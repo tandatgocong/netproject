@@ -1,0 +1,5 @@
+E:\DATA\NETPROJECT\MapVietBangDo\MapVietBangDo\bin\MapVietBangDo.dll
+E:\DATA\NETPROJECT\MapVietBangDo\MapVietBangDo\bin\MapVietBangDo.pdb
+E:\DATA\NETPROJECT\MapVietBangDo\MapVietBangDo\obj\Debug\ResolveAssemblyReference.cache
+E:\DATA\NETPROJECT\MapVietBangDo\MapVietBangDo\obj\Debug\MapVietBangDo.dll
+E:\DATA\NETPROJECT\MapVietBangDo\MapVietBangDo\obj\Debug\MapVietBangDo.pdb

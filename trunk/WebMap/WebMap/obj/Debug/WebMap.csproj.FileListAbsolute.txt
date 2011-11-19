@@ -1,0 +1,5 @@
+E:\DATA\NETPROJECT\WebMap\WebMap\bin\WebMap.dll
+E:\DATA\NETPROJECT\WebMap\WebMap\bin\WebMap.pdb
+E:\DATA\NETPROJECT\WebMap\WebMap\obj\Debug\ResolveAssemblyReference.cache
+E:\DATA\NETPROJECT\WebMap\WebMap\obj\Debug\WebMap.dll
+E:\DATA\NETPROJECT\WebMap\WebMap\obj\Debug\WebMap.pdb
