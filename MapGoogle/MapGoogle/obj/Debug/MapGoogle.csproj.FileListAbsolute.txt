@@ -1,5 +1,0 @@
-E:\DATA\NETPROJECT\MapGoogle\MapGoogle\bin\MapGoogle.dll
-E:\DATA\NETPROJECT\MapGoogle\MapGoogle\bin\MapGoogle.pdb
-E:\DATA\NETPROJECT\MapGoogle\MapGoogle\obj\Debug\ResolveAssemblyReference.cache
-E:\DATA\NETPROJECT\MapGoogle\MapGoogle\obj\Debug\MapGoogle.dll
-E:\DATA\NETPROJECT\MapGoogle\MapGoogle\obj\Debug\MapGoogle.pdb

@@ -61,12 +61,27 @@
     <Content Include="Image\6.jpg" />
     <Content Include="Image\7.jpg" />
     <Content Include="Image\8.jpg" />
+    <Content Include="Image\blank %283%29.png" />
+    <Content Include="Image\bule.png" />
+    <Content Include="Image\green.png" />
     <Content Include="Image\location1.png" />
+    <Content Include="Image\orange.png" />
+    <Content Include="Image\red.png" />
+    <Content Include="Scripts\headmenu.css" />
+    <Content Include="Scripts\headmenu.js" />
+    <Content Include="Scripts\jquery-1.2.6.js" />
+    <Content Include="Scripts\jquery-1.6.2.js" />
+    <Content Include="Scripts\jquery.iviewer.css" />
+    <Content Include="Scripts\jquery.iviewer.js" />
+    <Content Include="Scripts\transmenu.js" />
+    <Content Include="Styles\DialogModel.css" />
+    <Content Include="Styles\Menu.css" />
     <Content Include="Styles\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\StyleSheet.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
