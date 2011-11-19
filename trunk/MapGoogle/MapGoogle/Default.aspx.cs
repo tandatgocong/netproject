@@ -19,12 +19,23 @@ namespace MapGoogle
             DataSet ds = new DataSet();
             db.Connection.Open();
             string sql = "SELECT * FROM LOCATION ";
-
             SqlDataAdapter dond = new SqlDataAdapter(sql, db.Connection.ConnectionString);
             dond.Fill(ds, "TABLE");
-
-
             Session["Authenticate"] = ds.Tables["TABLE"];
+        }
+
+        protected void btSearch_Click(object sender, EventArgs e)
+        {
+            Session["tmp"] = Session["Authenticate"];
+            Session["Authenticate"] = null;
+            MapDemoDataContext db = new MapDemoDataContext();
+            DataSet ds = new DataSet();
+            db.Connection.Open();
+            string sql = "SELECT * FROM LOCATION WHERE ADDRESS LIKE N'%" +  this.textSearchDiaChi.Text + "%' ";
+            SqlDataAdapter dond = new SqlDataAdapter(sql, db.Connection.ConnectionString);
+            dond.Fill(ds, "TABLE");
+            if(ds.Tables["TABLE"].Rows.Count>0)
+                Session["Authenticate"] = ds.Tables["TABLE"];
         }
     }
 }
