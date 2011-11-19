@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="E:\DATA\NETPROJECT\MapGoogle\Deploy" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Image/green.png" publishTime="11/19/2011 12:24:48" />
+    <file relUrl="Image/8.jpg" publishTime="11/19/2011 12:20:52" />
+    <file relUrl="Scripts/transmenu.js" publishTime="11/19/2011 12:21:02" />
+    <file relUrl="Image/red.png" publishTime="11/19/2011 12:25:34" />
+    <file relUrl="Image/2.jpg" publishTime="11/19/2011 12:20:52" />
+    <file relUrl="Global.asax" publishTime="11/19/2011 12:20:53" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="11/19/2011 12:21:02" />
+    <file relUrl="add.aspx" publishTime="11/19/2011 23:18:37" />
+    <file relUrl="Styles/Site.css" publishTime="11/19/2011 12:20:52" />
+    <file relUrl="Web.config" publishTime="11/19/2011 23:46:44" />
+    <file relUrl="Image/7.jpg" publishTime="11/19/2011 12:20:52" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="11/19/2011 12:21:02" />
+    <file relUrl="Scripts/headmenu.css" publishTime="11/19/2011 12:21:02" />
+    <file relUrl="Image/orange.png" publishTime="11/19/2011 12:25:15" />
+    <file relUrl="Scripts/jquery-1.6.2.js" publishTime="11/19/2011 12:21:02" />
+    <file relUrl="Styles/StyleSheet.css" publishTime="11/19/2011 17:06:52" />
+    <file relUrl="bin/MapGoogle.pdb" publishTime="11/19/2011 23:45:45" />
+    <file relUrl="Scripts/jquery.iviewer.js" publishTime="11/19/2011 12:21:02" />
+    <file relUrl="Image/5.jpg" publishTime="11/19/2011 12:20:52" />
+    <file relUrl="bin/MapGoogle.dll" publishTime="11/19/2011 23:45:45" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="11/19/2011 12:21:02" />
+    <file relUrl="Styles/DialogModel.css" publishTime="11/19/2011 13:04:23" />
+    <file relUrl="Default.aspx" publishTime="11/19/2011 23:21:43" />
+    <file relUrl="Image/3.jpg" publishTime="11/19/2011 12:20:52" />
+    <file relUrl="Image/blank (3).png" publishTime="11/19/2011 12:25:23" />
+    <file relUrl="Image/6.jpg" publishTime="11/19/2011 12:20:52" />
+    <file relUrl="Scripts/jquery-1.2.6.js" publishTime="11/19/2011 12:21:02" />
+    <file relUrl="Image/1.jpg" publishTime="11/19/2011 12:20:52" />
+    <file relUrl="Scripts/jquery.iviewer.css" publishTime="11/19/2011 12:21:02" />
+    <file relUrl="Image/4.jpg" publishTime="11/19/2011 12:20:52" />
+    <file relUrl="Scripts/headmenu.js" publishTime="11/19/2011 12:21:02" />
+    <file relUrl="Styles/Menu.css" publishTime="11/19/2011 12:21:26" />
+    <file relUrl="Image/bule.png" publishTime="11/19/2011 12:25:02" />
+    <file relUrl="Image/location1.png" publishTime="11/19/2011 12:20:52" />
+  </publishProfile>
+</publishData>

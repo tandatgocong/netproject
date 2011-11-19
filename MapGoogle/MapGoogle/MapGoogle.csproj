@@ -52,6 +52,7 @@
     <Reference Include="System.Web.ApplicationServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="add.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Image\1.jpg" />
     <Content Include="Image\2.jpg" />
@@ -91,6 +92,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
