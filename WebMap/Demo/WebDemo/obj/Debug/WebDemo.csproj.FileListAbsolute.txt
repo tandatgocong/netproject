@@ -1,0 +1,10 @@
+D:\PROJECT\DEMO\WebDemo\WebDemo\bin\WebDemo.dll
+D:\PROJECT\DEMO\WebDemo\WebDemo\bin\WebDemo.pdb
+D:\PROJECT\DEMO\WebDemo\WebDemo\obj\Debug\ResolveAssemblyReference.cache
+D:\PROJECT\DEMO\WebDemo\WebDemo\obj\Debug\WebDemo.dll
+D:\PROJECT\DEMO\WebDemo\WebDemo\obj\Debug\WebDemo.pdb
+D:\DATA\PROJECT\DEMO\WebDemo\WebDemo\bin\WebDemo.dll
+D:\DATA\PROJECT\DEMO\WebDemo\WebDemo\bin\WebDemo.pdb
+D:\DATA\PROJECT\DEMO\WebDemo\WebDemo\obj\Debug\ResolveAssemblyReference.cache
+D:\DATA\PROJECT\DEMO\WebDemo\WebDemo\obj\Debug\WebDemo.dll
+D:\DATA\PROJECT\DEMO\WebDemo\WebDemo\obj\Debug\WebDemo.pdb
