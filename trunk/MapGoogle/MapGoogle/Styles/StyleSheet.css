@@ -1,0 +1,140 @@
+﻿html, body{
+	margin:3px 3px 0px 3px;
+	font-family: Arial, Tahoma, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style:normal;	
+}
+
+#Home{
+	margin: 0 auto;
+	width: 100%;
+}
+
+#Home .Header{
+	margin: 0;
+	padding: 0;
+	height: 100px;
+	position: relative;
+	background-image: url(/portal/Image/bg_head.jpg);
+}
+#Home .Menu{
+	margin: 0;
+	padding: 0;
+	height: 35px;
+	border-bottom: 5px #fd0700 solid;
+	background-color:#02579D;
+/*	background: #081768 url(/portal/Image/menu_bg.png) repeat-x top;*/
+	z-index: 999;
+}
+
+/* Content */
+#Home .Content{
+	margin: 0 0 0 0;
+	padding: 0;
+	height:680px;
+	background-color: White;
+}
+/* Content */
+/*--------------------- Foot -----------------------*/
+
+#Home .Foot{
+	margin: 0;
+	padding:0;
+	height: 78px;
+	background-color : #0E7B98 ;
+	font:normal 12px Arial, Tahoma, Helvetica, sans-serif;
+	color: #FFF;
+}
+
+#Home .Foot .copyright{
+	float: left;
+	margin: 7px 10px;
+}
+
+#Home .Foot .linkfoot
+{
+    margin: 0;
+	padding: 0;
+	float: right;
+	width: 300px;
+	margin-top: 7px; margin-right: 10px;
+	text-align: right;
+	/*background: #FFF url(/portal/Image/menu_bg.png);*/
+	background-color:#0E7B98;
+	font:bold 13px Arial, Tahoma, verdana, sans-serif;
+	color:#FFF;
+	/*
+;*/
+}
+
+.linkfoot ul{
+	list-style: none;
+	font:normal 11px Arial, Tahoma, Helvetica, sans-serif;
+	font-weight: bold;
+	padding:0; float: right;
+	margin:0;
+}
+
+.linkfoot ul li{
+	float: left;
+	display:inline;
+	padding: 0 10px;
+	border-right: 1px #6699FF solid;
+	color: #FFF;
+}
+
+.linkfoot ul li.last{
+	border:0;
+	padding-left:10px;
+	padding-right:0;
+}
+
+.linkfoot ul li a:link,
+.linkfoot ul li a:visited,
+.linkfoot ul li a:active{
+	font-weight: bold;
+	color: #FFF;
+	text-decoration:none;
+}
+
+.linkfoot ul li a:hover{
+	color: #FFF;
+}
+
+
+a.linkfoot_text,
+a.linkfoot_text:link
+a.linkfoot_text:visited
+a.linkfoot_text:active{
+	color: #6699FF;
+	text-decoration:none;
+}
+
+a.linkfoot_text:hover{
+	color: #030B4C;
+	text-decoration:underline;
+}
+/* Demo R-Click */
+  .vmenu{border:1px solid #aaa;position:absolute;background:#fff;	display:none;font-size:0.75em;}
+       .vmenu .first_li span{width:200px;display:block;padding:5px 10px;cursor:pointer}
+       .vmenu .inner_li{display:none;margin-left:120px;position:absolute;border:1px solid #aaa;
+        border-left:1px solid #ccc;margin-top:-28px;background:#fff;}
+       .vmenu .sep_li{border-top: 1px ridge #aaa;margin:5px 0}
+       .vmenu .fill_title{font-size:11px;font-weight:bold;height:15px;overflow:hidden;word-wrap:break-word;}
+ 
+ div.title_page {
+    border-bottom: 2px solid #663300;
+    color: #006600;
+    font-family: Tahoma,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 5px 0;
+    text-transform: uppercase;
+    margin-top:5px;
+}
+  
+
+
+
+
