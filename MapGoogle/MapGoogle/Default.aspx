@@ -1,4 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="MapGoogle.Default" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
 <%@ Import Namespace="System.Data" %>
 <%@ Import Namespace="System.Data.SqlClient" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -9,12 +11,13 @@
     <title>Demo</title>
     <link rel="stylesheet" type="text/css" href="Scripts/headmenu.css" />
     <script src="Scripts/headmenu.js" type="text/javascript"></script>
-    <link href="Styles/StyleSheet.css" rel="stylesheet" type="text/css" />    
+    <link href="Styles/StyleSheet.css" rel="stylesheet" type="text/css" />  
+    <link href="Styles/DialogModel.css" rel="stylesheet" type="text/css" />    
     <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAuPsJpk3MBtDpJ4G8cqBnjRRaGTYH6UMl8mADNa0YKuWNNa8VNxQCzVBXTx2DYyXGsTOxpWhvIG7Djw" type="text/javascript"></script>
      <style type="text/css">
-      @import url("http://www.google.com/uds/css/gsearch.css");
+         @import url("http://www.google.com/uds/css/gsearch.css");
       @import url("http://www.google.com/uds/solutions/localsearch/gmlocalsearch.css");
-    </style>
+         </style>
 
     <script src="http://www.google.com/uds/api?file=uds.js&amp;v=1.0" type="text/javascript"></script>
     <script src="http://www.google.com/uds/solutions/localsearch/gmlocalsearch.js" type="text/javascript"></script>
@@ -125,15 +128,21 @@
   </head>
   <body onload="initialize()" onunload="GUnload()" >
       <form id="form1" runat="server">
+      
+
   <div id="Home">
        <!-- <div class="Header"> -->
             <!-- <img src="/portal/Image/logo.png" style=" margin-top:4px;" /> -->
         <!-- </div> -->
         <div class="menu"> 
             <ul id="mnIntro">			
-                <li><a href="#" class="act">TRANG CHỦ</a></li>
+                <li><a href="#" class="act">TRANG CHỦNG CHỦ</a></li>
                 
-                <li >   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                <li > &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <!--  <asp:RadioButton 
+                        ID="RadioButton2" runat="server" Text="Mã Chi Nhánh" /> <asp:RadioButton 
+                        ID="RadioButton1" runat="server" Text="Địa Chỉ" /> -->
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
                     <%--<ul style="overflow: hidden; display: block; height: 0px; z-index: 59; opacity: 0.0119048;">
                         <li><a href="#">SUB MENU 1</a></li>
                         <li><a href="#">SUB MENU 2</a></li>
@@ -141,7 +150,7 @@
                     </ul>    --%>                    
                 </li>
                 
-                <li>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li>  &nbsp;&nbsp; 
                     <asp:TextBox ID="textSearchDiaChi" runat="server" Height="25px" Width="296px" 
                         Font-Size="12pt"></asp:TextBox>
 &nbsp;
@@ -188,7 +197,7 @@
                     </ul>
                 </li>-->
                                 
-            </ul>
+                </ul>
                 
             <script type="text/javascript">
                 var menu1 = new menu.dd("menu1");

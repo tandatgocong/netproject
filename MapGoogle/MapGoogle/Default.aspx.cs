@@ -14,14 +14,22 @@ namespace MapGoogle
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session["Authenticate"] = null;
-            MapDemoDataContext db = new MapDemoDataContext();
-            DataSet ds = new DataSet();
-            db.Connection.Open();
-            string sql = "SELECT * FROM LOCATION ";
-            SqlDataAdapter dond = new SqlDataAdapter(sql, db.Connection.ConnectionString);
-            dond.Fill(ds, "TABLE");
-            Session["Authenticate"] = ds.Tables["TABLE"];
+            if (Session["login"] == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
+            else
+            {
+
+                Session["Authenticate"] = null;
+                MapDemoDataContext db = new MapDemoDataContext();
+                DataSet ds = new DataSet();
+                db.Connection.Open();
+                string sql = "SELECT * FROM LOCATION ";
+                SqlDataAdapter dond = new SqlDataAdapter(sql, db.Connection.ConnectionString);
+                dond.Fill(ds, "TABLE");
+                Session["Authenticate"] = ds.Tables["TABLE"];
+            }
         }
 
         protected void btSearch_Click(object sender, EventArgs e)

@@ -22,7 +22,7 @@ namespace MapGoogle.Databases
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="test")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="WEBDEMO")]
 	public partial class MapDemoDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -33,6 +33,9 @@ namespace MapGoogle.Databases
     partial void InsertLOCATION(LOCATION instance);
     partial void UpdateLOCATION(LOCATION instance);
     partial void DeleteLOCATION(LOCATION instance);
+    partial void InsertUSER(USER instance);
+    partial void UpdateUSER(USER instance);
+    partial void DeleteUSER(USER instance);
     #endregion
 		
 		public MapDemoDataContext() : 
@@ -70,6 +73,14 @@ namespace MapGoogle.Databases
 			get
 			{
 				return this.GetTable<LOCATION>();
+			}
+		}
+		
+		public System.Data.Linq.Table<USER> USERs
+		{
+			get
+			{
+				return this.GetTable<USER>();
 			}
 		}
 	}
@@ -279,6 +290,308 @@ namespace MapGoogle.Databases
 					this._IMG = value;
 					this.SendPropertyChanged("IMG");
 					this.OnIMGChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.USERS")]
+	public partial class USER : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private string _USERNAME;
+		
+		private string _PASSWORD;
+		
+		private string _FULLNAME;
+		
+		private string _ROLEID;
+		
+		private System.Nullable<bool> _ENABLED;
+		
+		private System.Nullable<int> _CAP;
+		
+		private string _MAPHONG;
+		
+		private string _CREATEBY;
+		
+		private System.Nullable<System.DateTime> _CREATEDATE;
+		
+		private string _MODIFYBY;
+		
+		private System.Nullable<System.DateTime> _MODIFYDATE;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnUSERNAMEChanging(string value);
+    partial void OnUSERNAMEChanged();
+    partial void OnPASSWORDChanging(string value);
+    partial void OnPASSWORDChanged();
+    partial void OnFULLNAMEChanging(string value);
+    partial void OnFULLNAMEChanged();
+    partial void OnROLEIDChanging(string value);
+    partial void OnROLEIDChanged();
+    partial void OnENABLEDChanging(System.Nullable<bool> value);
+    partial void OnENABLEDChanged();
+    partial void OnCAPChanging(System.Nullable<int> value);
+    partial void OnCAPChanged();
+    partial void OnMAPHONGChanging(string value);
+    partial void OnMAPHONGChanged();
+    partial void OnCREATEBYChanging(string value);
+    partial void OnCREATEBYChanged();
+    partial void OnCREATEDATEChanging(System.Nullable<System.DateTime> value);
+    partial void OnCREATEDATEChanged();
+    partial void OnMODIFYBYChanging(string value);
+    partial void OnMODIFYBYChanged();
+    partial void OnMODIFYDATEChanging(System.Nullable<System.DateTime> value);
+    partial void OnMODIFYDATEChanged();
+    #endregion
+		
+		public USER()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_USERNAME", DbType="VarChar(20) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string USERNAME
+		{
+			get
+			{
+				return this._USERNAME;
+			}
+			set
+			{
+				if ((this._USERNAME != value))
+				{
+					this.OnUSERNAMEChanging(value);
+					this.SendPropertyChanging();
+					this._USERNAME = value;
+					this.SendPropertyChanged("USERNAME");
+					this.OnUSERNAMEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PASSWORD", DbType="VarChar(50)")]
+		public string PASSWORD
+		{
+			get
+			{
+				return this._PASSWORD;
+			}
+			set
+			{
+				if ((this._PASSWORD != value))
+				{
+					this.OnPASSWORDChanging(value);
+					this.SendPropertyChanging();
+					this._PASSWORD = value;
+					this.SendPropertyChanged("PASSWORD");
+					this.OnPASSWORDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FULLNAME", DbType="NVarChar(50)")]
+		public string FULLNAME
+		{
+			get
+			{
+				return this._FULLNAME;
+			}
+			set
+			{
+				if ((this._FULLNAME != value))
+				{
+					this.OnFULLNAMEChanging(value);
+					this.SendPropertyChanging();
+					this._FULLNAME = value;
+					this.SendPropertyChanged("FULLNAME");
+					this.OnFULLNAMEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ROLEID", DbType="VarChar(5)")]
+		public string ROLEID
+		{
+			get
+			{
+				return this._ROLEID;
+			}
+			set
+			{
+				if ((this._ROLEID != value))
+				{
+					this.OnROLEIDChanging(value);
+					this.SendPropertyChanging();
+					this._ROLEID = value;
+					this.SendPropertyChanged("ROLEID");
+					this.OnROLEIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ENABLED", DbType="Bit")]
+		public System.Nullable<bool> ENABLED
+		{
+			get
+			{
+				return this._ENABLED;
+			}
+			set
+			{
+				if ((this._ENABLED != value))
+				{
+					this.OnENABLEDChanging(value);
+					this.SendPropertyChanging();
+					this._ENABLED = value;
+					this.SendPropertyChanged("ENABLED");
+					this.OnENABLEDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CAP", DbType="Int")]
+		public System.Nullable<int> CAP
+		{
+			get
+			{
+				return this._CAP;
+			}
+			set
+			{
+				if ((this._CAP != value))
+				{
+					this.OnCAPChanging(value);
+					this.SendPropertyChanging();
+					this._CAP = value;
+					this.SendPropertyChanged("CAP");
+					this.OnCAPChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MAPHONG", DbType="VarChar(20)")]
+		public string MAPHONG
+		{
+			get
+			{
+				return this._MAPHONG;
+			}
+			set
+			{
+				if ((this._MAPHONG != value))
+				{
+					this.OnMAPHONGChanging(value);
+					this.SendPropertyChanging();
+					this._MAPHONG = value;
+					this.SendPropertyChanged("MAPHONG");
+					this.OnMAPHONGChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATEBY", DbType="VarChar(50)")]
+		public string CREATEBY
+		{
+			get
+			{
+				return this._CREATEBY;
+			}
+			set
+			{
+				if ((this._CREATEBY != value))
+				{
+					this.OnCREATEBYChanging(value);
+					this.SendPropertyChanging();
+					this._CREATEBY = value;
+					this.SendPropertyChanged("CREATEBY");
+					this.OnCREATEBYChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATEDATE", DbType="DateTime")]
+		public System.Nullable<System.DateTime> CREATEDATE
+		{
+			get
+			{
+				return this._CREATEDATE;
+			}
+			set
+			{
+				if ((this._CREATEDATE != value))
+				{
+					this.OnCREATEDATEChanging(value);
+					this.SendPropertyChanging();
+					this._CREATEDATE = value;
+					this.SendPropertyChanged("CREATEDATE");
+					this.OnCREATEDATEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MODIFYBY", DbType="VarChar(50)")]
+		public string MODIFYBY
+		{
+			get
+			{
+				return this._MODIFYBY;
+			}
+			set
+			{
+				if ((this._MODIFYBY != value))
+				{
+					this.OnMODIFYBYChanging(value);
+					this.SendPropertyChanging();
+					this._MODIFYBY = value;
+					this.SendPropertyChanged("MODIFYBY");
+					this.OnMODIFYBYChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MODIFYDATE", DbType="DateTime")]
+		public System.Nullable<System.DateTime> MODIFYDATE
+		{
+			get
+			{
+				return this._MODIFYDATE;
+			}
+			set
+			{
+				if ((this._MODIFYDATE != value))
+				{
+					this.OnMODIFYDATEChanging(value);
+					this.SendPropertyChanging();
+					this._MODIFYDATE = value;
+					this.SendPropertyChanged("MODIFYDATE");
+					this.OnMODIFYDATEChanged();
 				}
 			}
 		}
