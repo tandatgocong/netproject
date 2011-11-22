@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.50731.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -62,12 +65,23 @@
     <Content Include="Image\6.jpg" />
     <Content Include="Image\7.jpg" />
     <Content Include="Image\8.jpg" />
+    <Content Include="Image\bg_head_DH.gif" />
+    <Content Include="Image\bg_help.jpg" />
     <Content Include="Image\blank %283%29.png" />
     <Content Include="Image\bule.png" />
     <Content Include="Image\green.png" />
+    <Content Include="Image\help_left.jpg" />
+    <Content Include="Image\help_right.jpg" />
     <Content Include="Image\location1.png" />
+    <Content Include="Image\lSearchBox.gif" />
+    <Content Include="Image\mSearchBox.gif" />
     <Content Include="Image\orange.png" />
     <Content Include="Image\red.png" />
+    <Content Include="Image\rSearchBox.gif" />
+    <Content Include="Image\tmnbg.jpg" />
+    <Content Include="Image\tmnleft.jpg" />
+    <Content Include="Image\tmnright.jpg" />
+    <Content Include="Login.aspx" />
     <Content Include="Scripts\headmenu.css" />
     <Content Include="Scripts\headmenu.js" />
     <Content Include="Scripts\jquery-1.2.6.js" />
@@ -76,6 +90,7 @@
     <Content Include="Scripts\jquery.iviewer.js" />
     <Content Include="Scripts\transmenu.js" />
     <Content Include="Styles\DialogModel.css" />
+    <Content Include="Styles\home.css" />
     <Content Include="Styles\Menu.css" />
     <Content Include="Styles\Site.css" />
     <Content Include="Global.asax" />
@@ -83,6 +98,7 @@
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="Styles\StyleSheet.css" />
+    <Content Include="Styles\vietuni.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -113,6 +129,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MapDemo.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
