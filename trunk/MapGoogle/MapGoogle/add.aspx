@@ -118,7 +118,7 @@
             </div>      
         </div>    
         </div>
-    <div  id="map_canvas" class="map_canvas" style="width: 100%; height:580px;">
+    <div  id="map_canvas" class="map_canvas" style="width: 100%; height:680px;">
         <br />
         <table style="width:100%;">
             <tr>
@@ -165,14 +165,14 @@
                 <td class="style3">
                 </td>
                 <td class="style4">
-                    Tên Chi Nhánh :</td>
+                    Tên Cửa Hàng :</td>
                 <td class="style20">
                     <asp:TextBox ID="txtTenChiNhanh" runat="server" Height="27px" Width="343px"></asp:TextBox>
                 </td>
                 <td class="style5">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
                         ControlToValidate="txtTenChiNhanh" 
-                        ErrorMessage="Tên Chi Nhánh Không Được Trống" ForeColor="Red"></asp:RequiredFieldValidator>
+                        ErrorMessage="Tên Cửa Hàng Không Được Trống" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -191,6 +191,50 @@
             </tr>
             <tr>
                 <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    Loại CH :</td>
+                <td class="style21">
+                    <asp:TextBox ID="txtLoaiCH" runat="server" Height="27px" Width="343px"></asp:TextBox>
+                </td>
+                <td class="style11">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    Trưng Bày</td>
+                <td class="style21">
+                    <asp:TextBox ID="txtTrungBay" runat="server" Height="27px" Width="343px"></asp:TextBox>
+                </td>
+                <td class="style11">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    Tần Số</td>
+                <td class="style21">
+                    <asp:TextBox ID="txtTanSo" runat="server" Height="27px" Width="343px"></asp:TextBox>
+                </td>
+                <td class="style11">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    Số Call</td>
+                <td class="style21">
+                    <asp:TextBox ID="txtSoCall" runat="server" Height="27px" Width="343px"></asp:TextBox>
+                </td>
+                <td class="style11">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
                 </td>
                 <td class="style10">
                     Chủ Cửa Hàng:</td>
@@ -198,10 +242,7 @@
                     <asp:TextBox ID="txtChuCuaHang" runat="server" Height="27px" Width="343px"></asp:TextBox>
                 </td>
                 <td class="style11">
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
-                        ControlToValidate="txtChuCuaHang" 
-                        ErrorMessage="Tên Chủ Cửa Hàng Không Được Trống" ForeColor="Red"></asp:RequiredFieldValidator>
-                </td>
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="style9">

@@ -30,12 +30,12 @@ namespace MapGoogle.Databases
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertLOCATION(LOCATION instance);
-    partial void UpdateLOCATION(LOCATION instance);
-    partial void DeleteLOCATION(LOCATION instance);
     partial void InsertUSER(USER instance);
     partial void UpdateUSER(USER instance);
     partial void DeleteUSER(USER instance);
+    partial void InsertLOCATION(LOCATION instance);
+    partial void UpdateLOCATION(LOCATION instance);
+    partial void DeleteLOCATION(LOCATION instance);
     #endregion
 		
 		public MapDemoDataContext() : 
@@ -68,14 +68,6 @@ namespace MapGoogle.Databases
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<LOCATION> LOCATIONs
-		{
-			get
-			{
-				return this.GetTable<LOCATION>();
-			}
-		}
-		
 		public System.Data.Linq.Table<USER> USERs
 		{
 			get
@@ -83,234 +75,12 @@ namespace MapGoogle.Databases
 				return this.GetTable<USER>();
 			}
 		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.LOCATION")]
-	public partial class LOCATION : INotifyPropertyChanging, INotifyPropertyChanged
-	{
 		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private System.Nullable<double> _X;
-		
-		private System.Nullable<double> _Y;
-		
-		private System.Nullable<int> _MUC;
-		
-		private string _LOCATIONID;
-		
-		private string _LOCATIONNAME;
-		
-		private string _ADDRESS;
-		
-		private string _EMLOYEENAME;
-		
-		private string _IMG;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnXChanging(System.Nullable<double> value);
-    partial void OnXChanged();
-    partial void OnYChanging(System.Nullable<double> value);
-    partial void OnYChanged();
-    partial void OnMUCChanging(System.Nullable<int> value);
-    partial void OnMUCChanged();
-    partial void OnLOCATIONIDChanging(string value);
-    partial void OnLOCATIONIDChanged();
-    partial void OnLOCATIONNAMEChanging(string value);
-    partial void OnLOCATIONNAMEChanged();
-    partial void OnADDRESSChanging(string value);
-    partial void OnADDRESSChanged();
-    partial void OnEMLOYEENAMEChanging(string value);
-    partial void OnEMLOYEENAMEChanged();
-    partial void OnIMGChanging(string value);
-    partial void OnIMGChanged();
-    #endregion
-		
-		public LOCATION()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_X", DbType="Float")]
-		public System.Nullable<double> X
+		public System.Data.Linq.Table<LOCATION> LOCATIONs
 		{
 			get
 			{
-				return this._X;
-			}
-			set
-			{
-				if ((this._X != value))
-				{
-					this.OnXChanging(value);
-					this.SendPropertyChanging();
-					this._X = value;
-					this.SendPropertyChanged("X");
-					this.OnXChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Y", DbType="Float")]
-		public System.Nullable<double> Y
-		{
-			get
-			{
-				return this._Y;
-			}
-			set
-			{
-				if ((this._Y != value))
-				{
-					this.OnYChanging(value);
-					this.SendPropertyChanging();
-					this._Y = value;
-					this.SendPropertyChanged("Y");
-					this.OnYChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MUC", DbType="Int")]
-		public System.Nullable<int> MUC
-		{
-			get
-			{
-				return this._MUC;
-			}
-			set
-			{
-				if ((this._MUC != value))
-				{
-					this.OnMUCChanging(value);
-					this.SendPropertyChanging();
-					this._MUC = value;
-					this.SendPropertyChanged("MUC");
-					this.OnMUCChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LOCATIONID", DbType="VarChar(20) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string LOCATIONID
-		{
-			get
-			{
-				return this._LOCATIONID;
-			}
-			set
-			{
-				if ((this._LOCATIONID != value))
-				{
-					this.OnLOCATIONIDChanging(value);
-					this.SendPropertyChanging();
-					this._LOCATIONID = value;
-					this.SendPropertyChanged("LOCATIONID");
-					this.OnLOCATIONIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LOCATIONNAME", DbType="NVarChar(250)")]
-		public string LOCATIONNAME
-		{
-			get
-			{
-				return this._LOCATIONNAME;
-			}
-			set
-			{
-				if ((this._LOCATIONNAME != value))
-				{
-					this.OnLOCATIONNAMEChanging(value);
-					this.SendPropertyChanging();
-					this._LOCATIONNAME = value;
-					this.SendPropertyChanged("LOCATIONNAME");
-					this.OnLOCATIONNAMEChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ADDRESS", DbType="NVarChar(500)")]
-		public string ADDRESS
-		{
-			get
-			{
-				return this._ADDRESS;
-			}
-			set
-			{
-				if ((this._ADDRESS != value))
-				{
-					this.OnADDRESSChanging(value);
-					this.SendPropertyChanging();
-					this._ADDRESS = value;
-					this.SendPropertyChanged("ADDRESS");
-					this.OnADDRESSChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EMLOYEENAME", DbType="NVarChar(250)")]
-		public string EMLOYEENAME
-		{
-			get
-			{
-				return this._EMLOYEENAME;
-			}
-			set
-			{
-				if ((this._EMLOYEENAME != value))
-				{
-					this.OnEMLOYEENAMEChanging(value);
-					this.SendPropertyChanging();
-					this._EMLOYEENAME = value;
-					this.SendPropertyChanged("EMLOYEENAME");
-					this.OnEMLOYEENAMEChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IMG", DbType="NVarChar(50)")]
-		public string IMG
-		{
-			get
-			{
-				return this._IMG;
-			}
-			set
-			{
-				if ((this._IMG != value))
-				{
-					this.OnIMGChanging(value);
-					this.SendPropertyChanging();
-					this._IMG = value;
-					this.SendPropertyChanged("IMG");
-					this.OnIMGChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+				return this.GetTable<LOCATION>();
 			}
 		}
 	}
@@ -592,6 +362,356 @@ namespace MapGoogle.Databases
 					this._MODIFYDATE = value;
 					this.SendPropertyChanged("MODIFYDATE");
 					this.OnMODIFYDATEChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.LOCATION")]
+	public partial class LOCATION : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private System.Nullable<double> _X;
+		
+		private System.Nullable<double> _Y;
+		
+		private System.Nullable<int> _MUC;
+		
+		private string _MACHINHANH;
+		
+		private string _TENCHINHANH;
+		
+		private string _ADDRESS;
+		
+		private string _LOAICHINHANH;
+		
+		private string _TRUNGBAY;
+		
+		private string _TANSO;
+		
+		private string _DIENTHOAI;
+		
+		private string _CHUCHINHANH;
+		
+		private string _IMG;
+		
+		private int _STT;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnXChanging(System.Nullable<double> value);
+    partial void OnXChanged();
+    partial void OnYChanging(System.Nullable<double> value);
+    partial void OnYChanged();
+    partial void OnMUCChanging(System.Nullable<int> value);
+    partial void OnMUCChanged();
+    partial void OnMACHINHANHChanging(string value);
+    partial void OnMACHINHANHChanged();
+    partial void OnTENCHINHANHChanging(string value);
+    partial void OnTENCHINHANHChanged();
+    partial void OnADDRESSChanging(string value);
+    partial void OnADDRESSChanged();
+    partial void OnLOAICHINHANHChanging(string value);
+    partial void OnLOAICHINHANHChanged();
+    partial void OnTRUNGBAYChanging(string value);
+    partial void OnTRUNGBAYChanged();
+    partial void OnTANSOChanging(string value);
+    partial void OnTANSOChanged();
+    partial void OnDIENTHOAIChanging(string value);
+    partial void OnDIENTHOAIChanged();
+    partial void OnCHUCHINHANHChanging(string value);
+    partial void OnCHUCHINHANHChanged();
+    partial void OnIMGChanging(string value);
+    partial void OnIMGChanged();
+    partial void OnSTTChanging(int value);
+    partial void OnSTTChanged();
+    #endregion
+		
+		public LOCATION()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_X", DbType="Float")]
+		public System.Nullable<double> X
+		{
+			get
+			{
+				return this._X;
+			}
+			set
+			{
+				if ((this._X != value))
+				{
+					this.OnXChanging(value);
+					this.SendPropertyChanging();
+					this._X = value;
+					this.SendPropertyChanged("X");
+					this.OnXChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Y", DbType="Float")]
+		public System.Nullable<double> Y
+		{
+			get
+			{
+				return this._Y;
+			}
+			set
+			{
+				if ((this._Y != value))
+				{
+					this.OnYChanging(value);
+					this.SendPropertyChanging();
+					this._Y = value;
+					this.SendPropertyChanged("Y");
+					this.OnYChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MUC", DbType="Int")]
+		public System.Nullable<int> MUC
+		{
+			get
+			{
+				return this._MUC;
+			}
+			set
+			{
+				if ((this._MUC != value))
+				{
+					this.OnMUCChanging(value);
+					this.SendPropertyChanging();
+					this._MUC = value;
+					this.SendPropertyChanged("MUC");
+					this.OnMUCChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MACHINHANH", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
+		public string MACHINHANH
+		{
+			get
+			{
+				return this._MACHINHANH;
+			}
+			set
+			{
+				if ((this._MACHINHANH != value))
+				{
+					this.OnMACHINHANHChanging(value);
+					this.SendPropertyChanging();
+					this._MACHINHANH = value;
+					this.SendPropertyChanged("MACHINHANH");
+					this.OnMACHINHANHChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TENCHINHANH", DbType="NVarChar(250)")]
+		public string TENCHINHANH
+		{
+			get
+			{
+				return this._TENCHINHANH;
+			}
+			set
+			{
+				if ((this._TENCHINHANH != value))
+				{
+					this.OnTENCHINHANHChanging(value);
+					this.SendPropertyChanging();
+					this._TENCHINHANH = value;
+					this.SendPropertyChanged("TENCHINHANH");
+					this.OnTENCHINHANHChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ADDRESS", DbType="NVarChar(500)")]
+		public string ADDRESS
+		{
+			get
+			{
+				return this._ADDRESS;
+			}
+			set
+			{
+				if ((this._ADDRESS != value))
+				{
+					this.OnADDRESSChanging(value);
+					this.SendPropertyChanging();
+					this._ADDRESS = value;
+					this.SendPropertyChanged("ADDRESS");
+					this.OnADDRESSChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LOAICHINHANH", DbType="NVarChar(500)")]
+		public string LOAICHINHANH
+		{
+			get
+			{
+				return this._LOAICHINHANH;
+			}
+			set
+			{
+				if ((this._LOAICHINHANH != value))
+				{
+					this.OnLOAICHINHANHChanging(value);
+					this.SendPropertyChanging();
+					this._LOAICHINHANH = value;
+					this.SendPropertyChanged("LOAICHINHANH");
+					this.OnLOAICHINHANHChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TRUNGBAY", DbType="NVarChar(500)")]
+		public string TRUNGBAY
+		{
+			get
+			{
+				return this._TRUNGBAY;
+			}
+			set
+			{
+				if ((this._TRUNGBAY != value))
+				{
+					this.OnTRUNGBAYChanging(value);
+					this.SendPropertyChanging();
+					this._TRUNGBAY = value;
+					this.SendPropertyChanged("TRUNGBAY");
+					this.OnTRUNGBAYChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TANSO", DbType="NVarChar(500)")]
+		public string TANSO
+		{
+			get
+			{
+				return this._TANSO;
+			}
+			set
+			{
+				if ((this._TANSO != value))
+				{
+					this.OnTANSOChanging(value);
+					this.SendPropertyChanging();
+					this._TANSO = value;
+					this.SendPropertyChanged("TANSO");
+					this.OnTANSOChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DIENTHOAI", DbType="NVarChar(500)")]
+		public string DIENTHOAI
+		{
+			get
+			{
+				return this._DIENTHOAI;
+			}
+			set
+			{
+				if ((this._DIENTHOAI != value))
+				{
+					this.OnDIENTHOAIChanging(value);
+					this.SendPropertyChanging();
+					this._DIENTHOAI = value;
+					this.SendPropertyChanged("DIENTHOAI");
+					this.OnDIENTHOAIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CHUCHINHANH", DbType="NVarChar(500)")]
+		public string CHUCHINHANH
+		{
+			get
+			{
+				return this._CHUCHINHANH;
+			}
+			set
+			{
+				if ((this._CHUCHINHANH != value))
+				{
+					this.OnCHUCHINHANHChanging(value);
+					this.SendPropertyChanging();
+					this._CHUCHINHANH = value;
+					this.SendPropertyChanged("CHUCHINHANH");
+					this.OnCHUCHINHANHChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IMG", DbType="NVarChar(500)")]
+		public string IMG
+		{
+			get
+			{
+				return this._IMG;
+			}
+			set
+			{
+				if ((this._IMG != value))
+				{
+					this.OnIMGChanging(value);
+					this.SendPropertyChanging();
+					this._IMG = value;
+					this.SendPropertyChanged("IMG");
+					this.OnIMGChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_STT", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int STT
+		{
+			get
+			{
+				return this._STT;
+			}
+			set
+			{
+				if ((this._STT != value))
+				{
+					this.OnSTTChanging(value);
+					this.SendPropertyChanging();
+					this._STT = value;
+					this.SendPropertyChanged("STT");
+					this.OnSTTChanged();
 				}
 			}
 		}

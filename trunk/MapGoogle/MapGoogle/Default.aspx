@@ -101,11 +101,15 @@
                           var x = parseFloat(<%=table.Rows[i][0]%>);
                           var y = parseFloat(<%=table.Rows[i][1]%>);
                            map.setCenter(new GLatLng(x,y), 17);
-                          var title="<table style='height:200px;' colspan='2' align='center'><tr><td style='height:200px;' colspan='2' align='center'> <img src='<%=table.Rows[i][7]%>' width='300' height='200'/></td></tr> <tr>";
-                          title+="<td style='border-bottom:1px; border-bottom-style:dotted; width:10px;'>Mã Chi Nhánh:</td> <td style='border-bottom:1px; border-bottom-style:dotted; width:400px' ><%=table.Rows[i][3]%> &nbsp;</td></tr>";
-                          title+="<tr><td style='border-bottom:1px; border-bottom-style:dotted; width:100px;'>Tên Chi Nhánh</td><td style='border-bottom:1px; border-bottom-style:dotted; width:400px' ><%=table.Rows[i][4]%>&nbsp;</td></tr>";
-                          title+="<tr><td style='border-bottom:1px; border-bottom-style:dotted; width:100px;'> Địa Chỉ</td><td style='border-bottom:1px; border-bottom-style:dotted; width:400px' ><%=table.Rows[i][5]%>&nbsp;</td></tr>";
-                          title+=" <tr><td style='border-bottom:1px; border-bottom-style:dotted; width:100px;'>Chủ Cửa Hàng</td><td style='border-bottom:1px; border-bottom-style:dotted; width:400px' ><%=table.Rows[i][6]%>&nbsp;</td></tr>";
+                          var title="<div class='title_page'><%=table.Rows[i][4]%> </div> <br/><table style='height:200px; colspan='2' align='center'><tr><td colspan='2' align='center'> </td></tr> <tr>";
+                          title+="<td style='border-bottom:1px; border-bottom-style:dotted; width:10px;'>&nbsp; &nbsp; Mã Chi Nhánh</td> <td style='border-bottom:1px; border-bottom-style:dotted; width:400px' >: <%=table.Rows[i][3]%> &nbsp;</td></tr>";
+                          title+="<tr><td style='border-bottom:1px; border-bottom-style:dotted; width:100px;'>&nbsp; &nbsp; Địa Chỉ</td><td style='border-bottom:1px; border-bottom-style:dotted; width:400px' >: <%=table.Rows[i][5]%>&nbsp;</td></tr>";
+                          title+="<tr><td style='border-bottom:1px; border-bottom-style:dotted; width:100px;'>&nbsp; &nbsp; Loại Cửa Hàng</td><td style='border-bottom:1px; border-bottom-style:dotted; width:400px' >: <%=table.Rows[i][6]%>&nbsp;</td></tr>";
+                          title+="<tr><td style='border-bottom:1px; border-bottom-style:dotted; width:100px;'>&nbsp; &nbsp; Trưng Bày</td><td style='border-bottom:1px; border-bottom-style:dotted; width:400px' >: <%=table.Rows[i][7]%>&nbsp;</td></tr>";
+                          title+="<tr><td style='border-bottom:1px; border-bottom-style:dotted; width:100px;'>&nbsp; &nbsp;T ần Số</td><td style='border-bottom:1px; border-bottom-style:dotted; width:400px' >: <%=table.Rows[i][8]%>&nbsp;</td></tr>";
+                          title+="<tr><td style='border-bottom:1px; border-bottom-style:dotted; width:100px;'>&nbsp; &nbsp; Số Call</td><td style='border-bottom:1px; border-bottom-style:dotted; width:400px' >: <%=table.Rows[i][9]%>&nbsp;</td></tr>";
+                          title+=" <tr><td style='border-bottom:1px; border-bottom-style:dotted; width:100px;'>&nbsp; &nbsp;  Chủ Cửa Hàng</td><td style='border-bottom:1px; border-bottom-style:dotted; width:400px' >: <%=table.Rows[i][10]%>&nbsp;</td></tr>";
+                          title+=" <tr><td colspan='2' align='center' style='border-bottom:1px; border-bottom-style:dotted; height:200px; width:100px;'> <img src='<%=table.Rows[i][11]%>' width='300' height='200'/> </td></tr>";
                           title+="</table>";
                         var latlng = new GLatLng(x,y);
                         map.addOverlay(createMarker(latlng,<%=i%>, title));
@@ -136,12 +140,12 @@
         <!-- </div> -->
         <div class="menu"> 
             <ul id="mnIntro">			
-                <li><a href="#" class="act">TRANG CHỦNG CHỦ</a></li>
+                <li><a href="#" class="act">TRANG CHỦ</a></li>
                 
                 <li > &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;
-&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <!--  <asp:RadioButton 
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <asp:RadioButton 
                         ID="RadioButton2" runat="server" Text="Mã Chi Nhánh" /> <asp:RadioButton 
-                        ID="RadioButton1" runat="server" Text="Địa Chỉ" /> -->
+                        ID="RadioButton1" runat="server" Text="Địa Chỉ" />
 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
                     <%--<ul style="overflow: hidden; display: block; height: 0px; z-index: 59; opacity: 0.0119048;">
                         <li><a href="#">SUB MENU 1</a></li>

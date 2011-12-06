@@ -66,10 +66,14 @@ namespace MapGoogle
                  LOCATION location = new LOCATION();
                  location.X = double.Parse(word[0]);
                  location.Y = double.Parse(word[1]);
-                 location.LOCATIONID = this.txtMaChiNhanh.Text;
-                 location.LOCATIONNAME = this.txtTenChiNhanh.Text;
+                 location.MACHINHANH = this.txtMaChiNhanh.Text;
+                 location.TENCHINHANH = this.txtTenChiNhanh.Text;
                  location.ADDRESS = this.txtDiaChi.Text;
-                 location.EMLOYEENAME = this.txtChuCuaHang.Text;
+                 location.LOAICHINHANH = this.txtLoaiCH.Text;
+                 location.TRUNGBAY = this.txtTrungBay.Text;
+                 location.TANSO = this.txtTanSo.Text;
+                 location.DIENTHOAI = this.txtSoCall.Text;
+                 location.CHUCHINHANH = this.txtChuCuaHang.Text;
                  location.IMG = this.imagePath.Value;
                  db.LOCATIONs.InsertOnSubmit(location);
                  db.SubmitChanges();
