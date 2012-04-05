@@ -51,13 +51,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Image\1.jpg" />
+    <Content Include="Image\2.jpg" />
+    <Content Include="Image\3.jpg" />
+    <Content Include="Image\4.jpg" />
+    <Content Include="Image\5.jpg" />
+    <Content Include="Image\6.jpg" />
+    <Content Include="Image\7.jpg" />
+    <Content Include="Image\8.gif" />
     <Content Include="Image\bg.gif" />
     <Content Include="Image\bg_head.jpg" />
     <Content Include="Image\box-bullet1.gif" />
+    <Content Include="Image\Capture.JPG" />
     <Content Include="Image\foot.png" />
     <Content Include="Image\logo.png" />
     <Content Include="Image\menu_bg.png" />
     <Content Include="Image\news_list_bg.gif" />
+    <Content Include="Image\Untitled.png" />
     <Content Include="JavaScript\headmenu.css" />
     <Content Include="JavaScript\headmenu.js" />
     <Content Include="JavaScript\jquery-1.2.6.js" />
