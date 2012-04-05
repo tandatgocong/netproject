@@ -128,10 +128,10 @@ a.linkfoot_text:hover{
     font-family: Tahoma,Arial,Helvetica,sans-serif;
     font-size: 14px;
     font-weight: bold;
-    margin: 0 10px;
     padding: 5px 0;
     text-transform: uppercase;
-    margin-top:5px;
+    margin-top:2px;
+    text-align:center;
 }
 
 div.footer
@@ -148,7 +148,13 @@ div.footer
      margin-bottom :0px;
      text-align :center;
 }
-
+div.criteria_scroll {
+ height: 190px;
+ width: 349px;
+ overflow: auto;
+ border: 1px dotted #669966;
+ padding: 8px;
+}
   
 
 

@@ -31,7 +31,7 @@ namespace MapGoogle
         void Session_Start(object sender, EventArgs e)
         {
             Session["login"]= null;
-
+            Session["imgfile"] = "";
         }
 
         void Session_End(object sender, EventArgs e)

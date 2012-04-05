@@ -13,7 +13,7 @@
     <script src="Scripts/headmenu.js" type="text/javascript"></script>
     <link href="Styles/StyleSheet.css" rel="stylesheet" type="text/css" />  
     <link href="Styles/DialogModel.css" rel="stylesheet" type="text/css" />    
-    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAuPsJpk3MBtDpJ4G8cqBnjRRaGTYH6UMl8mADNa0YKuWNNa8VNxQCzVBXTx2DYyXGsTOxpWhvIG7Djw" type="text/javascript"></script>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAA1rQGElPxuPCGQfDh4lpWBhS3nu3yB_afl-p-5uIRtWNtWiAy8BRw5TQQfI1RNaVugEAFrfkgju8IHQ" type="text/javascript"></script>
      <style type="text/css">
          @import url("http://www.google.com/uds/css/gsearch.css");
       @import url("http://www.google.com/uds/solutions/localsearch/gmlocalsearch.css");
@@ -97,6 +97,15 @@
                        }
                        for(int i=0;i<table.Rows.Count;i++)
                        {
+                        string filelis ="";
+                        string[] words = Regex.Split(table.Rows[i][11].ToString(), ",");
+                        for (int j= 0; j < words.Length; j++)
+                        {
+                            if (!words[j].Equals("")) {
+                               filelis+=" <img  src='" + words[j] + "' width='300' height='200' />  ";
+                            }
+                         
+                        }
                           %>
                           var x = parseFloat(<%=table.Rows[i][0]%>);
                           var y = parseFloat(<%=table.Rows[i][1]%>);
@@ -109,7 +118,7 @@
                           title+="<tr><td style='border-bottom:1px; border-bottom-style:dotted; width:100px;'>&nbsp; &nbsp;T ần Số</td><td style='border-bottom:1px; border-bottom-style:dotted; width:400px' >: <%=table.Rows[i][8]%>&nbsp;</td></tr>";
                           title+="<tr><td style='border-bottom:1px; border-bottom-style:dotted; width:100px;'>&nbsp; &nbsp; Số Call</td><td style='border-bottom:1px; border-bottom-style:dotted; width:400px' >: <%=table.Rows[i][9]%>&nbsp;</td></tr>";
                           title+=" <tr><td style='border-bottom:1px; border-bottom-style:dotted; width:100px;'>&nbsp; &nbsp;  Chủ Cửa Hàng</td><td style='border-bottom:1px; border-bottom-style:dotted; width:400px' >: <%=table.Rows[i][10]%>&nbsp;</td></tr>";
-                          title+=" <tr><td colspan='2' align='center' style='border-bottom:1px; border-bottom-style:dotted; height:200px; width:100px;'> <img src='<%=table.Rows[i][11]%>' width='300' height='200'/> </td></tr>";
+                          title+=" <tr><td colspan='2' align='center' style='border-bottom:1px; border-bottom-style:dotted; height:200px; width:100px;'> <marquee behavior='scroll' direction='left' onmouseover='this.stop();' onmouseout='this.start();'> <%=filelis%> </marquee></td></tr>";
                           title+="</table>";
                         var latlng = new GLatLng(x,y);
                         map.addOverlay(createMarker(latlng,<%=i%>, title));
@@ -143,9 +152,7 @@
                 <li><a href="#" class="act">TRANG CHỦ</a></li>
                 
                 <li > &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;
-&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <asp:RadioButton 
-                        ID="RadioButton2" runat="server" Text="Mã Chi Nhánh" /> <asp:RadioButton 
-                        ID="RadioButton1" runat="server" Text="Địa Chỉ" />
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
                     <%--<ul style="overflow: hidden; display: block; height: 0px; z-index: 59; opacity: 0.0119048;">
                         <li><a href="#">SUB MENU 1</a></li>

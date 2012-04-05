@@ -9,8 +9,29 @@
     <link rel="stylesheet" type="text/css" href="Scripts/headmenu.css" />
     <script src="Scripts/headmenu.js" type="text/javascript"></script>
     <link href="Styles/StyleSheet.css" rel="stylesheet" type="text/css" />    
-    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAuPsJpk3MBtDpJ4G8cqBnjRRaGTYH6UMl8mADNa0YKuWNNa8VNxQCzVBXTx2DYyXGsTOxpWhvIG7Djw" type="text/javascript"></script>
-      <style type="text/css">
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAA1rQGElPxuPCGQfDh4lpWBhS3nu3yB_afl-p-5uIRtWNtWiAy8BRw5TQQfI1RNaVugEAFrfkgju8IHQ" type="text/javascript"></script>
+      <script type="text/javascript">
+          function removeElement(divNum) {
+              var d = document.getElementById('attach_file');
+              var olddiv = document.getElementById(divNum);
+              d.removeChild(olddiv);
+          }
+
+          var fileFieldCount = 0;
+          function addFileField() {
+              if (fileFieldCount >= 9) return false
+              fileFieldCount++;
+              var f = document.createElement("input");
+              f.id = "theFile" + fileFieldCount;
+              f.type = "file";
+              f.size = 120;
+              f.name = "theFile" + fileFieldCount;
+              p = document.getElementById("attachments_fields");
+              p.appendChild(document.createElement("br"));
+              p.appendChild(f);
+          }
+      </script>
+     <style type="text/css">
           .style3
           {
               width: 90px;
@@ -120,33 +141,8 @@
         </div>
     <div  id="map_canvas" class="map_canvas" style="width: 100%; height:680px;">
         <br />
-        <table style="width:100%;">
-            <tr>
-                <td class="style12">
-                </td>
-                <td class="style13">
-                    </td>
-                <td class="style18">&nbsp;<asp:Image ID="imgFile" runat="server" Height="200px" 
-                        Width="300px" />
-                </td>
-                <td class="style14">
-                    </td>
-            </tr>
-            <tr>
-                <td class="style15">
-                </td>
-                <td class="style16">
-                    Chọn Hình</td>
-                <td class="style19">
-                   <input id="filMyFile" type="file" runat="server"><br />
-                    <asp:Button ID="Button1" runat="server" 
-                        Text="Upload" onclick="Button1_Click" ValidationGroup="adsfdsafd"   />
-                    <asp:HiddenField ID="imagePath" runat="server" />
-                </td>
-                <td class="style17">
-                    <asp:Label ID="upload" runat="server" ForeColor="Red"></asp:Label>
-                </td>
-            </tr>
+        <table style="width:100%;">            
+
             <tr>
                 <td class="style3">
                 </td>
@@ -220,7 +216,8 @@
                     <asp:TextBox ID="txtTanSo" runat="server" Height="27px" Width="343px"></asp:TextBox>
                 </td>
                 <td class="style11">
-                    &nbsp;</td>
+                     
+</td>
             </tr>
             <tr>
                 <td class="style9">
@@ -243,6 +240,45 @@
                 </td>
                 <td class="style11">
                     &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style12">
+                </td>
+                <td class="style13">
+                    </td>
+                <td class="style18"><asp:Image ID="imgFile" runat="server" Height="208px" 
+                        Width="349px" />
+                </td>
+                <td class="style14" valign="bottom"><div class="criteria_scroll">
+                <%
+                    string filelis = Session["imgfile"].ToString();
+                    string[] words = Regex.Split(filelis, ",");
+                    for (int i = 0; i < words.Length; i++)
+                    {
+                        if (!words[i].Equals("")) {
+                            Response.Write("<img  src=" + words[i] + " Height='100px' Width='200px' /> ");
+                        }
+                         
+                    }
+                  %>
+                    </div>
+                    </td>
+            </tr>
+            <tr>
+                <td class="style15">
+                </td>
+                <td class="style16">
+                    Chọn Hình</td>
+                <td class="style19">
+                    <asp:FileUpload ID="FileUpload1" runat="server" />
+                    <br />
+                    <asp:Button ID="Button1" runat="server" 
+                        Text="Upload" onclick="Button1_Click" ValidationGroup="adsfdsafd" />
+                    <asp:HiddenField ID="imagePath" runat="server" />
+                </td>
+                <td class="style17">
+                    <asp:Label ID="upload" runat="server" ForeColor="Red"></asp:Label>
+                </td>
             </tr>
             <tr>
                 <td class="style9">

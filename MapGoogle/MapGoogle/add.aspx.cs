@@ -21,30 +21,48 @@ namespace MapGoogle
         string imgpath="";
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if (filMyFile.PostedFile != null)
-            {
+            //if (filMyFile.PostedFile != null)
+            //{
+            //    try
+            //    {
+            //        HttpPostedFile myFile = filMyFile.PostedFile;
+            //        int nFileLen = myFile.ContentLength;
+            //        if (nFileLen > 0)
+            //        {
+            //            byte[] myData = new byte[nFileLen];
+            //            myFile.InputStream.Read(myData, 0, nFileLen);
+            //            string strFilename = Path.GetFileName(myFile.FileName);
+            //            WriteToFile(Server.MapPath("Image\\" + strFilename), ref myData);
+            //            imgpath = @"Image/" + strFilename;
+            //            imgFile.ImageUrl = imgpath;
+            //            this.imagePath.Value = this.imagePath.Value + imgpath + "|";
+            //            Session["imgfile"] = this.imagePath.Value;
+            //            imgFile.ToolTip = "This file was stored to as file.";
+            //        }
+            //    }
+            //    catch (Exception)
+            //    {
+            //        this.upload.Text = "Lỗi Không Upload Ảnh Về Server";
+            //    }
+                
+            //}
+            if (FileUpload1.HasFile)
                 try
                 {
-                    HttpPostedFile myFile = filMyFile.PostedFile;
-                    int nFileLen = myFile.ContentLength;
-                    if (nFileLen > 0)
-                    {
-                        byte[] myData = new byte[nFileLen];
-                        myFile.InputStream.Read(myData, 0, nFileLen);
-                        string strFilename = Path.GetFileName(myFile.FileName);
-                        WriteToFile(Server.MapPath("Image\\" + strFilename), ref myData);
-                        imgpath = @"Image/" + strFilename;
-                        imgFile.ImageUrl = imgpath;
-                        this.imagePath.Value = imgpath;
-                        imgFile.ToolTip = "This file was stored to as file.";
-                    }
+                    string fileName =  txtMaChiNhanh.Text + DateTime.Now.ToString("ddmmyyhhmmss") + FileUpload1.FileName.Substring(FileUpload1.FileName.LastIndexOf(".")); ;
+                    string SaveLocation = Server.MapPath("~/Image/") + fileName;
+                    FileUpload1.SaveAs(SaveLocation);
+                    upload.Visible = true;
+                    imgpath = @"Image/" + fileName;                      
+                    imgFile.ImageUrl = imgpath;
+                    this.imagePath.Value = this.imagePath.Value + imgpath + ",";
+                    Session["imgfile"] = this.imagePath.Value;
+                    imgFile.ToolTip = "This file was stored to as file.";
                 }
                 catch (Exception)
                 {
                     this.upload.Text = "Lỗi Không Upload Ảnh Về Server";
                 }
-                
-            }
         }
         private void WriteToFile(string strPath, ref byte[] Buffer)
         {
@@ -88,6 +106,11 @@ namespace MapGoogle
                 this.lbThanhCong.Text = "Thêm Mới Địa Điểm Thất Bại.";
 
             }
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+
         }
 
     }
