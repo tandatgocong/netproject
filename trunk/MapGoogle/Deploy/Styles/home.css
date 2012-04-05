@@ -1,0 +1,195 @@
+﻿a
+{
+	color:Navy;
+}
+a:hover
+{
+	color:Red;
+}
+.botton td.mid
+{
+	background-image:url(../Image/mSearchBox.gif);
+	text-align:center;
+}
+.botton td.mid.midcon
+{
+	font-family:Arial;
+	color:White;
+	font-size:x-large;
+}
+.top
+{
+	color:White ;
+	border:dotted :10px :red;
+}
+.top td.bot0
+{
+	background-image:url(../Image/help_left.jpg);
+}
+
+.top td.bot1
+{
+	background-image:url(../Image/bg_help.jpg);
+	text-align:left;
+	color:White;
+}
+.top td.bot1 a
+{
+	text-align:left;
+	text-decoration:none;
+	color:White;
+	background-image:url(../Image/bg_help.jpg);
+}
+.top td.bot1 a:hover
+{	
+	color:Yellow;
+}
+
+.top td.bot2
+{
+	background-image:url(../Image/bg_help.jpg);
+	text-align:right;
+}
+.top td.bot2 a
+{
+	
+	color:White;
+	text-decoration: none;
+}
+
+.top td.bot2 a:hover
+{
+	
+	color:Yellow;
+}
+	
+.top td.bot3
+{
+	margin-top:1px;
+}
+.timkiem td.timkiem2
+{
+	display:block;
+}
+.dangnhap td.dangnhap_1
+{
+	background-image:url(../Image/tmnleft.jpg);
+	color:White ;
+	height:27px;
+	
+}
+.dangnhap td.dangnhap_2
+{
+	height:27px;
+	background-image:url(../Image/tmnbg.jpg);
+	color:White ;
+	font-weight:bold;
+	
+}
+.dangnhap td.dangnhap_3
+{
+	height:27px;
+	background-image:url(../Image/tmnright.jpg);
+	color:White ;
+	font-weight:bold;
+	
+}
+.dangkytop td.dkt1
+{
+	height:27px;
+	width:3px;
+	background-image:url(../Image/tmnleft.jpg);
+	color:White ;
+}
+.dangkytop td.dkt2
+{
+	height:27px;
+	width:800px;
+	background-image:url(../Image/tmnbg.jpg);
+	color:White ;	
+}
+.dangkytop td.dkt3
+{
+	height:27px;
+	width:3px;
+	background-image:url(../Image/tmnright.jpg);
+	color:White ;	
+}
+.dangkycuoi
+{
+	background-image:url(../Image/tmnbg.jpg);
+}
+
+.hr
+{
+	width:75%;
+	color:Red;
+}
+.searchsw td.searchsw_top
+{
+	background-image:url(../Image/tmnleft.jpg);
+	color:White;
+}
+.searchhw td.searchhw_top
+{
+	background-image:url(../Image/tmnleft.jpg);
+	color:White;
+}
+.searchdc td.searchdc_top
+{
+	background-image:url(../Image/tmnleft.jpg);
+	color:White;
+}
+.software td.software_top
+{
+	background-image:url(../Image/tmnleft.jpg);
+	color:White;
+}
+.hardware td.hardware_top
+{
+	background-image:url(../Image/tmnleft.jpg);
+	color:White;
+}
+.lienhe
+{		
+	color: White;	
+	font-family: Arial;
+	font-weight:bold;
+}
+.lienhe hr
+{
+	width:100%;
+	height:3px;
+	color:White;
+}
+.lienhe td.tieude
+{
+	text-align:center;
+	font-weight:bolder;
+	font-size:30px;
+}
+.lienhe td
+{
+	text-align:left;	
+}
+.lienhe table
+{
+	width:500px;
+	background-image:url(../Image/img24.jpg);
+	background-position:center;
+	background-repeat:no-repeat;	
+}
+.mail td.title
+{
+	text-align:center;
+	color:White;
+	background-image:url(../Image/tmnleft.jpg);	
+}
+.mail td.button
+{
+	text-align:center;
+}
+.mail table
+{
+	text-align:left;
+}

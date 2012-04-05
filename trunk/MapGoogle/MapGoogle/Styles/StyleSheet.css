@@ -148,7 +148,13 @@ div.footer
      margin-bottom :0px;
      text-align :center;
 }
-
+div.criteria_scroll {
+ height: 190px;
+ width: 349px;
+ overflow: auto;
+ border: 1px dotted #669966;
+ padding: 8px;
+}
   
 
 
