@@ -77,37 +77,37 @@
        <table id="menu" class="menu" cellSpacing="0" cellPadding="0">
            <tr> 
                 <td> 
-                  <a id="menu5" href="javascript:void(0);" >Menu 1</a>
+                  <a id="menu5" href="javascript:void(0);" >LOẠI MÁY 01</a>
                 </td> 
            </tr> 
            <tr> 
                 <td> 
-                  <a id="menu4" href="javascript:void(0);" >Menu 2</a>
+                  <a id="menu4" href="javascript:void(0);" >LOẠI MÁY 02</a>
                 </td> 
             </tr> 
             <tr> 
                 <td> 
-                  <a id="menu6" href="javascript:void(0);" >Menu 3</a>
+                  <a id="menu6" href="javascript:void(0);" >LOẠI MÁY 03</a>
                 </td> 
             </tr> 
             <tr> 
              <td> 
-                <a id="menu46" href="javascript:void(0);" >Menu 4</a>
+                <a id="menu46" href="javascript:void(0);" >LOẠI MÁY 04</a>
              </td> 
             </tr> 
             <tr> 
                 <td> 
-                    <a id="menu7" href="javascript:void(0);" >Menu 5</a>
+                    <a id="menu7" href="javascript:void(0);" >LOẠI MÁY 05</a>
                 </td> 
              </tr> 
              <tr> 
                 <td> 
-                    <a id="menu8" href="javascript:void(0);" >Menu 6</a>
+                    <a id="menu8" href="javascript:void(0);" >LOẠI MÁY 06</a>
                 </td> 
               </tr> 
               <tr> 
                 <td class="last"> 
-                  <a id="menu9" href="javascript:void(0);" >Menu 7</a>
+                  <a id="menu9" href="javascript:void(0);" >LOẠI MÁY 07</a>
                 </td> 
               </tr> 
              
@@ -149,8 +149,8 @@
        </div>
      <div id="Div2" align="left" style=" margin-left:3px; margin-bottom:5px; text-align:center;">
      <p />
-        <a href="ymsgr:SendIM?tandatgocong">
-         <img border="0" src="http://mail.opi.yahoo.com/online?u=saleonline2010&m=g&t=2"/>
+        <a href="ymsgr:sendim?tandatgocong">
+            <img border="0"  src="http://opi.yahoo.com/online?u=tandatgocong&m=g&t=2"/>
         </a>
        <div><div class="name">
        LÊ TẤN ĐẠT <BR />
@@ -165,7 +165,106 @@
 
     <div class="Pages_content">
 		<div class="title_page">SẢN PHẨM</div>
-		<div class="pages_contain" style="margin-top:10px;">
+		<div class="pages_contain" style="margin-top:10px; text-align:center;">
+        <center>
+            <table width="96%" border="0">
+                <tr>
+                    <td style="width:32%;"><center>
+                        <table>
+                            <tr><td><img src="../../Image/4.jpg" width="190px" height="200px" /></td></tr>
+                            <tr><td>
+                                <div class="tensp"><a href="#" title="Xem Chi Tiết">Tên Sản Phẩm</a></div>
+                                <div class="gia">Giá Bán: <span style="color:Red">1.800.000 đ</span> </div>
+                            </td></tr>
+                        </table></center> 
+                    </td>
+                    <td style="width:32%;"><center>
+                        <table>
+                            <tr><td><img src="../../Image/2.jpg" width="190px" height="200px" /></td></tr>
+                            <tr><td>
+                                <div class="tensp"><a href="#" title="Xem Chi Tiết">Tên Sản Phẩm</a></div>
+                                <div class="gia">Giá Bán: <span style="color:Red">1.800.000 đ</span> </div>
+                            </td></tr>
+                        </table></center> 
+                    </td>
+                    <td style="width:32%;"><center>
+                        <table>
+                            <tr><td><img src="../../Image/6.jpg" width="190px" height="200px" /></td></tr>
+                            <tr><td>
+                                <div class="tensp"><a href="#" title="Xem Chi Tiết">Tên Sản Phẩm</a></div>
+                                <div class="gia">Giá Bán: <span style="color:Red">1.800.000 đ</span> </div>
+                            </td></tr>
+                        </table></center> 
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:32%;"><center>
+                        <table>
+                            <tr><td><img src="../../Image/1.jpg" width="190px" height="200px" /></td></tr>
+                            <tr><td>
+                                <div class="tensp"><a href="#" title="Xem Chi Tiết">Tên Sản Phẩm</a></div>
+                                <div class="gia">Giá Bán: <span style="color:Red">1.800.000 đ</span> </div>
+                            </td></tr>
+                        </table></center> 
+                    </td>
+                    <td style="width:32%;"><center>
+                        <table>
+                            <tr><td><img src="../../Image/3.jpg" width="190px" height="200px" /></td></tr>
+                            <tr><td>
+                                <div class="tensp"><a href="#" title="Xem Chi Tiết">Tên Sản Phẩm</a></div>
+                                <div class="gia">Giá Bán: <span style="color:Red">1.800.000 đ</span> </div>
+                            </td></tr>
+                        </table></center> 
+                    </td>
+                    <td style="width:32%;"><center>
+                        <table>
+                            <tr><td><img src="../../Image/5.jpg" width="190px" height="200px" /></td></tr>
+                            <tr><td>
+                                <div class="tensp"><a href="#" title="Xem Chi Tiết">Tên Sản Phẩm</a></div>
+                                <div class="gia">Giá Bán: <span style="color:Red">1.800.000 đ</span> </div>
+                            </td></tr>
+                        </table></center> 
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:32%;"><center>
+                        <table>
+                            <tr><td><img src="../../Image/5.jpg" width="190px" height="200px" /></td></tr>
+                            <tr><td>
+                                <div class="tensp"><a href="#" title="Xem Chi Tiết">Tên Sản Phẩm</a></div>
+                                <div class="gia">Giá Bán: <span style="color:Red">1.800.000 đ</span> </div>
+                            </td></tr>
+                        </table></center> 
+                    </td>
+                    <td style="width:32%;"><center>
+                        <table>
+                            <tr><td><img src="../../Image/4.jpg" width="190px" height="200px" /></td></tr>
+                            <tr><td>
+                                <div class="tensp"><a href="#" title="Xem Chi Tiết">Tên Sản Phẩm</a></div>
+                                <div class="gia">Giá Bán: <span style="color:Red">1.800.000 đ</span> </div>
+                            </td></tr>
+                        </table></center> 
+                    </td>
+                    <td style="width:32%;"><center>
+                        <table>
+                            <tr><td><img src="../../Image/6.jpg" width="190px" height="200px" /></td></tr>
+                            <tr><td>
+                                <div class="tensp"><a href="#" title="Xem Chi Tiết">Tên Sản Phẩm</a></div>
+                                <div class="gia">Giá Bán: <span style="color:Red">1.800.000 đ</span> </div>
+                            </td></tr>
+                        </table></center> 
+                    </td>
+                </tr>
+                <tr>
+                <td colspan="3">
+                <center>
+                    <img src="../../Image/Untitled.png" />
+                    
+                </center>
+                </td>
+                </tr>
+            </table>
+        </center>
         </div>
     </div>
 
@@ -185,7 +284,29 @@
                </tbody>
            </table>
 </div>
-<div class="sanphamchay"></div>
+<div class="banchay">
+<marquee onmouseover='this.stop();' onmouseout='this.start();' scrollamount="4" direction="up" loop="true" width="100%" HEIGHT=400>
+<center>
+
+<img src="../../Image/4.jpg" width="190px" height="200px" />
+ <p />
+<img src="../../Image/5.jpg" width="190px" height="200px" />
+ <p />
+<img src="../../Image/6.jpg" width="190px" height="200px" />
+ <p />
+<img src="../../Image/7.jpg" width="190px" height="200px" />
+ <p />
+ <img src="../../Image/1.jpg" width="190px" height="200px" />
+ <p />
+<img src="../../Image/2.jpg" width="190px" height="200px" />
+ <p />
+<img src="../../Image/3.jpg" width="190px" height="200px" />
+ <p />
+</center>
+</marquee
+
+
+</div>
 <!-- SAN PHAM MOI-->
  <div> <table width="100%" cellspacing="0" cellpadding="0" border="0">
                  <tbody><tr>
@@ -193,7 +314,7 @@
                      <tbody><tr>
                        <td width="33"><img width="33" height="31" src="../../Image/box-bullet1.gif" /></td>
                        <td width="10">&nbsp;</td>
-                       <td><b>SẢN PHẨM MỚI</b> </td>
+                       <td><b>SẢN PHẨM MỚI</b>  </td>
                      </tr>
                    </tbody></table></td>
                  </tr>
@@ -202,15 +323,22 @@
 </div>
 <div class="sanphamchay" style="border:2px;">
 
-<marquee bgcolor="#000080" onMouseOver="this.scrollAmount=0" onMouseOut="this.scrollAmount=2" scrollamount="2" direction="up" loop="true" width="100%" HEIGHT=313>
+<marquee onmouseover='this.stop();' onmouseout='this.start();' scrollamount="4" direction="up" loop="true" width="100%" HEIGHT=405>
 <center>
-<font color="#ffffff" size="+1">SCROLLING TEXT</font><p>
-<font color="#ff0000" size="+1">UPWARD</font><p> 
-<font color="#ffffff" size="+1">IS ONE WAY</font><p>
-<font color="#ffffff" size="+1">TO MAKE YOUR</font><p>
-<font color="#ffffff" size="+1">SITE</font><p>
-<font color="#ff0000" size="+1">STAND OUT</font><p>
-<font color="#ffffff" size="+1">FROM THE REST!</font>
+<img src="../../Image/1.jpg" width="190px" height="200px" />
+ <p />
+<img src="../../Image/2.jpg" width="190px" height="200px" />
+ <p />
+<img src="../../Image/3.jpg" width="190px" height="200px" />
+ <p />
+<img src="../../Image/4.jpg" width="190px" height="200px" />
+ <p />
+<img src="../../Image/5.jpg" width="190px" height="200px" />
+ <p />
+<img src="../../Image/6.jpg" width="190px" height="200px" />
+ <p />
+<img src="../../Image/7.jpg" width="190px" height="200px" />
+ <p />
 </center>
 </marquee
 </div>
@@ -228,24 +356,24 @@
                 if (TransMenu.isSupported()) {
                     var ms = new TransMenuSet(TransMenu.direction.right, 0, 0, TransMenu.reference.topRight);
                     var menu5 = ms.addMenu(document.getElementById("menu5"));
-                    menu5.addItem("Menu 5.1", "#", "0");
-                    menu5.addItem("Menu 5.2", "#", "0");
-                    menu5.addItem("Menu 5.3", "#", "0");
-                    menu5.addItem("Menu 5.4", "#", "0");
-                    menu5.addItem("Menu 5.5", "#", "0");
-                    menu5.addItem("Menu 5.6", "#", "0");
-                    menu5.addItem("Menu 5.7", "#", "0");
+                    menu5.addItem("&nbsp;&nbsp; Hiệu 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", "#", "0");
+                    menu5.addItem("&nbsp;&nbsp; Hiệu 2", "#", "0");
+                    menu5.addItem("&nbsp;&nbsp; Hiệu 3", "#", "0");
+                    menu5.addItem("&nbsp;&nbsp; Hiệu 4", "#", "0");
+                    menu5.addItem("&nbsp;&nbsp; Hiệu Khác", "#", "0");
                     var menu4 = ms.addMenu(document.getElementById("menu4"));
-                    menu4.addItem("Menu 4.1", "#", "0");
-                    menu4.addItem("Menu 4.2", "#", "0");
-                    menu4.addItem("Menu 4.3", "#", "0");
+                    menu4.addItem("&nbsp;&nbsp;Hiệu 1  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", "#", "0");
+                    menu4.addItem("&nbsp;&nbsp;Hiệu 2", "#", "0");
+                    menu4.addItem("&nbsp;&nbsp;Hiệu 3", "#", "0");
+                    menu4.addItem("&nbsp;&nbsp;Hiệu 4", "#", "0");
+                    menu4.addItem("&nbsp;&nbsp;Hiệu Khác", "#", "0");
                     var menu6 = ms.addMenu(document.getElementById("menu6"));
-                    menu6.addItem("Menu 6.1", "#", "0");
-                    menu6.addItem("Menu 6.1", "#", "0");
-                    menu6.addItem("Menu 6.1", "#", "0");
-                    menu6.addItem("Menu 6.1", "#", "0");
-                    menu6.addItem("Menu 6.1", "#", "0");
-                    var menu46 = ms.addMenu(document.getElementById("menu46"));
+                    menu6.addItem("&nbsp;&nbsp;Hiệu 1  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", "#", "0");
+                    menu6.addItem("&nbsp;&nbsp;Hiệu 2", "#", "0");
+                    menu6.addItem("&nbsp;&nbsp;Hiệu 3", "#", "0");
+                    menu6.addItem("&nbsp;&nbsp;Hiệu 4", "#", "0");
+                    menu6.addItem("&nbsp;&nbsp;Hiệu Khác", "#", "0");
+                   /* var menu46 = ms.addMenu(document.getElementById("menu46"));
                     menu46.addItem("Menu 7.1", "#", "0");
                     menu46.addItem("Menu 7.2", "#", "1");
                     menu46.addItem("Menu 7.3", "#", "0");
@@ -254,66 +382,17 @@
                     var menu7 = ms.addMenu(document.getElementById("menu7"));
                     menu7.addItem("Menu 8.1", "javascript:void(0);", "0");
                     /* Level 2 */
-                    var menu47 = menu7.addMenu(menu7.items[0], 0, 0);
+                  /*  var menu47 = menu7.addMenu(menu7.items[0], 0, 0);
                     menu47.addItem("Menu 8.1.1", "#", "0");
                     menu47.addItem("Menu 8.1.2", "#", "0");
                     menu47.addItem("Menu 8.1.3", "#", "0");
                     menu47.addItem("Menu 8.1.4", "#", "0");
-                    /* -- */
+                    
                     menu7.addItem("Menu 9.1", "javascript:void(0);", "0");
                     var menu51 = menu7.addMenu(menu7.items[1], 0, 0);
                     menu51.addItem("Menu 9.1.1", "#", "0");
                     menu51.addItem("Menu 9.1.2", "#", "0");
-                    /* 
-                    var menu169 = menu7.addMenu(menu7.items[10], 0, 0);
-                    menu169.addItem("Tra điểm phân loại AV đầu vào 2010", "/index.php/to-chuc/phong-dao-tao/tra-diem-phan-loai-av-dau-vao-2010.html", "0");
-                    menu169.addItem("KQ TNCĐLT K4 - ngành TP & TS", "/index.php/to-chuc/phong-dao-tao/kq-tncdlt-k4-nganh-tp-a-ts.html", "0");
-                    menu169.addItem("Tra điểm thi phân loại AV đầu vào ngày 31/10/2010", "/index.php/to-chuc/phong-dao-tao/tra-diem-thi-phan-loai-av-dau-vao-ngay-31102010.html", "0");
-                    menu7.addItem("Phòng Quản lý Khoa học - ĐN và Hợp tác Quốc tế", "/index.php/to-chuc/phong-quan-ly-khoa-hoc-dn-va-hop-tac-quoc-te.html", "0");
-                    menu7.addItem("Phòng Công tác Chính trị", "/index.php/to-chuc/phong-cong-tac-chinh-tri.html", "0");
-                    var menu8 = ms.addMenu(document.getElementById("menu8"));
-                    menu8.addItem("Thông tin đào tạo", "http://daotao.cntp.edu.vn", "1");
-                    menu8.addItem("Đăng ký môn học", "http://dt.cntp.edu.vn", "1");
-                    var menu9 = ms.addMenu(document.getElementById("menu9"));
-                    menu9.addItem("Các điều kiện đảm bảo chất lượng giáo dục", "/index.php/cong-khai-giao-duc/cac-dieu-kien-dam-bao-chat-luong-giao-duc.html", "0");
-                    menu9.addItem("Chương trình đào tạo", "/index.php/cong-khai-giao-duc/chuong-trinh-dao-tao.html", "0");
-                    menu9.addItem("Công khai thu chi tài chính", "/index.php/cong-khai-giao-duc/cong-khai-thu-chi-tai-chinh.html", "0");
-                    var menu79 = ms.addMenu(document.getElementById("menu79"));
-                    menu79.addItem("Quyết định thành lập mạng lưới", "", "0");
-                    var menu198 = menu79.addMenu(menu79.items[0], 0, 0);
-                    menu198.addItem("Quyết định thành lập ban ISO", "/index.php/iso-90012008/quyet-dinh-thanh-lap-mang-luoi/quyet-dinh-thanh-lap-ban-iso.html", "0");
-                    menu198.addItem("Quyết định thành lập mạng lưới kiểm soát", "/index.php/iso-90012008/quyet-dinh-thanh-lap-mang-luoi/quyet-dinh-thanh-lap-mang-luoi-kiem-soat.html", "0");
-                    menu79.addItem("Sứ mạng", "/index.php/iso-90012008/su-mang.html", "0");
-                    menu79.addItem("Mục tiêu chất lượng", "/index.php/iso-90012008/muc-tieu-chat-luong.html", "0");
-                    menu79.addItem("Chứng nhận NQA", "/index.php/iso-90012008/chung-nhan-nqa.html", "0");
-                    menu79.addItem("Cam kết của lãnh đạo", "/index.php/iso-90012008/cam-ket-cua-lanh-dao.html", "0");
-                    menu79.addItem("Các đơn vị thực hiện", "", "0");
-                    var menu205 = menu79.addMenu(menu79.items[5], 0, 0);
-                    menu205.addItem("Ban giám hiệu - Ban ISO", "", "0");
-                    var menu210 = menu205.addMenu(menu205.items[0], 0, 0);
-                    menu210.addItem("Văn bản - Biểu mẫu", "/index.php/iso-90012008/cac-don-vi-thuc-hien/ban-giam-hieu-ban-iso/van-ban-bieu-mau.html", "0");
-                    menu205.addItem("Phòng đào tạo", "", "0");
-                    var menu211 = menu205.addMenu(menu205.items[1], 0, 0);
-                    menu211.addItem("Văn bản - Biểu mẫu", "/index.php/iso-90012008/cac-don-vi-thuc-hien/phong-dao-tao/van-ban-bieu-mau.html", "0");
-                    menu205.addItem("Phòng khảo thí & đảm bảo chất lượng", "", "0");
-                    var menu212 = menu205.addMenu(menu205.items[2], 0, 0);
-                    menu212.addItem("Văn bản - Biểu mẫu", "/index.php/iso-90012008/cac-don-vi-thuc-hien/phong-khao-thi-a-dam-bao-chat-luong/van-ban-bieu-mau.html", "0");
-                    menu205.addItem("Phòng quản lý khoa học & hợp tác quốc tế", "", "0");
-                    var menu213 = menu205.addMenu(menu205.items[3], 0, 0);
-                    menu213.addItem("Văn bản - Biểu mẫu", "", "0");
-                    var menu214 = menu213.addMenu(menu213.items[0], 0, 0);
-                    menu214.addItem("Cấp Bộ", "/index.php/iso-90012008/cac-don-vi-thuc-hien/phong-quan-ly-khoa-hoc-a-hop-tac-quoc-te/van-ban-bieu-mau/cap-bo.html", "0");
-                    menu214.addItem("Cấp Trường", "/index.php/iso-90012008/cac-don-vi-thuc-hien/phong-quan-ly-khoa-hoc-a-hop-tac-quoc-te/van-ban-bieu-mau/cap-truong.html", "0");
-                    menu205.addItem("Phòng Kế Hoạch Tài Chính", "", "0");
-                    var menu223 = menu205.addMenu(menu205.items[4], 0, 0);
-                    menu223.addItem("Văn bản - Biểu mẫu", "/index.php/iso-90012008/cac-don-vi-thuc-hien/phong-ke-hoach-tai-chinh/van-ban-bieu-mau.html", "0");
-                    menu205.addItem("Phòng Thanh Tra Giáo Dục", "", "0");
-                    menu205.addItem("Phòng Công tác HSSV", "", "0");
-                    menu205.addItem("Phòng ĐTXD&SC", "", "0");
-                    var menu224 = menu205.addMenu(menu205.items[7], 0, 0);
-                    menu224.addItem("Văn bản - Biểu mẫu", "/index.php/iso-90012008/cac-don-vi-thuc-hien/phong-dtxdasc/van-ban-bieu-mau.html", "0");
-                    menu205.addItem("Phòng QLKH-ĐN&HTQT", "", "0");
-                    menu205.addItem("Phòng Tổ Chức Hành Chính", "", "0");*/
+                    */
                     function init() {
                         if (TransMenu.isSupported()) {
                             TransMenu.initialize();

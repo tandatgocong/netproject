@@ -6,6 +6,18 @@
 	font-size: 12px;
 	font-style:normal;	
 }
+a,
+a:link,
+a:visited,
+a:active{
+	color: #663300;
+	text-decoration:none;	
+}
+
+a:hover{
+	color: Red;
+	text-decoration:none;
+}
 
 #Home{
 	margin: 0 auto;
@@ -33,24 +45,24 @@
 #Home .Content{
 	margin: 0 0 0 0;
 	padding: 0;
-	height:700px;
+	height:880px;
 	background-color: White;
 }
-.sanphamchay
-{
-    margin: 0 0 0 0;
-	padding: 0;
-	height:320px;
-	width:200px;
-	background-color: Yellow;
-}   
 .sanphammoi
 {
     margin: 0 0 0 0;
 	padding: 0;
-	height:316px;
+	height:390px;
 	width:200px;
-	background-color: Yellow;
+	background-color: White;
+}   
+.banchay
+{
+    margin: 0 0 0 0;
+	padding: 0;
+	height:400px;
+	width:200px;
+	background-color: White;
 }   
     
 
@@ -59,7 +71,7 @@ div.Pages_content{
 	width: 612px;
 	margin: 0;
 	padding: 0;
-	height:695px;
+	height:870px;
 	background: #FFF url(../../Image/news_list_bg.gif) repeat-x top;
 	border: 1px #E0E0E0 solid;
 }
@@ -84,6 +96,23 @@ div.name {
     text-transform: uppercase;
 }
 
+div.tensp {
+    color: #006600;
+    font-family: Tahoma,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 5px 0;
+    border-bottom: 1px #AAA dotted;
+}
+div.gia {
+    color: Black;
+    font-family: Tahoma,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 5px 0;
+}
 div.news_contain{
 	padding:0 10px 10px;
 }
