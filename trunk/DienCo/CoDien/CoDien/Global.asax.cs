@@ -12,8 +12,8 @@ namespace CoDien
 
         void Application_Start(object sender, EventArgs e)
         {
-            // Code that runs on application startup
-
+            Application["FCKeditor:UserFilesPath"] = "../Image/Upload";
+            log4net.Config.XmlConfigurator.Configure();
         }
 
         void Application_End(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace CoDien
 
         void Session_Start(object sender, EventArgs e)
         {
-            // Code that runs when a new session is started
+            Session["page"] = "";
 
         }
 

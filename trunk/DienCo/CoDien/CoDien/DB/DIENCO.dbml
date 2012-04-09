@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DIENCO" Class="DIENCODataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=DIENCO;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DIENCOConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.HIEUSANPHAM" Member="HIEUSANPHAMs">
+    <Type Name="HIEUSANPHAM">
+      <Column Name="MAHIEU" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TENHIEU" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="HIEUSANPHAM_SANPHAM" Member="SANPHAMs" ThisKey="MAHIEU" OtherKey="MAHIEU" Type="SANPHAM" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SYS_USERS" Member="SYS_USERs">
+    <Type Name="SYS_USER">
+      <Column Name="USERNAME" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FULLNAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ROLEID" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="ENABLED" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="[LEVEL]" Member="LEVEL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CREATEBY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CREATEDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MODIFYBY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MODIFYDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="SYS_ROLE_SYS_USER" Member="SYS_ROLE" ThisKey="ROLEID" OtherKey="ROLEID" Type="SYS_ROLE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOAISANPHAM" Member="LOAISANPHAMs">
+    <Type Name="LOAISANPHAM">
+      <Column Name="MALOAI" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TENLOAI" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="LOAISANPHAM_SANPHAM" Member="SANPHAMs" ThisKey="MALOAI" OtherKey="MALOAI" Type="SANPHAM" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PAGES" Member="PAGEs">
+    <Type Name="PAGE">
+      <Column Name="MAPAGES" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PAGESNAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NOIDUNG" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SANPHAM" Member="SANPHAMs">
+    <Type Name="SANPHAM">
+      <Column Name="MASP" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MALOAI" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="MAHIEU" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="KYTUAT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TENSP" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="GIA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MOTA" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CHITIET" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ANH" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SAPMOI" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BANCHAY" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LANXEM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GIAMGIA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CREATEBY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CREATEDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MODIFYBY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MODIFYDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="HIEUSANPHAM_SANPHAM" Member="HIEUSANPHAM" ThisKey="MAHIEU" OtherKey="MAHIEU" Type="HIEUSANPHAM" IsForeignKey="true" />
+      <Association Name="LOAISANPHAM_SANPHAM" Member="LOAISANPHAM" ThisKey="MALOAI" OtherKey="MALOAI" Type="LOAISANPHAM" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SYS_ROLES" Member="SYS_ROLEs">
+    <Type Name="SYS_ROLE">
+      <Column Name="ROLEID" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ROLENAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="SYS_ROLE_SYS_USER" Member="SYS_USERs" ThisKey="ROLEID" OtherKey="ROLEID" Type="SYS_USER" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NEWS" Member="NEWs">
+    <Type Name="NEW">
+      <Column Name="NEWSID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NEWSTILE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NEWIMG" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NEWSDICRIPTION" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NEWSCONTENT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CREATEBY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CREATEDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MODIFYBY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MODIFYDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
