@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\inetpub\wwwroot\dienco" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="View/Admin.aspx" publishTime="04/08/2012 09:29:18" />
+    <file relUrl="Image/news_list_bg.gif" publishTime="04/07/2012 22:05:02" />
+    <file relUrl="Image/XOA.png" publishTime="01/16/2008 12:29:22" />
+    <file relUrl="Image/2.jpg" publishTime="04/07/2012 22:05:01" />
+    <file relUrl="Global.asax" publishTime="04/07/2012 22:05:03" />
+    <file relUrl="JavaScript/transmenu.js" publishTime="04/07/2012 22:05:04" />
+    <file relUrl="Image/delete2.ico" publishTime="06/02/2009 11:01:00" />
+    <file relUrl="View/A_BaiViet.aspx" publishTime="04/08/2012 09:42:43" />
+    <file relUrl="Image/7.jpg" publishTime="04/07/2012 22:05:02" />
+    <file relUrl="StyleSheet/Menu.css" publishTime="04/07/2012 22:05:03" />
+    <file relUrl="JavaScript/jquery-1.2.6.js" publishTime="04/07/2012 22:05:04" />
+    <file relUrl="Image/foot.png" publishTime="04/07/2012 22:05:02" />
+    <file relUrl="JavaScript/jquery-1.6.2.js" publishTime="04/07/2012 22:05:05" />
+    <file relUrl="Image/3.jpg" publishTime="04/07/2012 22:05:01" />
+    <file relUrl="View/Home.aspx" publishTime="04/07/2012 22:24:03" />
+    <file relUrl="Image/EDIT.png" publishTime="01/16/2008 12:30:32" />
+    <file relUrl="Image/Untitled.png" publishTime="04/07/2012 22:05:03" />
+    <file relUrl="Image/edit.ico" publishTime="06/02/2009 11:01:02" />
+    <file relUrl="Image/logo.png" publishTime="04/07/2012 22:05:02" />
+    <file relUrl="Image/5.jpg" publishTime="04/07/2012 22:05:02" />
+    <file relUrl="Image/Capture.JPG" publishTime="04/07/2012 22:05:01" />
+    <file relUrl="StyleSheet/StyleSheet.css" publishTime="04/08/2012 09:30:14" />
+    <file relUrl="View/Admin.Master" publishTime="04/08/2012 09:53:35" />
+    <file relUrl="Default.aspx" publishTime="04/07/2012 22:13:01" />
+    <file relUrl="bin/CoDien.dll" publishTime="04/08/2012 09:45:29" />
+    <file relUrl="Image/bg_head.jpg" publishTime="04/07/2012 22:05:02" />
+    <file relUrl="JavaScript/headmenu.css" publishTime="04/07/2012 22:05:05" />
+    <file relUrl="Image/6.jpg" publishTime="04/07/2012 22:05:02" />
+    <file relUrl="Image/8.gif" publishTime="04/07/2012 22:05:03" />
+    <file relUrl="Image/menu_bg.png" publishTime="04/07/2012 22:05:02" />
+    <file relUrl="Image/bg.gif" publishTime="04/07/2012 22:05:02" />
+    <file relUrl="Image/1.jpg" publishTime="04/07/2012 22:05:00" />
+    <file relUrl="Image/4.jpg" publishTime="04/07/2012 22:05:02" />
+    <file relUrl="Image/add.ico" publishTime="06/02/2009 11:00:46" />
+    <file relUrl="JavaScript/headmenu.js" publishTime="04/07/2012 22:05:03" />
+    <file relUrl="View/HomePage.Master" publishTime="04/08/2012 09:51:26" />
+    <file relUrl="Image/box-bullet1.gif" publishTime="04/07/2012 22:05:03" />
+    <file relUrl="bin/CoDien.pdb" publishTime="04/08/2012 09:45:29" />
+    <file relUrl="Web.config" publishTime="04/07/2012 22:12:15" />
+  </publishProfile>
+</publishData>
