@@ -1,6 +1,0 @@
-E:\DATA\NETPROJECT\DienCo\CoDien\CoDien\bin\CoDien.dll
-E:\DATA\NETPROJECT\DienCo\CoDien\CoDien\bin\CoDien.pdb
-E:\DATA\NETPROJECT\DienCo\CoDien\CoDien\obj\Debug\ResolveAssemblyReference.cache
-E:\DATA\NETPROJECT\DienCo\CoDien\CoDien\obj\Debug\CoDien.dll
-E:\DATA\NETPROJECT\DienCo\CoDien\CoDien\obj\Debug\CoDien.pdb
-E:\DATA\NETPROJECT\DienCo\CoDien\CoDien\bin\log4net.dll
