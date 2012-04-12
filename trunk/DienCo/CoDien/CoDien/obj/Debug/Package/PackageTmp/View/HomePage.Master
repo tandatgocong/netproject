@@ -20,8 +20,8 @@
      <div class="Menu">
  	 <div>
  		<ul class="menuhead">
- 			<li id="mnHome" class="current"><a class="current_link" href=""><span>TRANG CHỦ</span></a></li>
- 			<li id="mnGioithieu" class="top"><a href="#" class="top_link"><span>GIỚI THIỆU</span>
+ 			<li id="mnHome" class="current"><a class="current_link" href="Home.aspx"><span>TRANG CHỦ</span></a></li>
+ 			<li id="mnGioithieu" class="top"><a href="Pages.aspx?page=GT" class="top_link"><span>GIỚI THIỆU</span>
     		<!--[if gte IE 7]><!--></a><!--<![endif]-->
     		<!--[if lte IE 6]><table><tr><td><![endif]   			
                 <ul class="sub_gioithieu">
@@ -31,7 +31,7 @@
 		        </ul>--> 
     		<!--[if lte IE 6]></td></tr></table></a><![endif]-->
   			</li>
-  			<li id="mnTintuc" class="top"><a href="#" class="top_link"><span>TIN TỨC</span>
+  			<li id="mnTintuc" class="top"><a href="News.aspx" class="top_link"><span>TIN TỨC</span>
     		<!--[if gte IE 7]><!--></a><!--<![endif]-->
     		<!--[if lte IE 6]><table><tr><td><![endif]
     			<ul class="sub_tintuc">
@@ -41,9 +41,9 @@
     			</ul>-->
     		<!--[if lte IE 6]></td></tr></table></a><![endif]-->
   			</li>
-  			<li id="mnTuyendung" class="top"><a href="#" class="top_link"><span>TUYỂN DỤNG</span>            </a>
+  			<li id="mnTuyendung" class="top"><a href="Pages.aspx?page=TD" class="top_link"><span>TUYỂN DỤNG</span>            </a>
             </li>
-            <li id="mnLienHe" class="top"><a href="#" class="top_link"><span>LIÊN HỆ</span>
+            <li id="mnLienHe" class="top"><a href="Pages.aspx?page=LH" class="top_link"><span>LIÊN HỆ</span>
             <!--[if gte IE 7]><!--></a><!--<![endif]-->
             <!--[if lte IE 6]><table><tr><td><![endif]-->
             <!--[if lte IE 6]></td></tr></table></a><![endif]-->
@@ -149,9 +149,8 @@
        </div>
      <div id="Div2" align="left" style=" margin-left:3px; margin-bottom:5px; text-align:center;">
      <p />
-        <a href="ymsgr:sendim?tandatgocong">
-            <img border="0"  src="http://opi.yahoo.com/online?u=tandatgocong&m=g&t=2"/>
-        </a>
+       <a href="ymsgr:sendim?mautimtinhyeu_1010">
+       <img border="0" src="http://mail.opi.yahoo.com/online?u=mautimtinhyeu_1010&amp;m=g&amp;t=14" alt="Click vào đây để chat qua Yahoo với mautimtinhyeu_1010" title="Click vào đây để chat qua Yahoo với mautimtinhyeu_1010"></a>
        <div><div class="name">
        LÊ TẤN ĐẠT <BR />
         0909933397
@@ -161,10 +160,11 @@
      </div>
 
      </td>
-<td valign="top">
+<td valign="top" style="width: 612px;">
 
-    <div class="Pages_content">
-		<div class="title_page">SẢN PHẨM</div>
+    
+       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <div class="title_page">SẢN PHẨM</div>
 		<div class="pages_contain" style="margin-top:10px; text-align:center;">
         <center>
             <table width="96%" border="0">
@@ -266,8 +266,8 @@
             </table>
         </center>
         </div>
-    </div>
-
+   
+ </asp:ContentPlaceHolder>
 </td>
 <!-- SAN PHAM BÁN CHẠY-->
 <td valign="top" style="width:200px;">
@@ -348,9 +348,7 @@
 </tr>
 </table>
    <!--<div id="subwrap">  -->
-           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
-        </asp:ContentPlaceHolder>
    <script type="text/javascript">
             <!--
        if (TransMenu.isSupported()) {
@@ -479,8 +477,41 @@
   <!--		END FOOTER	-->   
      
 </div>
-
 <script language="javascript">
+    title_tmp1 = document.title
+    if (title_tmp1.indexOf(">>") != -1) {
+        title_tmp2 = title_tmp1.split(">>");
+        title_last = "*~*" + title_tmp2[1];
+        title_last = title_last + "*~*" + title_tmp2[2];
+    } else {
+
+        if (title_tmp1.indexOf("*~*") != -1) {
+            title_tmp2 = title_tmp1.split("*~*");
+            title_last = "*~*" + title_tmp2[1];
+            if (title_last == "*~*") { title_last = "*~*" };
+            if (title_last == "*~*") { title_last = "*~*" };
+        }
+        else { title_last = " Tên Công Ty " }
+    }
+
+
+    title_new = "" + title_last + ""
+    step = 0
+
+    function flash_title() {
+        step++
+        if (step == 8) { step = 1 }
+        if (step == 1) { document.title = '[----*' + title_new + '*----]' }
+        if (step == 2) { document.title = '[---*-' + title_new + '-*---]' }
+        if (step == 3) { document.title = '[--*--' + title_new + '--*--]' }
+        if (step == 4) { document.title = '[-*---' + title_new + '---*-]' }
+        if (step == 5) { document.title = '[--*--' + title_new + '--*--]' }
+        if (step == 6) { document.title = '[---*-' + title_new + '-*---]' }
+        if (step == 7) { document.title = '[----*' + title_new + '*----]' }
+        setTimeout("flash_title()", 180);
+    }
+    flash_title()
+
     function HamThoiGian() {
         var ThoiGian = new Date();
         var Gio = ThoiGian.getHours();
@@ -495,13 +526,14 @@
         if (Giay < 10) {
             Giay = "0" + Giay;
         }
-        var ngay = ThoiGian.getDay();
+        var ngay = ThoiGian.getDate();
         var thang = ThoiGian.getMonth() + 1;
         var nam = ThoiGian.getFullYear();
         if (ngay < 10)
             ngay = "0" + ngay;
         if (thang < 10)
             thang = "0" + thang;
+        
         document.getElementById("clock").innerHTML = ngay + "/" + thang + "/" + nam + "  " + Gio + ":" + Phut + ":" + Giay;
     }
     setInterval("HamThoiGian()", 1000); // S? d?ng setInterval d? g?i l?p di l?p l?i hàm HamThoiGian sau 1 giây.

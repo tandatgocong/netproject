@@ -20,14 +20,14 @@
      <div class="Menu">
  	 <div>
  		<ul class="menuhead">
- 			<li id="mnHome" class="current"><a class="current_link" href="#"><span>DANH MỤC SẢN PHẨM</span></a></li>
- 			<li id="mnGioithieu" class="top"><a href="#" class="top_link"><span>DANH MỤC BÀI VIẾT</span><!--[if gte IE 7]><!--></a><!--<![endif]-->
+ 			<li id="mnHome" class="current"><a id="sp" class="current_link" href="Admin.aspx"><span>DANH MỤC SẢN PHẨM</span></a></li>
+ 			<li id="mnGioithieu" class="top"><a  id="bv" href="#" class="top_link"><span>DANH MỤC BÀI VIẾT</span><!--[if gte IE 7]><!--></a><!--<![endif]-->
     		<!--[if lte IE 6]><table><tr><td><![endif]   --> 			
                 <ul class="sub_gioithieu">
-                	<li><a href="A_BaiViet.aspx">GIỚI THIỆU</a></li>
-                    <li><a href="#" class="">TIN TỨC</a></li>
-                    <li><a href="#" class="">TUYỂN DỤNG</a></li>		         
-		            <li class="last"><a href="#" class="">LIÊN HỆ</a></li>
+                	<li><a href="A_BaiViet.aspx?page=GT">GIỚI THIỆU</a></li>
+                    <li><a href="A_News.aspx" class="">TIN TỨC</a></li>
+                    <li><a href="A_BaiViet.aspx?page=TD" class="">TUYỂN DỤNG</a></li>		         
+		            <li class="last"><a href="A_BaiViet.aspx?page=LH" class="">LIÊN HỆ</a></li>
 		        </ul>
     		<!--[if lte IE 6]></td></tr></table></a><![endif]-->
             </li>        
@@ -39,7 +39,7 @@
 </div>
  <!--		END MENU	-->
 <!-- Content -->
-<div class="Content">
+<div class="Content_Admin">
       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
@@ -67,6 +67,40 @@
 </div>
 
 <script language="javascript">
+    title_tmp1 = document.title
+    if (title_tmp1.indexOf(">>") != -1) {
+        title_tmp2 = title_tmp1.split(">>");
+        title_last = "*~*" + title_tmp2[1];
+        title_last = title_last + "*~*" + title_tmp2[2];
+    } else {
+
+        if (title_tmp1.indexOf("*~*") != -1) {
+            title_tmp2 = title_tmp1.split("*~*");
+            title_last = "*~*" + title_tmp2[1];
+            if (title_last == "*~*") { title_last = "*~*" };
+            if (title_last == "*~*") { title_last = "*~*" };
+        }
+        else { title_last = " Tên Công Ty " }
+    }
+
+
+    title_new = "" + title_last + ""
+    step = 0
+
+    function flash_title() {
+        step++
+        if (step == 8) { step = 1 }
+        if (step == 1) { document.title = '[----*' + title_new + '*----]' }
+        if (step == 2) { document.title = '[---*-' + title_new + '-*---]' }
+        if (step == 3) { document.title = '[--*--' + title_new + '--*--]' }
+        if (step == 4) { document.title = '[-*---' + title_new + '---*-]' }
+        if (step == 5) { document.title = '[--*--' + title_new + '--*--]' }
+        if (step == 6) { document.title = '[---*-' + title_new + '-*---]' }
+        if (step == 7) { document.title = '[----*' + title_new + '*----]' }
+        setTimeout("flash_title()", 180);
+    }
+    flash_title();
+
     function HamThoiGian() {
         var ThoiGian = new Date();
         var Gio = ThoiGian.getHours();
@@ -81,7 +115,7 @@
         if (Giay < 10) {
             Giay = "0" + Giay;
         }
-        var ngay = ThoiGian.getDay();
+        var ngay = ThoiGian.getDate();
         var thang = ThoiGian.getMonth() + 1;
         var nam = ThoiGian.getFullYear();
         if (ngay < 10)
