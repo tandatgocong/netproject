@@ -53,6 +53,10 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+ <script language="javascript" type="text/javascript">
+     window.document.getElementById("sp").className = "current_link";
+     window.document.getElementById("bv").className = "top_link";
+</script>
  <div class="Pages_content_Admin">
 		<div class="title_page" style=" margin-top: 15px; font-size:16px; width:99%"> tìm kiếm sản phẩm </div>
 		 <div class="pages_admin" style="margin-top:10px; margin-left:20px; font-family:Times New Roman;  font-size: 14px;">

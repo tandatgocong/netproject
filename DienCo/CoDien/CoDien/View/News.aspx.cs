@@ -11,8 +11,10 @@ namespace CoDien.View
 {
     public partial class News : System.Web.UI.Page
     {
+        
         protected void Page_Load(object sender, EventArgs e)
         {
+            Session["style"] = "height:870px;";
             MaintainScrollPositionOnPostBack = true;
             if (IsPostBack)
                 return;
@@ -30,6 +32,13 @@ namespace CoDien.View
                 lbTitle0.Text =tb.Rows[1]["NEWSTILE"]+"";
                 lbMoTa.Text =tb.Rows[1]["NEWSDICRIPTION"]+"";
                 Session["content"] = tb.Rows[1]["NEWSCONTENT"] + "";
+                if ((tb.Rows[1]["NEWSCONTENT"] + "").Length < 10000)
+                {
+                    Session["style"] = " height:870px;";
+                }
+                else {
+                    Session["style"] = "";
+                }
             }
         }
         void binding() {
@@ -61,6 +70,13 @@ namespace CoDien.View
                     lbTitle0.Text =news.NEWSTILE;
                     lbMoTa.Text = news.NEWSDICRIPTION; 
                     Session["content"] = news.NEWSCONTENT;
+                    if (news.NEWSCONTENT.Length < 10000)
+                    {
+                        Session["style"] = " height:870px;";
+                    }
+                    else {
+                        Session["style"] = "";
+                    }
                 }
             }
         }
