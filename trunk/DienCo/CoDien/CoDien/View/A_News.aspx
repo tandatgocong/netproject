@@ -53,7 +53,8 @@
                  BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4" 
                  Width="894px" AllowPaging="True" AutoGenerateColumns="False" 
                      onpageindexchanging="GridView1_PageIndexChanging" 
-                     onrowcommand="GridView1_RowCommand" PageSize="15">
+                     onrowcommand="GridView1_RowCommand" PageSize="15" 
+                     style="margin-right: 0px">
                      <Columns>
                          <asp:TemplateField HeaderText="STT">
                              <ItemTemplate>

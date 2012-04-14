@@ -116,6 +116,15 @@ div.title_page {
     padding: 5px 0;
     text-transform: uppercase;
 }
+div.pading {
+    border-bottom: 1px solid #663300;
+    color: Blue;
+    font-family: Tahoma,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    margin: 0 10px;
+    padding: 5px 0;
+}
+
 div.title_page_orther {
     border-bottom: 1px solid #663300;
     color: #006600;
@@ -398,4 +407,9 @@ a.linkfoot_text:hover{
 
 .article_other a:hover{
 	color:#000;
+}
+
+.add_table tr.row td{
+	border-bottom: 1px #AAA dotted;
+	padding-top: 3px; padding-bottom: 3px;
 }

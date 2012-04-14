@@ -1,69 +1,69 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.75, 8.625" name="DIENCO">
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.75, 9.75" name="DIENCO">
   <DataContextMoniker Name="/DIENCODataContext" />
   <nestedChildShapes>
-    <classShape Id="49655250-e309-47f2-8105-2396ab46128c" absoluteBounds="0.75, 2.75, 2, 1.1939925130208335">
+    <classShape Id="c00f6019-085e-421d-ba1a-267efef4dd95" absoluteBounds="0.75, 2.75, 2, 1.1939925130208335">
       <DataClassMoniker Name="/DIENCODataContext/HIEUSANPHAM" />
       <nestedChildShapes>
-        <elementListCompartment Id="a3b2c371-8797-4bb4-9b4c-164a35961b31" absoluteBounds="0.765, 3.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="a520b44a-b7d3-4cb3-b867-22f55a11fbb6" absoluteBounds="0.765, 3.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="0a98624d-f94b-4a77-9913-3307a57c8eaf" absoluteBounds="9.5, 1.25, 2, 2.7324039713541666">
+    <classShape Id="c3962822-1818-45f9-bdb9-529eadb39c7a" absoluteBounds="9.5, 1.25, 2, 2.7324039713541666">
       <DataClassMoniker Name="/DIENCODataContext/SYS_USER" />
       <nestedChildShapes>
-        <elementListCompartment Id="2bac1d2a-bcc9-400e-b3e8-3b3655258208" absoluteBounds="9.515, 1.71, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="c3f6cfa2-ab32-4b38-907b-f5180bec7ca2" absoluteBounds="9.515, 1.71, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="ae6796f9-5451-4ca9-a10a-b6fbe92d8da0" absoluteBounds="0.75, 0.75, 2, 1.1939925130208335">
+    <classShape Id="9f78e76d-a85d-4ad3-9dbc-4fa42a9d444c" absoluteBounds="0.75, 0.75, 2, 1.1939925130208335">
       <DataClassMoniker Name="/DIENCODataContext/LOAISANPHAM" />
       <nestedChildShapes>
-        <elementListCompartment Id="a7a7f3ac-7743-41bc-b96f-ad01191e24ce" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="b577e705-520e-4772-83c4-d92f3b7ad01b" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="290df2a4-3107-48bb-8e3a-3d4f1d862be0" absoluteBounds="0.75, 7, 2, 1.3862939453125005">
+    <classShape Id="0fcc2695-f4e5-4f6b-9bba-ada030d8c260" absoluteBounds="0.75, 7, 2, 2.5401025390624987">
+      <DataClassMoniker Name="/DIENCODataContext/NEW" />
+      <nestedChildShapes>
+        <elementListCompartment Id="76363a19-c925-4f4b-b3e3-1b1577c65d08" absoluteBounds="0.765, 7.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="50b70b6f-dc1a-4d9d-b0e3-7d40642fdc2d" absoluteBounds="3.75, 7, 2, 1.3862939453125005">
       <DataClassMoniker Name="/DIENCODataContext/PAGE" />
       <nestedChildShapes>
-        <elementListCompartment Id="5eac3e5e-c790-4674-9a48-e13869279da9" absoluteBounds="0.765, 7.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="09ded9c2-3786-4fa2-ae2f-3f7a6944b3b0" absoluteBounds="3.765, 7.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="0a5edddd-bca4-429a-bfb1-1e4f18903879" absoluteBounds="3.5, 1.25, 2, 4.0785139973958318">
+    <classShape Id="b543527b-8c05-40c4-a166-6bc70ced93b9" absoluteBounds="3.5, 1.25, 2, 4.0785139973958318">
       <DataClassMoniker Name="/DIENCODataContext/SANPHAM" />
       <nestedChildShapes>
-        <elementListCompartment Id="cd237f64-73a4-481d-890c-97ac376f376c" absoluteBounds="3.515, 1.71, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="b36247e2-6db1-40f8-9b4f-98431a1634c9" absoluteBounds="3.515, 1.71, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="09cda769-891b-4851-bc18-033380acc885" absoluteBounds="6.75, 2, 2, 1.1939925130208335">
+    <classShape Id="de3305c4-4877-43e5-a662-05bb0cc9ee63" absoluteBounds="6.75, 2, 2, 1.1939925130208335">
       <DataClassMoniker Name="/DIENCODataContext/SYS_ROLE" />
       <nestedChildShapes>
-        <elementListCompartment Id="5ddbbd9e-11dd-4a61-8a32-d0efe2f7239f" absoluteBounds="6.765, 2.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="dbfa0290-7ce3-4da4-9345-820f770fbd88" absoluteBounds="6.765, 2.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(2.75 : 3.34699625651042); (3.5 : 3.34699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 3.34699625651042); (3.5 : 3.34699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DIENCODataContext/HIEUSANPHAM/HIEUSANPHAM_SANPHAM" />
       <nodes>
-        <classShapeMoniker Id="49655250-e309-47f2-8105-2396ab46128c" />
-        <classShapeMoniker Id="0a5edddd-bca4-429a-bfb1-1e4f18903879" />
+        <classShapeMoniker Id="c00f6019-085e-421d-ba1a-267efef4dd95" />
+        <classShapeMoniker Id="b543527b-8c05-40c4-a166-6bc70ced93b9" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 1.59699625651042); (3.5 : 1.59699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 1.59699625651042); (3.5 : 1.59699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DIENCODataContext/LOAISANPHAM/LOAISANPHAM_SANPHAM" />
       <nodes>
-        <classShapeMoniker Id="ae6796f9-5451-4ca9-a10a-b6fbe92d8da0" />
-        <classShapeMoniker Id="0a5edddd-bca4-429a-bfb1-1e4f18903879" />
+        <classShapeMoniker Id="9f78e76d-a85d-4ad3-9dbc-4fa42a9d444c" />
+        <classShapeMoniker Id="b543527b-8c05-40c4-a166-6bc70ced93b9" />
       </nodes>
     </associationConnector>
     <associationConnector edgePoints="[(8.75 : 2.59699625651042); (9.5 : 2.59699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DIENCODataContext/SYS_ROLE/SYS_ROLE_SYS_USER" />
       <nodes>
-        <classShapeMoniker Id="09cda769-891b-4851-bc18-033380acc885" />
-        <classShapeMoniker Id="0a98624d-f94b-4a77-9913-3307a57c8eaf" />
+        <classShapeMoniker Id="de3305c4-4877-43e5-a662-05bb0cc9ee63" />
+        <classShapeMoniker Id="c3962822-1818-45f9-bdb9-529eadb39c7a" />
       </nodes>
     </associationConnector>
-    <classShape Id="c3203a31-547b-4d6f-851b-8ba62b371ed2" absoluteBounds="0.75, 4.375, 2, 2.5401025390625">
-      <DataClassMoniker Name="/DIENCODataContext/NEW" />
-      <nestedChildShapes>
-        <elementListCompartment Id="cc93a346-4165-46da-a238-fab59d2540fd" absoluteBounds="0.76499999999999968, 4.835, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

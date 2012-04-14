@@ -20,7 +20,7 @@
         </td>
         <td class="style4" colspan="3">
             <asp:Label ID="Label1" runat="server" Font-Size="X-Large" ForeColor="Blue" 
-                Text="THÊM MỚI TIN TỨC"></asp:Label>
+                Text=""></asp:Label>
         </td>
     </tr>
     <tr>
