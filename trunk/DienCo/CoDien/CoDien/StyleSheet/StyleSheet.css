@@ -152,8 +152,17 @@ div.tensp {
     font-weight: bold;
     margin: 0 10px;
     padding: 5px 0;
-    border-bottom: 1px #AAA dotted;
+
 }
+div.detail
+{
+    font-family: Tahoma,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    margin: 0 10px;
+    padding: 5px 0;
+    margin-left:20px;
+}
+
 div.gia {
     color: Black;
     font-family: Tahoma,Arial,Helvetica,sans-serif;
@@ -161,6 +170,7 @@ div.gia {
     font-weight: bold;
     margin: 0 10px;
     padding: 5px 0;
+    border-bottom: 1px #AAA dotted;
 }
 div.news_contain{
 	padding:0 10px 10px;
@@ -412,4 +422,15 @@ a.linkfoot_text:hover{
 .add_table tr.row td{
 	border-bottom: 1px #AAA dotted;
 	padding-top: 3px; padding-bottom: 3px;
+}
+
+div.numberonline {
+    color: Red;
+    font-family: Tahoma,Arial,Helvetica,sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 5px 0;
+    text-transform: uppercase;
+    margin-top:10px;
 }

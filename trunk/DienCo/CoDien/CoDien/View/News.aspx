@@ -3,6 +3,13 @@
    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+ <script language="javascript" type="text/javascript">
+     window.document.getElementById("TC").className = "top_link";
+     window.document.getElementById("GT").className = "top_link";
+     window.document.getElementById("LH").className = "top_link";
+     window.document.getElementById("TD").className = "top_link";
+     window.document.getElementById("TT").className = "current_link";
+    </script>
 <div class="" style="float: right;width: 612px;border: 1px #E0E0E0 solid;<%=Session["style"] %>" >
     <div class="title_page"><asp:Label ID="title" runat="server" Text="tin tức"></asp:Label></div>
 		<div class="pages_contain_news" style="margin-top:10px; margin-left:10px; margin-right:10px;">

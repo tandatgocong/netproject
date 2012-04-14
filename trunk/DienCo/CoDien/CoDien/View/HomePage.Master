@@ -21,8 +21,8 @@
      <div class="Menu">
  	 <div>
  		<ul class="menuhead">
- 			<li id="mnHome" class="current"><a class="current_link" href="Home.aspx"><span>TRANG CHỦ</span></a></li>
- 			<li id="mnGioithieu" class="top"><a href="Pages.aspx?page=GT" class="top_link"><span>GIỚI THIỆU</span>
+ 			<li id="mnHome" class="current"><a class="current_link" id="TC" href="Home.aspx"><span>TRANG CHỦ</span></a></li>
+ 			<li id="mnGioithieu" class="top"><a href="Pages.aspx?page=GT" id="GT" class="top_link"><span>GIỚI THIỆU</span>
     		<!--[if gte IE 7]><!--></a><!--<![endif]-->
     		<!--[if lte IE 6]><table><tr><td><![endif]   			
                 <ul class="sub_gioithieu">
@@ -32,7 +32,7 @@
 		        </ul>--> 
     		<!--[if lte IE 6]></td></tr></table></a><![endif]-->
   			</li>
-  			<li id="mnTintuc" class="top"><a href="News.aspx" class="top_link"><span>TIN TỨC</span>
+  			<li id="mnTintuc" class="top"><a href="News.aspx" id="TT" class="top_link"><span>TIN TỨC</span>
     		<!--[if gte IE 7]><!--></a><!--<![endif]-->
     		<!--[if lte IE 6]><table><tr><td><![endif]
     			<ul class="sub_tintuc">
@@ -42,9 +42,9 @@
     			</ul>-->
     		<!--[if lte IE 6]></td></tr></table></a><![endif]-->
   			</li>
-  			<li id="mnTuyendung" class="top"><a href="Pages.aspx?page=TD" class="top_link"><span>TUYỂN DỤNG</span>            </a>
+  			<li id="mnTuyendung" class="top"><a href="Pages.aspx?page=TD"  id="TD"class="top_link"><span>TUYỂN DỤNG</span>            </a>
             </li>
-            <li id="mnLienHe" class="top"><a href="Pages.aspx?page=LH" class="top_link"><span>LIÊN HỆ</span>
+            <li id="mnLienHe" class="top"><a href="Pages.aspx?page=LH"  id="LH" class="top_link"><span>LIÊN HỆ</span>
             <!--[if gte IE 7]><!--></a><!--<![endif]-->
             <!--[if lte IE 6]><table><tr><td><![endif]-->
             <!--[if lte IE 6]></td></tr></table></a><![endif]-->
@@ -154,121 +154,41 @@
        <img border="0" src="http://mail.opi.yahoo.com/online?u=mautimtinhyeu_1010&amp;m=g&amp;t=14" alt="Click vào đây để chat qua Yahoo với mautimtinhyeu_1010" title="Click vào đây để chat qua Yahoo với mautimtinhyeu_1010"></a>
        <div><div class="name">
        LÊ TẤN ĐẠT <BR />
-        0909933397
+        0909933397       
        </div>
          
        </div>
      </div>
-
+     <p /><br />
+     <div> <table width="100%" cellspacing="0" cellpadding="0" border="0">
+              <tbody><tr>
+                   <td bgcolor="#DDEDFB" style="border-bottom:1pt #67aeef solid"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                     <tbody><tr>
+                       <td width="33"><img width="33" height="31" src="../Image/box-bullet1.gif" /></td>
+                       <td width="10">&nbsp;</td>
+                       <td><b>SỐ NGƯỜI TRUY CẬP</b> </td>
+                     </tr>
+                   </tbody></table></td>
+                 </tr>
+               </tbody>
+           </table>
+       </div>
+        <center>
+            <div class="numberonline">
+             <%=Application["count_visit"].ToString()%>
+            </div>
+           
+        </center>
+      
      </td>
 <td valign="top" style="width: 612px;">
 
     
-       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        <div class="title_page">SẢN PHẨM</div>
-		<div class="pages_contain" style="margin-top:10px; text-align:center;">
-        <center>
-            <table width="96%" border="0">
-                <tr>
-                    <td style="width:32%;"><center>
-                        <table>
-                            <tr><td><img src="../Image/4.jpg" width="190px" height="200px" /></td></tr>
-                            <tr><td>
-                                <div class="tensp"><a href="#" title="Xem Chi Tiết">Tên Sản Phẩm</a></div>
-                                <div class="gia">Giá Bán: <span style="color:Red">1.800.000 đ</span> </div>
-                            </td></tr>
-                        </table></center> 
-                    </td>
-                    <td style="width:32%;"><center>
-                        <table>
-                            <tr><td><img src="../Image/2.jpg" width="190px" height="200px" /></td></tr>
-                            <tr><td>
-                                <div class="tensp"><a href="#" title="Xem Chi Tiết">Tên Sản Phẩm</a></div>
-                                <div class="gia">Giá Bán: <span style="color:Red">1.800.000 đ</span> </div>
-                            </td></tr>
-                        </table></center> 
-                    </td>
-                    <td style="width:32%;"><center>
-                        <table>
-                            <tr><td><img src="../Image/6.jpg" width="190px" height="200px" /></td></tr>
-                            <tr><td>
-                                <div class="tensp"><a href="#" title="Xem Chi Tiết">Tên Sản Phẩm</a></div>
-                                <div class="gia">Giá Bán: <span style="color:Red">1.800.000 đ</span> </div>
-                            </td></tr>
-                        </table></center> 
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width:32%;"><center>
-                        <table>
-                            <tr><td><img src="../Image/1.jpg" width="190px" height="200px" /></td></tr>
-                            <tr><td>
-                                <div class="tensp"><a href="#" title="Xem Chi Tiết">Tên Sản Phẩm</a></div>
-                                <div class="gia">Giá Bán: <span style="color:Red">1.800.000 đ</span> </div>
-                            </td></tr>
-                        </table></center> 
-                    </td>
-                    <td style="width:32%;"><center>
-                        <table>
-                            <tr><td><img src="../Image/3.jpg" width="190px" height="200px" /></td></tr>
-                            <tr><td>
-                                <div class="tensp"><a href="#" title="Xem Chi Tiết">Tên Sản Phẩm</a></div>
-                                <div class="gia">Giá Bán: <span style="color:Red">1.800.000 đ</span> </div>
-                            </td></tr>
-                        </table></center> 
-                    </td>
-                    <td style="width:32%;"><center>
-                        <table>
-                            <tr><td><img src="../Image/5.jpg" width="190px" height="200px" /></td></tr>
-                            <tr><td>
-                                <div class="tensp"><a href="#" title="Xem Chi Tiết">Tên Sản Phẩm</a></div>
-                                <div class="gia">Giá Bán: <span style="color:Red">1.800.000 đ</span> </div>
-                            </td></tr>
-                        </table></center> 
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width:32%;"><center>
-                        <table>
-                            <tr><td><img src="../Image/5.jpg" width="190px" height="200px" /></td></tr>
-                            <tr><td>
-                                <div class="tensp"><a href="#" title="Xem Chi Tiết">Tên Sản Phẩm</a></div>
-                                <div class="gia">Giá Bán: <span style="color:Red">1.800.000 đ</span> </div>
-                            </td></tr>
-                        </table></center> 
-                    </td>
-                    <td style="width:32%;"><center>
-                        <table>
-                            <tr><td><img src="../Image/4.jpg" width="190px" height="200px" /></td></tr>
-                            <tr><td>
-                                <div class="tensp"><a href="#" title="Xem Chi Tiết">Tên Sản Phẩm</a></div>
-                                <div class="gia">Giá Bán: <span style="color:Red">1.800.000 đ</span> </div>
-                            </td></tr>
-                        </table></center> 
-                    </td>
-                    <td style="width:32%;"><center>
-                        <table>
-                            <tr><td><img src="../Image/6.jpg" width="190px" height="200px" /></td></tr>
-                            <tr><td>
-                                <div class="tensp"><a href="#" title="Xem Chi Tiết">Tên Sản Phẩm</a></div>
-                                <div class="gia">Giá Bán: <span style="color:Red">1.800.000 đ</span> </div>
-                            </td></tr>
-                        </table></center> 
-                    </td>
-                </tr>
-                <tr>
-                <td colspan="3">
-                <center>
-                    <img src="../Image/Untitled.png" />
-                    
-                </center>
-                </td>
-                </tr>
-            </table>
-        </center>
-        </div>
+   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+       
+		
    
- </asp:ContentPlaceHolder>
+   </asp:ContentPlaceHolder>
 </td>
 <!-- SAN PHAM BÁN CHẠY-->
 <td valign="top" style="width:200px;">

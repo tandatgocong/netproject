@@ -16,6 +16,11 @@ namespace CoDien.Class
             var query = from q in database.LOAISANPHAMs select q;
             return query.ToList();
         }
+        public static SANPHAM findSanPhamById(int spID)
+        {
+            var query = from q in database.SANPHAMs where q.MASP==spID select q;
+            return query.SingleOrDefault();
+        }
         public static List<HIEUSANPHAM> GetHieuSanPham()
         {
             var query = from q in database.HIEUSANPHAMs select q;

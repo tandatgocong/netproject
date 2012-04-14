@@ -326,6 +326,7 @@
     <Content Include="View\A_News.aspx" />
     <Content Include="View\A_News_Add.aspx" />
     <Content Include="View\A_UpdateSanPham.aspx" />
+    <Content Include="View\Detail.aspx" />
     <Content Include="View\Home.aspx" />
     <Content Include="View\Login.aspx" />
     <Content Include="View\News.aspx" />
@@ -417,6 +418,13 @@
     </Compile>
     <Compile Include="View\A_UpdateSanPham.aspx.designer.cs">
       <DependentUpon>A_UpdateSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Detail.aspx.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
