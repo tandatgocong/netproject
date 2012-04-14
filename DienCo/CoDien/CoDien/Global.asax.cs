@@ -31,6 +31,7 @@ namespace CoDien
         void Session_Start(object sender, EventArgs e)
         {
             Session["page"] = "";
+            Session["USER"] = "";
 
         }
 

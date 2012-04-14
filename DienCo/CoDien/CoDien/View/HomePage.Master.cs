@@ -11,7 +11,9 @@ namespace CoDien.View
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Session["spMoi"] = Class.C_Home.getSANPHAM_MOI() ;
+            Session["spBanChay"] = Class.C_Home.getSANPHAM_BANCHAY();
+             
         }
     }
 }

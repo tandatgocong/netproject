@@ -39,6 +39,9 @@ namespace CoDien.DB
     partial void InsertLOAISANPHAM(LOAISANPHAM instance);
     partial void UpdateLOAISANPHAM(LOAISANPHAM instance);
     partial void DeleteLOAISANPHAM(LOAISANPHAM instance);
+    partial void InsertNEW(NEW instance);
+    partial void UpdateNEW(NEW instance);
+    partial void DeleteNEW(NEW instance);
     partial void InsertPAGE(PAGE instance);
     partial void UpdatePAGE(PAGE instance);
     partial void DeletePAGE(PAGE instance);
@@ -48,9 +51,6 @@ namespace CoDien.DB
     partial void InsertSYS_ROLE(SYS_ROLE instance);
     partial void UpdateSYS_ROLE(SYS_ROLE instance);
     partial void DeleteSYS_ROLE(SYS_ROLE instance);
-    partial void InsertNEW(NEW instance);
-    partial void UpdateNEW(NEW instance);
-    partial void DeleteNEW(NEW instance);
     #endregion
 		
 		public DIENCODataContext() : 
@@ -107,6 +107,14 @@ namespace CoDien.DB
 			}
 		}
 		
+		public System.Data.Linq.Table<NEW> NEWs
+		{
+			get
+			{
+				return this.GetTable<NEW>();
+			}
+		}
+		
 		public System.Data.Linq.Table<PAGE> PAGEs
 		{
 			get
@@ -128,14 +136,6 @@ namespace CoDien.DB
 			get
 			{
 				return this.GetTable<SYS_ROLE>();
-			}
-		}
-		
-		public System.Data.Linq.Table<NEW> NEWs
-		{
-			get
-			{
-				return this.GetTable<NEW>();
 			}
 		}
 	}
@@ -687,6 +687,260 @@ namespace CoDien.DB
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.NEWS")]
+	public partial class NEW : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _NEWSID;
+		
+		private string _NEWSTILE;
+		
+		private string _NEWIMG;
+		
+		private string _NEWSDICRIPTION;
+		
+		private string _NEWSCONTENT;
+		
+		private string _CREATEBY;
+		
+		private System.Nullable<System.DateTime> _CREATEDATE;
+		
+		private string _MODIFYBY;
+		
+		private System.Nullable<System.DateTime> _MODIFYDATE;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnNEWSIDChanging(int value);
+    partial void OnNEWSIDChanged();
+    partial void OnNEWSTILEChanging(string value);
+    partial void OnNEWSTILEChanged();
+    partial void OnNEWIMGChanging(string value);
+    partial void OnNEWIMGChanged();
+    partial void OnNEWSDICRIPTIONChanging(string value);
+    partial void OnNEWSDICRIPTIONChanged();
+    partial void OnNEWSCONTENTChanging(string value);
+    partial void OnNEWSCONTENTChanged();
+    partial void OnCREATEBYChanging(string value);
+    partial void OnCREATEBYChanged();
+    partial void OnCREATEDATEChanging(System.Nullable<System.DateTime> value);
+    partial void OnCREATEDATEChanged();
+    partial void OnMODIFYBYChanging(string value);
+    partial void OnMODIFYBYChanged();
+    partial void OnMODIFYDATEChanging(System.Nullable<System.DateTime> value);
+    partial void OnMODIFYDATEChanged();
+    #endregion
+		
+		public NEW()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NEWSID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int NEWSID
+		{
+			get
+			{
+				return this._NEWSID;
+			}
+			set
+			{
+				if ((this._NEWSID != value))
+				{
+					this.OnNEWSIDChanging(value);
+					this.SendPropertyChanging();
+					this._NEWSID = value;
+					this.SendPropertyChanged("NEWSID");
+					this.OnNEWSIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NEWSTILE", DbType="NVarChar(MAX)")]
+		public string NEWSTILE
+		{
+			get
+			{
+				return this._NEWSTILE;
+			}
+			set
+			{
+				if ((this._NEWSTILE != value))
+				{
+					this.OnNEWSTILEChanging(value);
+					this.SendPropertyChanging();
+					this._NEWSTILE = value;
+					this.SendPropertyChanged("NEWSTILE");
+					this.OnNEWSTILEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NEWIMG", DbType="NVarChar(MAX)")]
+		public string NEWIMG
+		{
+			get
+			{
+				return this._NEWIMG;
+			}
+			set
+			{
+				if ((this._NEWIMG != value))
+				{
+					this.OnNEWIMGChanging(value);
+					this.SendPropertyChanging();
+					this._NEWIMG = value;
+					this.SendPropertyChanged("NEWIMG");
+					this.OnNEWIMGChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NEWSDICRIPTION", DbType="NVarChar(MAX)")]
+		public string NEWSDICRIPTION
+		{
+			get
+			{
+				return this._NEWSDICRIPTION;
+			}
+			set
+			{
+				if ((this._NEWSDICRIPTION != value))
+				{
+					this.OnNEWSDICRIPTIONChanging(value);
+					this.SendPropertyChanging();
+					this._NEWSDICRIPTION = value;
+					this.SendPropertyChanged("NEWSDICRIPTION");
+					this.OnNEWSDICRIPTIONChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NEWSCONTENT", DbType="NVarChar(MAX)")]
+		public string NEWSCONTENT
+		{
+			get
+			{
+				return this._NEWSCONTENT;
+			}
+			set
+			{
+				if ((this._NEWSCONTENT != value))
+				{
+					this.OnNEWSCONTENTChanging(value);
+					this.SendPropertyChanging();
+					this._NEWSCONTENT = value;
+					this.SendPropertyChanged("NEWSCONTENT");
+					this.OnNEWSCONTENTChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATEBY", DbType="VarChar(50)")]
+		public string CREATEBY
+		{
+			get
+			{
+				return this._CREATEBY;
+			}
+			set
+			{
+				if ((this._CREATEBY != value))
+				{
+					this.OnCREATEBYChanging(value);
+					this.SendPropertyChanging();
+					this._CREATEBY = value;
+					this.SendPropertyChanged("CREATEBY");
+					this.OnCREATEBYChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATEDATE", DbType="DateTime")]
+		public System.Nullable<System.DateTime> CREATEDATE
+		{
+			get
+			{
+				return this._CREATEDATE;
+			}
+			set
+			{
+				if ((this._CREATEDATE != value))
+				{
+					this.OnCREATEDATEChanging(value);
+					this.SendPropertyChanging();
+					this._CREATEDATE = value;
+					this.SendPropertyChanged("CREATEDATE");
+					this.OnCREATEDATEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MODIFYBY", DbType="VarChar(50)")]
+		public string MODIFYBY
+		{
+			get
+			{
+				return this._MODIFYBY;
+			}
+			set
+			{
+				if ((this._MODIFYBY != value))
+				{
+					this.OnMODIFYBYChanging(value);
+					this.SendPropertyChanging();
+					this._MODIFYBY = value;
+					this.SendPropertyChanged("MODIFYBY");
+					this.OnMODIFYBYChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MODIFYDATE", DbType="DateTime")]
+		public System.Nullable<System.DateTime> MODIFYDATE
+		{
+			get
+			{
+				return this._MODIFYDATE;
+			}
+			set
+			{
+				if ((this._MODIFYDATE != value))
+				{
+					this.OnMODIFYDATEChanging(value);
+					this.SendPropertyChanging();
+					this._MODIFYDATE = value;
+					this.SendPropertyChanged("MODIFYDATE");
+					this.OnMODIFYDATEChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.PAGES")]
 	public partial class PAGE : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -803,7 +1057,7 @@ namespace CoDien.DB
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _MASP;
+		private int _MASP;
 		
 		private string _MALOAI;
 		
@@ -845,7 +1099,7 @@ namespace CoDien.DB
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnMASPChanging(string value);
+    partial void OnMASPChanging(int value);
     partial void OnMASPChanged();
     partial void OnMALOAIChanging(string value);
     partial void OnMALOAIChanged();
@@ -888,8 +1142,8 @@ namespace CoDien.DB
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MASP", DbType="VarChar(20) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MASP
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MASP", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int MASP
 		{
 			get
 			{
@@ -1436,260 +1690,6 @@ namespace CoDien.DB
 		{
 			this.SendPropertyChanging();
 			entity.SYS_ROLE = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.NEWS")]
-	public partial class NEW : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _NEWSID;
-		
-		private string _NEWSTILE;
-		
-		private string _NEWIMG;
-		
-		private string _NEWSDICRIPTION;
-		
-		private string _NEWSCONTENT;
-		
-		private string _CREATEBY;
-		
-		private System.Nullable<System.DateTime> _CREATEDATE;
-		
-		private string _MODIFYBY;
-		
-		private System.Nullable<System.DateTime> _MODIFYDATE;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnNEWSIDChanging(int value);
-    partial void OnNEWSIDChanged();
-    partial void OnNEWSTILEChanging(string value);
-    partial void OnNEWSTILEChanged();
-    partial void OnNEWIMGChanging(string value);
-    partial void OnNEWIMGChanged();
-    partial void OnNEWSDICRIPTIONChanging(string value);
-    partial void OnNEWSDICRIPTIONChanged();
-    partial void OnNEWSCONTENTChanging(string value);
-    partial void OnNEWSCONTENTChanged();
-    partial void OnCREATEBYChanging(string value);
-    partial void OnCREATEBYChanged();
-    partial void OnCREATEDATEChanging(System.Nullable<System.DateTime> value);
-    partial void OnCREATEDATEChanged();
-    partial void OnMODIFYBYChanging(string value);
-    partial void OnMODIFYBYChanged();
-    partial void OnMODIFYDATEChanging(System.Nullable<System.DateTime> value);
-    partial void OnMODIFYDATEChanged();
-    #endregion
-		
-		public NEW()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NEWSID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int NEWSID
-		{
-			get
-			{
-				return this._NEWSID;
-			}
-			set
-			{
-				if ((this._NEWSID != value))
-				{
-					this.OnNEWSIDChanging(value);
-					this.SendPropertyChanging();
-					this._NEWSID = value;
-					this.SendPropertyChanged("NEWSID");
-					this.OnNEWSIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NEWSTILE", DbType="NVarChar(MAX)")]
-		public string NEWSTILE
-		{
-			get
-			{
-				return this._NEWSTILE;
-			}
-			set
-			{
-				if ((this._NEWSTILE != value))
-				{
-					this.OnNEWSTILEChanging(value);
-					this.SendPropertyChanging();
-					this._NEWSTILE = value;
-					this.SendPropertyChanged("NEWSTILE");
-					this.OnNEWSTILEChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NEWIMG", DbType="NVarChar(MAX)")]
-		public string NEWIMG
-		{
-			get
-			{
-				return this._NEWIMG;
-			}
-			set
-			{
-				if ((this._NEWIMG != value))
-				{
-					this.OnNEWIMGChanging(value);
-					this.SendPropertyChanging();
-					this._NEWIMG = value;
-					this.SendPropertyChanged("NEWIMG");
-					this.OnNEWIMGChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NEWSDICRIPTION", DbType="NVarChar(MAX)")]
-		public string NEWSDICRIPTION
-		{
-			get
-			{
-				return this._NEWSDICRIPTION;
-			}
-			set
-			{
-				if ((this._NEWSDICRIPTION != value))
-				{
-					this.OnNEWSDICRIPTIONChanging(value);
-					this.SendPropertyChanging();
-					this._NEWSDICRIPTION = value;
-					this.SendPropertyChanged("NEWSDICRIPTION");
-					this.OnNEWSDICRIPTIONChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NEWSCONTENT", DbType="NVarChar(MAX)")]
-		public string NEWSCONTENT
-		{
-			get
-			{
-				return this._NEWSCONTENT;
-			}
-			set
-			{
-				if ((this._NEWSCONTENT != value))
-				{
-					this.OnNEWSCONTENTChanging(value);
-					this.SendPropertyChanging();
-					this._NEWSCONTENT = value;
-					this.SendPropertyChanged("NEWSCONTENT");
-					this.OnNEWSCONTENTChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATEBY", DbType="VarChar(50)")]
-		public string CREATEBY
-		{
-			get
-			{
-				return this._CREATEBY;
-			}
-			set
-			{
-				if ((this._CREATEBY != value))
-				{
-					this.OnCREATEBYChanging(value);
-					this.SendPropertyChanging();
-					this._CREATEBY = value;
-					this.SendPropertyChanged("CREATEBY");
-					this.OnCREATEBYChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATEDATE", DbType="DateTime")]
-		public System.Nullable<System.DateTime> CREATEDATE
-		{
-			get
-			{
-				return this._CREATEDATE;
-			}
-			set
-			{
-				if ((this._CREATEDATE != value))
-				{
-					this.OnCREATEDATEChanging(value);
-					this.SendPropertyChanging();
-					this._CREATEDATE = value;
-					this.SendPropertyChanged("CREATEDATE");
-					this.OnCREATEDATEChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MODIFYBY", DbType="VarChar(50)")]
-		public string MODIFYBY
-		{
-			get
-			{
-				return this._MODIFYBY;
-			}
-			set
-			{
-				if ((this._MODIFYBY != value))
-				{
-					this.OnMODIFYBYChanging(value);
-					this.SendPropertyChanging();
-					this._MODIFYBY = value;
-					this.SendPropertyChanged("MODIFYBY");
-					this.OnMODIFYBYChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MODIFYDATE", DbType="DateTime")]
-		public System.Nullable<System.DateTime> MODIFYDATE
-		{
-			get
-			{
-				return this._MODIFYDATE;
-			}
-			set
-			{
-				if ((this._MODIFYDATE != value))
-				{
-					this.OnMODIFYDATEChanging(value);
-					this.SendPropertyChanging();
-					this._MODIFYDATE = value;
-					this.SendPropertyChanged("MODIFYDATE");
-					this.OnMODIFYDATEChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
 		}
 	}
 }

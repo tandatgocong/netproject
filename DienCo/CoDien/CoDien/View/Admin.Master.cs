@@ -11,7 +11,9 @@ namespace CoDien.View
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if ("".Equals(Session["USER"] + "")) {
+                Response.Redirect(@"Login.aspx");
+            }
         }
     }
 }

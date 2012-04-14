@@ -1,1 +1,8 @@
-2012-04-08 11:22:24,701 [6212] INFO  File Starting page load
+2012-04-14 10:49:21,830 [7640] ERROR File LinQConnection getDataTableInvalid column name 'NEWSID'.
+2012-04-14 10:49:37,275 [9096] ERROR File LinQConnection getDataTableInvalid column name 'NEWSID'.
+2012-04-14 12:26:27,242 [13224] ERROR File Load Edit Sp Input string was not in a correct format.
+2012-04-14 12:27:04,734 [13060] ERROR File Load Edit Sp Input string was not in a correct format.
+2012-04-14 12:27:40,183 [13052] ERROR File Load Edit Sp Input string was not in a correct format.
+2012-04-14 12:34:09,110 [10772] ERROR File Load Edit Sp Input string was not in a correct format.
+2012-04-14 12:36:51,031 [13660] ERROR File Load Edit Sp Input string was not in a correct format.
+2012-04-14 12:51:31,474 [13136] ERROR File Add SANPHAMs : Cannot add an entity that already exists.

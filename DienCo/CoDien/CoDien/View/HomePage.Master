@@ -1,5 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomePage.master.cs" Inherits="CoDien.View.HomePage" %>
-
+<%@ Import Namespace="System.Data" %>
+<%@ Import Namespace="System.Data.SqlClient" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -287,21 +288,25 @@
 <div class="banchay">
 <marquee onmouseover='this.stop();' onmouseout='this.start();' scrollamount="4" direction="up" loop="true" width="100%" HEIGHT=400>
 <center>
-
-<img src="../Image/4.jpg" width="190px" height="200px" />
- <p />
-<img src="../Image/5.jpg" width="190px" height="200px" />
- <p />
-<img src="../Image/6.jpg" width="190px" height="200px" />
- <p />
-<img src="../Image/7.jpg" width="190px" height="200px" />
- <p />
- <img src="../Image/1.jpg" width="190px" height="200px" />
- <p />
-<img src="../Image/2.jpg" width="190px" height="200px" />
- <p />
-<img src="../Image/3.jpg" width="190px" height="200px" />
- <p />
+ <% 
+                       DataTable table = new DataTable();
+                       if (Session["spBanChay"] != null)
+                       {
+                           table = (DataTable)Session["spBanChay"];
+                           if (table != null)
+                           {
+                               for (int i = 0; i < table.Rows.Count; i++)
+                               {
+                                   string img = table.Rows[i]["ANH"].ToString().Replace(@"~", "");
+                                   %>
+                                   <img src="<%=img%>" width="190px" height="200px" />
+                                   <p />
+                                   <%
+                               }
+                           }
+                       }
+ %>
+ 
 </center>
 </marquee
 
@@ -325,20 +330,24 @@
 
 <marquee onmouseover='this.stop();' onmouseout='this.start();' scrollamount="4" direction="up" loop="true" width="100%" HEIGHT=405>
 <center>
-<img src="../Image/1.jpg" width="190px" height="200px" />
- <p />
-<img src="../Image/2.jpg" width="190px" height="200px" />
- <p />
-<img src="../Image/3.jpg" width="190px" height="200px" />
- <p />
-<img src="../Image/4.jpg" width="190px" height="200px" />
- <p />
-<img src="../Image/5.jpg" width="190px" height="200px" />
- <p />
-<img src="../Image/6.jpg" width="190px" height="200px" />
- <p />
-<img src="../Image/7.jpg" width="190px" height="200px" />
- <p />
+ <% 
+     DataTable spBanChay = new DataTable();
+     if (Session["spMoi"] != null)
+     {
+         spBanChay = (DataTable)Session["spMoi"];
+         if (spBanChay != null)
+         {
+             for (int i = 0; i < spBanChay.Rows.Count; i++)
+             {
+                 string img = spBanChay.Rows[i]["ANH"].ToString().Replace(@"~", "");
+                                   %>
+                                   <img src="<%=img%>" width="190px" height="200px" />
+                                   <p />
+                                   <%
+             }
+         }
+     }
+ %>
 </center>
 </marquee
 </div>
