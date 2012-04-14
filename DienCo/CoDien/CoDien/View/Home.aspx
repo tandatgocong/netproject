@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<div class="Pages_content">
+    <div class="Pages_content">
 <div class="title_page"><asp:Label ID="title" runat="server" Text="SẢN PHẨM"></asp:Label>
     </div>
 		<div class="pages_contain" style="margin-top:10px; margin-left:10px; margin-right:10px;">        
@@ -18,9 +18,8 @@
                         <tr>
                             <td>
                                 <div class="tensp">
-                                    <a href="#" title="Xem Chi Tiết">
-                                    <asp:Label ID="Label1" runat="server" Text='<%# BIND("TENSP") %>'></asp:Label>
-                                    </a>
+                                    <asp:LinkButton ID="LinkButton1" runat="server" 
+                                        PostBackUrl='<%# Eval("MASP","Detail.aspx?SP={0}") %>'  Text='<%# BIND("TENSP") %>'></asp:LinkButton>
                                 </div>
                                 <div class="gia">
                                     Giá Bán: <span style="color:Red">&nbsp;<asp:Label ID="Label2" runat="server" 

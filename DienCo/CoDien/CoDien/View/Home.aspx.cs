@@ -201,5 +201,25 @@ namespace CoDien.View
             this.BindItemsList();
 
         }
+
+        protected void DataList1_ItemDataBound(object sender, DataListItemEventArgs e)
+        {
+            //if (e.Row.RowType == DataControlRowType.DataRow)
+            //{
+            //    HyperLink NameHyperLink = (HyperLink)e.Row.FindControl("NameHyperlink");
+            //    NameHyperLink.Text = DataBinder.Eval(e.Row.DataItem, "ProductName") as string;
+            //    NameHyperLink.Attributes.Add("onmouseover", "ShowToolTip(" +
+            //    "'" + Server.HtmlEncode(DataBinder.Eval(e.Row.DataItem, "ProductName") as string).Replace("'", "&#96;") + "'," +
+            //    "'" + Server.HtmlEncode(DataBinder.Eval(e.Row.DataItem, "QuantityPerUnit") as string).Replace("'", "&#96;") + "'," +
+            //    "'" + Server.HtmlEncode(DataBinder.Eval(e.Row.DataItem, "UnitPrice") as string).Replace("'", "&#96;") + "'," +
+            //    "'" + Server.HtmlEncode(DataBinder.Eval(e.Row.DataItem, "UnitsInStock") as string).Replace("'", "&#96;") + "'," +
+            //    "'" + Server.HtmlEncode(DataBinder.Eval(e.Row.DataItem, "UnitsOnOrder") as string).Replace("'", "&#96;") + "'," +
+            //    "'" + Server.HtmlEncode(DataBinder.Eval(e.Row.DataItem, "ReorderLevel") as string).Replace("'", "&#96;") + "'," +
+            //    "'" + Server.HtmlEncode(DataBinder.Eval(e.Row.DataItem, "Discontinued") as string).Replace("'", "&#96;") + "'" +
+            //    ");");
+            //    NameHyperLink.Attributes.Add("onmouseout", "HideTooTip();");
+            //    NameHyperLink.Attributes.Add("onmousemove", "MoveToolTip();");
+            //}
+        }
     }
 }
