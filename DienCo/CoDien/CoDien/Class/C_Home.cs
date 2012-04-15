@@ -19,9 +19,17 @@ namespace CoDien.Class
             return LinQConnection.getDataTable(sql);
         }
 
-        public static DataTable getSANPHAM()
+        public static DataTable getSANPHAM(string page, string type)
         {
             string sql = "SELECT  *  FROM  SANPHAM  ORDER BY SAPMOI DESC";
+            if (page != null && type == null)
+            {
+                sql = "SELECT  *  FROM  SANPHAM WHERE MALOAI='"+page+"'  ORDER BY SAPMOI DESC";
+            }
+            else if (page != null && type != null)
+            {
+                sql = "SELECT  *  FROM  SANPHAM WHERE MALOAI='" + page + "' AND MAHIEU='"+type+"'  ORDER BY SAPMOI DESC";
+            }
             return LinQConnection.getDataTable(sql);
         }
     }

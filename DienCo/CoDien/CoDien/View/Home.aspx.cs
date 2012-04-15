@@ -91,8 +91,18 @@ namespace CoDien.View
         /// </summary>
         private void BindItemsList()
         {
-
-            DataTable dataTable = Class.C_Home.getSANPHAM(); 
+            string page = null;
+            string type = null;
+            if (Request.Params["page"] != null && Request.Params["type"]==null ) {
+                page = Request.Params["page"].ToString();
+            }
+            else if (Request.Params["page"] != null && Request.Params["type"] != null)
+            {
+                page = Request.Params["page"].ToString();
+                type = Request.Params["type"].ToString();
+            }
+            DataTable dataTable = Class.C_Home.getSANPHAM(page, type); 
+            
             _PageDataSource.DataSource = dataTable.DefaultView;
             _PageDataSource.AllowPaging = true;
             _PageDataSource.PageSize = 9;
