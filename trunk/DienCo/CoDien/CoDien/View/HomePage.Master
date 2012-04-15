@@ -78,39 +78,30 @@
        <table id="menu" class="menu" cellSpacing="0" cellPadding="0">
            <tr> 
                 <td> 
-                  <a id="menu5" href="javascript:void(0);" >LOẠI MÁY 01</a>
+                  <a id="menu4" href="Home.aspx?page=MT" >MÁY TÍNH XÁCH TAY</a>
                 </td> 
            </tr> 
            <tr> 
                 <td> 
-                  <a id="menu4" href="javascript:void(0);" >LOẠI MÁY 02</a>
+                  <a id="menu5" href="Home.aspx?page=MB" >MÁY TÍNH BẢNG</a>
                 </td> 
             </tr> 
             <tr> 
                 <td> 
-                  <a id="menu6" href="javascript:void(0);" >LOẠI MÁY 03</a>
+                  <a id="menu6" href="Home.aspx?page=MC" >MÁY CHỦ</a>
                 </td> 
             </tr> 
             <tr> 
              <td> 
-                <a id="menu46" href="javascript:void(0);" >LOẠI MÁY 04</a>
+                <a id="menu7" href="Home.aspx?page=DT" >ĐIỆN THOẠI</a>
              </td> 
             </tr> 
             <tr> 
                 <td> 
-                    <a id="menu7" href="javascript:void(0);" >LOẠI MÁY 05</a>
+                    <a id="menu8" href="Home.aspx?page=PK" >PHỤ KIỆN</a>
                 </td> 
              </tr> 
-             <tr> 
-                <td> 
-                    <a id="menu8" href="javascript:void(0);" >LOẠI MÁY 06</a>
-                </td> 
-              </tr> 
-              <tr> 
-                <td class="last"> 
-                  <a id="menu9" href="javascript:void(0);" >LOẠI MÁY 07</a>
-                </td> 
-              </tr> 
+              
              
         </table>
      </div>
@@ -282,24 +273,22 @@
             <!--
        if (TransMenu.isSupported()) {
            var ms = new TransMenuSet(TransMenu.direction.right, 0, 0, TransMenu.reference.topRight);
-           var menu5 = ms.addMenu(document.getElementById("menu5"));
-           menu5.addItem("&nbsp;&nbsp; Hiệu 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", "#", "0");
-           menu5.addItem("&nbsp;&nbsp; Hiệu 2", "#", "0");
-           menu5.addItem("&nbsp;&nbsp; Hiệu 3", "#", "0");
-           menu5.addItem("&nbsp;&nbsp; Hiệu 4", "#", "0");
-           menu5.addItem("&nbsp;&nbsp; Hiệu Khác", "#", "0");
            var menu4 = ms.addMenu(document.getElementById("menu4"));
-           menu4.addItem("&nbsp;&nbsp;Hiệu 1  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", "#", "0");
-           menu4.addItem("&nbsp;&nbsp;Hiệu 2", "#", "0");
-           menu4.addItem("&nbsp;&nbsp;Hiệu 3", "#", "0");
-           menu4.addItem("&nbsp;&nbsp;Hiệu 4", "#", "0");
-           menu4.addItem("&nbsp;&nbsp;Hiệu Khác", "#", "0");
+           menu4.addItem("&nbsp;&nbsp; HP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", "Home.aspx?page=MT&type=HP", "0");
+           menu4.addItem("&nbsp;&nbsp; DELL ", "Home.aspx?page=MT&type=DL", "0");
+           menu4.addItem("&nbsp;&nbsp; SONY ", "Home.aspx?page=MT&type=SN", "0");
+           menu4.addItem("&nbsp;&nbsp; ACER", "Home.aspx?page=MT&type=AC", "0");
+           var menu5 = ms.addMenu(document.getElementById("menu5"));
+           menu5.addItem("&nbsp;&nbsp; IPAD  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", "Home.aspx?page=MB&type=IP", "0");
+           menu5.addItem("&nbsp;&nbsp; SAMSUNG", "Home.aspx?page=MB&type=SA", "0");
+           menu5.addItem("&nbsp;&nbsp; LG", "Home.aspx?page=MB&type=LG", "0");
            var menu6 = ms.addMenu(document.getElementById("menu6"));
-           menu6.addItem("&nbsp;&nbsp;Hiệu 1  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", "#", "0");
-           menu6.addItem("&nbsp;&nbsp;Hiệu 2", "#", "0");
-           menu6.addItem("&nbsp;&nbsp;Hiệu 3", "#", "0");
-           menu6.addItem("&nbsp;&nbsp;Hiệu 4", "#", "0");
-           menu6.addItem("&nbsp;&nbsp;Hiệu Khác", "#", "0");
+           menu6.addItem("&nbsp;&nbsp; HP  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", "Home.aspx?page=MC&type=HP", "0");
+           menu6.addItem("&nbsp;&nbsp; IBM", "Home.aspx?page=MC&type=IB", "0");
+           var menu7 = ms.addMenu(document.getElementById("menu7"));
+           menu7.addItem("&nbsp;&nbsp; NOKIA  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", "Home.aspx?page=DT&type=NK", "0");
+           menu7.addItem("&nbsp;&nbsp; SAMSUNG ", "Home.aspx?page=DT&type=SA", "0");
+           menu7.addItem("&nbsp;&nbsp; LG ", "Home.aspx?page=DT&type=LG", "0");
            /* var menu46 = ms.addMenu(document.getElementById("menu46"));
            menu46.addItem("Menu 7.1", "#", "0");
            menu46.addItem("Menu 7.2", "#", "1");
