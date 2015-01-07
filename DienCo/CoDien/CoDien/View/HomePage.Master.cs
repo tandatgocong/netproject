@@ -15,5 +15,16 @@ namespace CoDien.View
             Session["spBanChay"] = Class.C_Home.getSANPHAM_BANCHAY();
              
         }
+
+        protected void btTimKiem_Load(object sender, EventArgs e)
+        {
+             
+           
+        }
+
+        protected void btTimKiem_Click(object sender, EventArgs e)
+        {
+            Response.Redirect(@"Home.aspx?search=" + txtSearch.Text);
+        }
     }
 }

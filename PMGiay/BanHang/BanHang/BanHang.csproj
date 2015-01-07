@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C01814DD-A0E7-4D6A-860A-4279C4EE3C1B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BanHang</RootNamespace>
+    <AssemblyName>BanHang</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ReFFlective %28135%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\..\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="String_Indentity">
+      <HintPath>..\..\..\..\TAN HOA\PROJECT\tanhoawater\TanHoaWater\TanHoaWater\Lib\String_Indentity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\C_ChuHang.cs" />
+    <Compile Include="DAL\C_GioHang.cs" />
+    <Compile Include="DAL\C_HoaDon.cs" />
+    <Compile Include="DAL\C_NhapHang.cs" />
+    <Compile Include="DAL\C_QLQuy.cs" />
+    <Compile Include="DAL\C_USERS.cs" />
+    <Compile Include="DAL\Idetity.cs" />
+    <Compile Include="DAL\LinQConnection.cs" />
+    <Compile Include="Database\qlBangHang.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>qlBangHang.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Database\qlBangHang1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>qlBangHang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Login.designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tab\rpSPBanHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tab\rpSPBanHang.Designer.cs">
+      <DependentUpon>rpSPBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tab\tbXuatHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tab\tbXuatHang.Designer.cs">
+      <DependentUpon>tbXuatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tab\rpBaoCaoNhapHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tab\rpBaoCaoNhapHang.Designer.cs">
+      <DependentUpon>rpBaoCaoNhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tab\rpBaoCaoBanHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tab\rpBaoCaoBanHang.Designer.cs">
+      <DependentUpon>rpBaoCaoBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tab\tbqlQuyNhapHang1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tab\tbqlQuyNhapHang1.Designer.cs">
+      <DependentUpon>tbqlQuyNhapHang1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tab\tbqlQuyThuChi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tab\tbqlQuyThuChi.Designer.cs">
+      <DependentUpon>tbqlQuyThuChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tab\tbqlQuy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tab\tbqlQuy.Designer.cs">
+      <DependentUpon>tbqlQuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tab\frm_ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tab\frm_ChangePassword.designer.cs">
+      <DependentUpon>frm_ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tab\Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tab\Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tab\tbChuHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tab\tbChuHang.Designer.cs">
+      <DependentUpon>tbChuHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tab\fromDieuChinhNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tab\fromDieuChinhNhapHang.Designer.cs">
+      <DependentUpon>fromDieuChinhNhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tab\tbNhapHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tab\tbNhapHang.Designer.cs">
+      <DependentUpon>tbNhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tab\tabTonKho.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tab\tabTonKho.Designer.cs">
+      <DependentUpon>tabTonKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tab\tbSanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tab\tbSanPham.Designer.cs">
+      <DependentUpon>tbSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\DateToString.cs" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database\qlBangHang.dbml.layout">
+      <DependentUpon>qlBangHang.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="tab\rpSPBanHang.rdlc" />
+    <EmbeddedResource Include="tab\rpSPBanHang.resx">
+      <DependentUpon>rpSPBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tab\rpBaoCaoBanHangTest.rdlc" />
+    <EmbeddedResource Include="tab\tbXuatHang.resx">
+      <DependentUpon>tbXuatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tab\rpBaoCaoNhapHang.rdlc" />
+    <EmbeddedResource Include="tab\rpBaoCaoBanHang.rdlc" />
+    <EmbeddedResource Include="tab\rpBaoCaoNhapHang.resx">
+      <DependentUpon>rpBaoCaoNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tab\rpBaoCaoBanHang.resx">
+      <DependentUpon>rpBaoCaoBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tab\tbqlQuyNhapHang1.resx">
+      <DependentUpon>tbqlQuyNhapHang1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tab\tbqlQuyThuChi.resx">
+      <DependentUpon>tbqlQuyThuChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tab\tbqlQuy.resx">
+      <DependentUpon>tbqlQuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tab\frm_ChangePassword.resx">
+      <DependentUpon>frm_ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tab\Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tab\tbChuHang.resx">
+      <DependentUpon>tbChuHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tab\fromDieuChinhNhapHang.resx">
+      <DependentUpon>fromDieuChinhNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tab\tbNhapHang.resx">
+      <DependentUpon>tbNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tab\tabTonKho.resx">
+      <DependentUpon>tabTonKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tab\tbSanPham.resx">
+      <DependentUpon>tbSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Database\qlBangHang.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>qlBangHang.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database\qlBangHang.xsc">
+      <DependentUpon>qlBangHang.xsd</DependentUpon>
+    </None>
+    <None Include="Database\qlBangHang.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>qlBangHang1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Database\qlBangHang.xss">
+      <DependentUpon>qlBangHang.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sweetim 15.jpg" />
+    <None Include="img\NHAP HANG %281%29.png" />
+    <None Include="img\NHAP HANG %282%29.png" />
+    <None Include="img\CHU HANG.png" />
+    <None Include="img\TIEN QUY.png" />
+    <None Include="img\THANH TOAN CHO CHU HANG.png" />
+    <None Include="img\DANG NHAP.png" />
+    <None Include="img\DOI MAT KHAU.png" />
+    <None Include="img\thong ke.png" />
+    <Content Include="ReFFlective %28135%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

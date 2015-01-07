@@ -6,3 +6,6 @@
 2012-04-14 12:34:09,110 [10772] ERROR File Load Edit Sp Input string was not in a correct format.
 2012-04-14 12:36:51,031 [13660] ERROR File Load Edit Sp Input string was not in a correct format.
 2012-04-14 12:51:31,474 [13136] ERROR File Add SANPHAMs : Cannot add an entity that already exists.
+2013-07-02 10:41:43,331 [4380] ERROR File LinQConnection getDataTableLogin failed for user 'sa'.
+2013-07-02 10:41:43,396 [4380] ERROR File LinQConnection getDataTableLogin failed for user 'sa'.
+2013-07-02 10:41:43,417 [4380] ERROR File LinQConnection getDataTableLogin failed for user 'sa'.

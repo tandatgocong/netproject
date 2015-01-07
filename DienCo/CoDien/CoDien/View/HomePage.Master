@@ -78,27 +78,27 @@
        <table id="menu" class="menu" cellSpacing="0" cellPadding="0">
            <tr> 
                 <td> 
-                  <a id="menu4" href="Home.aspx?page=MT" >MÁY TÍNH XÁCH TAY</a>
+                  <a id="menu4" href="Home.aspx?page=MBN" >MÁY BƠM NƯỚC</a>
                 </td> 
            </tr> 
            <tr> 
                 <td> 
-                  <a id="menu5" href="Home.aspx?page=MB" >MÁY TÍNH BẢNG</a>
+                  <a id="menu5" href="Home.aspx?page=MB" >LOẠI SẢN PHẦM 1</a>
                 </td> 
             </tr> 
             <tr> 
                 <td> 
-                  <a id="menu6" href="Home.aspx?page=MC" >MÁY CHỦ</a>
+                  <a id="menu6" href="Home.aspx?page=MC" >LOẠI SẢN PHẦM 2</a>
                 </td> 
             </tr> 
             <tr> 
              <td> 
-                <a id="menu7" href="Home.aspx?page=DT" >ĐIỆN THOẠI</a>
+                <a id="menu7" href="Home.aspx?page=DT" >LOẠI SẢN PHẦM 3</a>
              </td> 
             </tr> 
             <tr> 
                 <td> 
-                    <a id="menu8" href="Home.aspx?page=PK" >PHỤ KIỆN</a>
+                    <a id="menu8" href="Home.aspx?page=PK" >LOẠI SẢN PHẦM 4</a>
                 </td> 
              </tr> 
               
@@ -120,9 +120,10 @@
        </div>
      <div id="Div1" align="left" 
           style=" margin-left:3px; margin-bottom:5px; text-align: right;">
-         <asp:TextBox ID="TextBox1" runat="server" Width="98%"></asp:TextBox>
+         <asp:TextBox ID="txtSearch" runat="server" Width="98%"></asp:TextBox>
        <BR />
-         <asp:Button ID="btTimKiem" runat="server" Text="Tìm Kiếm" />
+         <asp:Button ID="btTimKiem" runat="server" Text="Tìm Kiếm" 
+             onclick="btTimKiem_Click" />
        <BR />
      </div>
 
@@ -144,7 +145,7 @@
        <a href="ymsgr:sendim?mautimtinhyeu_1010">
        <img border="0" src="http://mail.opi.yahoo.com/online?u=mautimtinhyeu_1010&amp;m=g&amp;t=14" alt="Click vào đây để chat qua Yahoo với mautimtinhyeu_1010" title="Click vào đây để chat qua Yahoo với mautimtinhyeu_1010"></a>
        <div><div class="name">
-       LÊ TẤN ĐẠT <BR />
+       HUỲNH MINH NHỰT <BR />
         0909933397       
        </div>
          
@@ -166,7 +167,7 @@
        </div>
         <center>
             <div class="numberonline">
-             <%=Application["count_visit"].ToString()%>
+                <%=Application["count_visit"].ToString()%>
             </div>
            
         </center>
@@ -208,7 +209,7 @@
                            {
                                for (int i = 0; i < table.Rows.Count; i++)
                                {
-                                   string img = table.Rows[i]["ANH"].ToString().Replace(@"~", "");
+                                   string img = table.Rows[i]["ANH"].ToString();
                                    %>
                                    <img src="<%=img%>" width="190px" height="200px" />
                                    <p />
@@ -250,7 +251,7 @@
          {
              for (int i = 0; i < spBanChay.Rows.Count; i++)
              {
-                 string img = spBanChay.Rows[i]["ANH"].ToString().Replace(@"~", "");
+                 string img = spBanChay.Rows[i]["ANH"].ToString();
                                    %>
                                    <img src="<%=img%>" width="190px" height="200px" />
                                    <p />
@@ -274,21 +275,21 @@
        if (TransMenu.isSupported()) {
            var ms = new TransMenuSet(TransMenu.direction.right, 0, 0, TransMenu.reference.topRight);
            var menu4 = ms.addMenu(document.getElementById("menu4"));
-           menu4.addItem("&nbsp;&nbsp; HP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", "Home.aspx?page=MT&type=HP", "0");
-           menu4.addItem("&nbsp;&nbsp; DELL ", "Home.aspx?page=MT&type=DL", "0");
-           menu4.addItem("&nbsp;&nbsp; SONY ", "Home.aspx?page=MT&type=SN", "0");
-           menu4.addItem("&nbsp;&nbsp; ACER", "Home.aspx?page=MT&type=AC", "0");
+           menu4.addItem("&nbsp;&nbsp; GRUDFOS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", "Home.aspx?page=MBN&type=GRU", "0");
+           menu4.addItem("&nbsp;&nbsp; MATRA ", "Home.aspx?page=MBN&type=MAT", "0");
+           menu4.addItem("&nbsp;&nbsp; Pentax ", "Home.aspx?page=MBN&type=PEN", "0");
+           menu4.addItem("&nbsp;&nbsp; ITALIA", "Home.aspx?page=MBN&type=ITA", "0");
            var menu5 = ms.addMenu(document.getElementById("menu5"));
-           menu5.addItem("&nbsp;&nbsp; IPAD  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", "Home.aspx?page=MB&type=IP", "0");
-           menu5.addItem("&nbsp;&nbsp; SAMSUNG", "Home.aspx?page=MB&type=SA", "0");
-           menu5.addItem("&nbsp;&nbsp; LG", "Home.aspx?page=MB&type=LG", "0");
+           menu5.addItem("&nbsp;&nbsp; HIỆU 01  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", "Home.aspx?page=MB&type=IP", "0");
+           menu5.addItem("&nbsp;&nbsp; HIỆU 02", "Home.aspx?page=MB&type=SA", "0");
+           menu5.addItem("&nbsp;&nbsp; HIỆU 03", "Home.aspx?page=MB&type=LG", "0");
            var menu6 = ms.addMenu(document.getElementById("menu6"));
-           menu6.addItem("&nbsp;&nbsp; HP  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", "Home.aspx?page=MC&type=HP", "0");
-           menu6.addItem("&nbsp;&nbsp; IBM", "Home.aspx?page=MC&type=IB", "0");
+           menu6.addItem("&nbsp;&nbsp; HIỆU 04  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", "Home.aspx?page=MC&type=HP", "0");
+           menu6.addItem("&nbsp;&nbsp; HIỆU 05", "Home.aspx?page=MC&type=IB", "0");
            var menu7 = ms.addMenu(document.getElementById("menu7"));
-           menu7.addItem("&nbsp;&nbsp; NOKIA  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", "Home.aspx?page=DT&type=NK", "0");
-           menu7.addItem("&nbsp;&nbsp; SAMSUNG ", "Home.aspx?page=DT&type=SA", "0");
-           menu7.addItem("&nbsp;&nbsp; LG ", "Home.aspx?page=DT&type=LG", "0");
+           menu7.addItem("&nbsp;&nbsp; HIỆU 06  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", "Home.aspx?page=DT&type=NK", "0");
+           menu7.addItem("&nbsp;&nbsp; HIỆU 07 ", "Home.aspx?page=DT&type=SA", "0");
+           menu7.addItem("&nbsp;&nbsp; HIỆU 08 ", "Home.aspx?page=DT&type=LG", "0");
            /* var menu46 = ms.addMenu(document.getElementById("menu46"));
            menu46.addItem("Menu 7.1", "#", "0");
            menu46.addItem("Menu 7.2", "#", "1");

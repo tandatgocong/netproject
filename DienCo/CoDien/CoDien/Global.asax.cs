@@ -30,6 +30,7 @@ namespace CoDien
 
         void Session_Start(object sender, EventArgs e)
         {
+            Session["content"] = "";
             Session["page"] = "";
             Session["USER"] = "";
             int count_visit = 0;

@@ -32,5 +32,10 @@ namespace CoDien.Class
             }
             return LinQConnection.getDataTable(sql);
         }
+        public static DataTable SearchSP( string search)
+        {
+            string sql = "SELECT  *  FROM  SANPHAM  WHERE TENSP LIKE '%"+search+"%' ORDER BY SAPMOI DESC";
+            return LinQConnection.getDataTable(sql);
+        }
     }
 }

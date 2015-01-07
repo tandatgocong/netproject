@@ -1,0 +1,5 @@
+E:\DATA\NETPROJECT\TruongGoCongDong\gcd\gcd\bin\gcd.dll
+E:\DATA\NETPROJECT\TruongGoCongDong\gcd\gcd\bin\gcd.pdb
+E:\DATA\NETPROJECT\TruongGoCongDong\gcd\gcd\obj\Debug\ResolveAssemblyReference.cache
+E:\DATA\NETPROJECT\TruongGoCongDong\gcd\gcd\obj\Debug\gcd.dll
+E:\DATA\NETPROJECT\TruongGoCongDong\gcd\gcd\obj\Debug\gcd.pdb

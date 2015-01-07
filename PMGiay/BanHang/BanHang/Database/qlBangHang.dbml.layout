@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 15.375, 14.5" name="qlBangHan">
+  <DataContextMoniker Name="/qlBangHangDataContext" />
+  <nestedChildShapes>
+    <classShape Id="0f726e5c-dae3-42a5-a172-569ed69487a5" absoluteBounds="0.75, 0.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/qlBangHangDataContext/CHUHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="57e85da8-1457-46ba-b320-4a485944b754" absoluteBounds="0.765, 1.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="466b091e-78ea-47f1-92b6-2a9df4e80843" absoluteBounds="3.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/qlBangHangDataContext/TIENQUY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="74cbe501-b9d5-4607-ac98-afd7dd8be1f7" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="da1c0fde-8fff-4f42-8b3f-bf1e28c0c717" absoluteBounds="3.75, 2.75, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/qlBangHangDataContext/CT_HOADON" />
+      <nestedChildShapes>
+        <elementListCompartment Id="52efe115-56e7-416b-837e-aeeb37cee1c6" absoluteBounds="3.765, 3.21, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="035979ed-4cd5-403e-98e9-d684163186f6" absoluteBounds="6.75, 0.75, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/qlBangHangDataContext/CT_TIENQUY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a8922b4b-edee-431c-a3e1-604bf08062c9" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fdca2abe-9707-4bcd-8473-77e612d8fe22" absoluteBounds="6.75, 4.75, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/qlBangHangDataContext/HOADON" />
+      <nestedChildShapes>
+        <elementListCompartment Id="198075fa-3cb3-4f78-a9d9-5a1e47b88d86" absoluteBounds="6.765, 5.21, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8cbceb41-3428-4497-abcb-9da9c3cc7f27" absoluteBounds="9.75, 0.75, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/qlBangHangDataContext/NHATKY_TIENQUY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d40586d4-a0c7-415b-90a0-0d8c4360c5c0" absoluteBounds="9.765, 1.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="98afd7d0-401c-4c8e-bd50-31798b01d0f6" absoluteBounds="13.125, 5.875, 2, 2.5401025390625">
+      <DataClassMoniker Name="/qlBangHangDataContext/USER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ae5ef3a8-d480-49ce-9f1f-e1c44c30c450" absoluteBounds="13.14, 6.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7c667ade-02a9-4fc7-854b-e9be4b5b1c83" absoluteBounds="4.75, 8, 2, 6.1938297526041657">
+      <DataClassMoniker Name="/qlBangHangDataContext/NHAP_HANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c7d55079-43e9-4fb7-8047-63c0f3f08e12" absoluteBounds="4.765, 8.46, 1.9700000000000002, 5.6338297526041661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
