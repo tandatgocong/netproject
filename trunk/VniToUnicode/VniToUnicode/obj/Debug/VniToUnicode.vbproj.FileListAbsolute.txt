@@ -1,0 +1,10 @@
+C:\Users\LEDAT\Desktop\VniToUnicode\VniToUnicode\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\LEDAT\Desktop\VniToUnicode\VniToUnicode\obj\Debug\VniToUnicode.Resources.resources
+C:\Users\LEDAT\Desktop\VniToUnicode\VniToUnicode\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\LEDAT\Desktop\VniToUnicode\VniToUnicode\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\LEDAT\Desktop\VniToUnicode\VniToUnicode\bin\Debug\VniToUnicode.dll
+C:\Users\LEDAT\Desktop\VniToUnicode\VniToUnicode\bin\Debug\VniToUnicode.pdb
+C:\Users\LEDAT\Desktop\VniToUnicode\VniToUnicode\bin\Debug\VniToUnicode.xml
+C:\Users\LEDAT\Desktop\VniToUnicode\VniToUnicode\obj\Debug\VniToUnicode.dll
+C:\Users\LEDAT\Desktop\VniToUnicode\VniToUnicode\obj\Debug\VniToUnicode.xml
+C:\Users\LEDAT\Desktop\VniToUnicode\VniToUnicode\obj\Debug\VniToUnicode.pdb

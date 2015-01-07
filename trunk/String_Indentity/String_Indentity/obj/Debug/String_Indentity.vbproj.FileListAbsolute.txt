@@ -8,3 +8,13 @@ C:\Users\TAN DAT\Desktop\String_Indentity\String_Indentity\bin\Debug\String_Inde
 C:\Users\TAN DAT\Desktop\String_Indentity\String_Indentity\obj\Debug\String_Indentity.dll
 C:\Users\TAN DAT\Desktop\String_Indentity\String_Indentity\obj\Debug\String_Indentity.xml
 C:\Users\TAN DAT\Desktop\String_Indentity\String_Indentity\obj\Debug\String_Indentity.pdb
+E:\DATA\NETPROJECT\String_Indentity\String_Indentity\bin\Debug\String_Indentity.dll
+E:\DATA\NETPROJECT\String_Indentity\String_Indentity\bin\Debug\String_Indentity.pdb
+E:\DATA\NETPROJECT\String_Indentity\String_Indentity\bin\Debug\String_Indentity.xml
+E:\DATA\NETPROJECT\String_Indentity\String_Indentity\obj\Debug\ResolveAssemblyReference.cache
+E:\DATA\NETPROJECT\String_Indentity\String_Indentity\obj\Debug\String_Indentity.Resources.resources
+E:\DATA\NETPROJECT\String_Indentity\String_Indentity\obj\Debug\GenerateResource-ResGen.read.1.tlog
+E:\DATA\NETPROJECT\String_Indentity\String_Indentity\obj\Debug\GenerateResource-ResGen.write.1.tlog
+E:\DATA\NETPROJECT\String_Indentity\String_Indentity\obj\Debug\String_Indentity.dll
+E:\DATA\NETPROJECT\String_Indentity\String_Indentity\obj\Debug\String_Indentity.xml
+E:\DATA\NETPROJECT\String_Indentity\String_Indentity\obj\Debug\String_Indentity.pdb

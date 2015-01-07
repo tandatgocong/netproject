@@ -91,32 +91,56 @@ namespace CoDien.View
         /// </summary>
         private void BindItemsList()
         {
-            string page = null;
-            string type = null;
-            if (Request.Params["page"] != null && Request.Params["type"]==null ) {
-                page = Request.Params["page"].ToString();
-            }
-            else if (Request.Params["page"] != null && Request.Params["type"] != null)
+            if (Request.Params["search"] != null)
             {
-                page = Request.Params["page"].ToString();
-                type = Request.Params["type"].ToString();
+
+                DataTable dataTable = Class.C_Home.SearchSP(Request.Params["search"].ToString());
+
+                _PageDataSource.DataSource = dataTable.DefaultView;
+                _PageDataSource.AllowPaging = true;
+                _PageDataSource.PageSize = 9;
+                _PageDataSource.CurrentPageIndex = CurrentPage;
+                ViewState["TotalPages"] = _PageDataSource.PageCount;
+
+                this.lbtnPrevious.Enabled = !_PageDataSource.IsFirstPage;
+                this.lbtnNext.Enabled = !_PageDataSource.IsLastPage;
+                this.lbtnFirst.Enabled = !_PageDataSource.IsFirstPage;
+                this.lbtnLast.Enabled = !_PageDataSource.IsLastPage;
+
+                this.DataList1.DataSource = _PageDataSource;
+                this.DataList1.DataBind();
+                this.doPaging();
             }
-            DataTable dataTable = Class.C_Home.getSANPHAM(page, type); 
+            else {
+                string page = null;
+                string type = null;
+                if (Request.Params["page"] != null && Request.Params["type"] == null)
+                {
+                    page = Request.Params["page"].ToString();
+                }
+                else if (Request.Params["page"] != null && Request.Params["type"] != null)
+                {
+                    page = Request.Params["page"].ToString();
+                    type = Request.Params["type"].ToString();
+                }
+                DataTable dataTable = Class.C_Home.getSANPHAM(page, type);
+
+                _PageDataSource.DataSource = dataTable.DefaultView;
+                _PageDataSource.AllowPaging = true;
+                _PageDataSource.PageSize = 9;
+                _PageDataSource.CurrentPageIndex = CurrentPage;
+                ViewState["TotalPages"] = _PageDataSource.PageCount;
+
+                this.lbtnPrevious.Enabled = !_PageDataSource.IsFirstPage;
+                this.lbtnNext.Enabled = !_PageDataSource.IsLastPage;
+                this.lbtnFirst.Enabled = !_PageDataSource.IsFirstPage;
+                this.lbtnLast.Enabled = !_PageDataSource.IsLastPage;
+
+                this.DataList1.DataSource = _PageDataSource;
+                this.DataList1.DataBind();
+                this.doPaging();
+            }
             
-            _PageDataSource.DataSource = dataTable.DefaultView;
-            _PageDataSource.AllowPaging = true;
-            _PageDataSource.PageSize = 9;
-            _PageDataSource.CurrentPageIndex = CurrentPage;
-            ViewState["TotalPages"] = _PageDataSource.PageCount;
-
-            this.lbtnPrevious.Enabled = !_PageDataSource.IsFirstPage;
-            this.lbtnNext.Enabled = !_PageDataSource.IsLastPage;
-            this.lbtnFirst.Enabled = !_PageDataSource.IsFirstPage;
-            this.lbtnLast.Enabled = !_PageDataSource.IsLastPage;
-
-            this.DataList1.DataSource = _PageDataSource;
-            this.DataList1.DataBind();
-            this.doPaging();
         }
 
         /// <summary>

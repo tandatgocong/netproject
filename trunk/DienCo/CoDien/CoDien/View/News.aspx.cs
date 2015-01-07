@@ -22,24 +22,37 @@ namespace CoDien.View
             binding();
         }
         void NewsLoad() {
-            DataTable tb = Class.C_News.getNews("");
-            if (tb!=null) {
-                if (!"".Equals(tb.Rows[1]["NEWIMG"]+"")) { 
-                 Image1.ImageUrl=tb.Rows[1]["NEWIMG"]+"";
-                }else{
-                    Image1.ImageUrl=@"~/Image/NEWS/Default.jpg";
-                }
-                lbTitle0.Text =tb.Rows[1]["NEWSTILE"]+"";
-                lbMoTa.Text =tb.Rows[1]["NEWSDICRIPTION"]+"";
-                Session["content"] = tb.Rows[1]["NEWSCONTENT"] + "";
-                if ((tb.Rows[1]["NEWSCONTENT"] + "").Length < 10000)
+            try
+            {
+                DataTable tb = Class.C_News.getNews("");
+                if (tb != null)
                 {
-                    Session["style"] = " height:870px;";
-                }
-                else {
-                    Session["style"] = "";
+                    if (!"".Equals(tb.Rows[0]["NEWIMG"] + ""))
+                    {
+                        Image1.ImageUrl = tb.Rows[0]["NEWIMG"] + "";
+                    }
+                    else
+                    {
+                        Image1.ImageUrl = @"~/Image/NEWS/Default.jpg";
+                    }
+                    lbTitle0.Text = tb.Rows[0]["NEWSTILE"] + "";
+                    lbMoTa.Text = tb.Rows[0]["NEWSDICRIPTION"] + "";
+                    Session["content"] = tb.Rows[0]["NEWSCONTENT"] + "";
+                    if ((tb.Rows[0]["NEWSCONTENT"] + "").Length < 10000)
+                    {
+                        Session["style"] = " height:870px;";
+                    }
+                    else
+                    {
+                        Session["style"] = "";
+                    }
                 }
             }
+            catch (Exception)
+            {
+                 
+            }
+            
         }
         void binding() {
             DataTable tb = Class.C_News.getNews("");

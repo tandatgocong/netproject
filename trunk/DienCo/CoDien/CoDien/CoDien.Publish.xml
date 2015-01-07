@@ -1,280 +1,285 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
   <publishProfile publishUrl="C:\inetpub\wwwroot\dienco" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
-    <file relUrl="ckeditor/plugins/smiley/images/shades_smile.gif" publishTime="08/20/2009 16:01:08" />
-    <file relUrl="ckeditor/lang/ar.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="ckeditor/skins/office2003/images/sprites_ie6.png" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="ckeditor/plugins/smiley/images/kiss.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/skins/kama/icons.png" publishTime="12/17/2010 01:16:06" />
     <file relUrl="ckeditor/skins/office2003/editor.css" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/lang/gl.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="Image/3.jpg" publishTime="04/07/2012 22:05:01" />
-    <file relUrl="ckeditor/skins/kama/images/dialog_sides.png" publishTime="08/20/2009 16:01:08" />
-    <file relUrl="ckeditor/plugins/uicolor/yui/assets/yui.css" publishTime="01/31/2011 19:28:16" />
-    <file relUrl="ckeditor/plugins/smiley/images/kiss.gif" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="View/A_UpdateSanPham.aspx" publishTime="04/14/2012 12:56:53" />
+    <file relUrl="ckeditor/skins/v2/icons.png" publishTime="12/17/2010 01:16:06" />
+    <file relUrl="View/Detail.aspx" publishTime="04/14/2012 21:57:49" />
     <file relUrl="ckeditor/plugins/showblocks/images/block_div.png" publishTime="09/21/2010 17:05:40" />
-    <file relUrl="ckeditor/skins/v2/images/dialog_sides.png" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/skins/v2/images/dialog_sides_rtl.png" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/skins/office2003/icons.png" publishTime="12/17/2010 01:16:06" />
-    <file relUrl="ckeditor/plugins/docprops/dialogs/docprops.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="JavaScript/headmenu.css" publishTime="04/07/2012 22:05:05" />
+    <file relUrl="View/Admin.aspx" publishTime="04/14/2012 14:29:42" />
+    <file relUrl="ckeditor/plugins/templates/templates/images/template2.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/lang/hi.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/skins/v2/templates.css" publishTime="01/31/2011 19:28:16" />
     <file relUrl="ckeditor/plugins/uicolor/lang/he.js" publishTime="01/31/2011 19:28:16" />
-    <file relUrl="ckeditor/lang/it.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="ckeditor/skins/v2/dialog.css" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/lang/bs.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/plugins/showblocks/images/block_h3.png" publishTime="09/21/2010 17:05:40" />
-    <file relUrl="ckeditor/skins/kama/images/dialog_sides_rtl.png" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/INSTALL.html" publishTime="01/31/2011 19:28:16" />
-    <file relUrl="ckeditor/plugins/uicolor/lang/en.js" publishTime="01/31/2011 19:28:16" />
+    <file relUrl="Image/2.jpg" publishTime="04/07/2012 22:05:01" />
     <file relUrl="ckeditor/plugins/showblocks/images/block_h6.png" publishTime="09/21/2010 17:05:40" />
-    <file relUrl="ckeditor/plugins/ajax/plugin.js" publishTime="04/07/2011 16:17:36" />
+    <file relUrl="ckeditor/lang/fr.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/lang/ka.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/skins/kama/images/noimage.png" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="View/A_AddSanPham.aspx" publishTime="04/14/2012 13:27:56" />
     <file relUrl="Image/menu_bg.png" publishTime="04/07/2012 22:05:02" />
+    <file relUrl="ckeditor/lang/ja.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="Image/7.jpg" publishTime="04/07/2012 22:05:02" />
-    <file relUrl="Image/5.jpg" publishTime="04/07/2012 22:05:02" />
+    <file relUrl="ckeditor/plugins/forms/dialogs/button.js" publishTime="01/31/2011 19:28:16" />
+    <file relUrl="JavaScript/jquery-1.6.2.js" publishTime="04/07/2012 22:05:05" />
     <file relUrl="ckeditor/plugins/forms/dialogs/radio.js" publishTime="01/31/2011 19:28:16" />
+    <file relUrl="ckeditor/lang/ar.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/lang/gu.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/plugins/pagebreak/images/pagebreak.gif" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="View/HomePage.Master" publishTime="04/16/2012 23:30:52" />
     <file relUrl="ckeditor/plugins/docprops/plugin.js" publishTime="05/09/2011 17:28:30" />
     <file relUrl="ckeditor/skins/v2/images/toolbar_start.gif" publishTime="08/20/2009 16:01:08" />
-    <file relUrl="View/A_News.aspx" publishTime="04/09/2012 00:21:49" />
-    <file relUrl="ckeditor/lang/fr.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="View/A_News.aspx" publishTime="04/14/2012 11:12:10" />
+    <file relUrl="ckeditor/plugins/smiley/images/sad_smile.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="Image/bg_head.jpg" publishTime="04/07/2012 22:05:02" />
     <file relUrl="ckeditor/plugins/smiley/images/thumbs_down.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/plugins/tableresize/plugin.js" publishTime="06/16/2011 21:08:00" />
-    <file relUrl="ckeditor/plugins/about/dialogs/logo_ckeditor.png" publishTime="08/20/2009 16:01:08" />
-    <file relUrl="View/Pages.aspx" publishTime="04/10/2012 09:13:16" />
+    <file relUrl="Image/NEWS/084612094639.gif" publishTime="04/08/2012 21:46:39" />
+    <file relUrl="ckeditor/skins/kama/images/dialog_sides_rtl.png" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/lang/en.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/plugins/showblocks/images/block_blockquote.png" publishTime="09/21/2010 17:05:40" />
-    <file relUrl="ckeditor/plugins/showblocks/images/block_address.png" publishTime="09/21/2010 17:05:40" />
+    <file relUrl="ckeditor/plugins/specialchar/lang/en.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="ckeditor/plugins/smiley/images/angry_smile.gif" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="ckeditor/lang/fr-ca.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/plugins/showblocks/images/block_h4.png" publishTime="09/21/2010 17:05:40" />
     <file relUrl="ckeditor/plugins/tabletools/dialogs/tableCell.js" publishTime="04/07/2011 16:17:36" />
     <file relUrl="Image/news_list_bg.gif" publishTime="04/07/2012 22:05:02" />
     <file relUrl="StyleSheet/Menu.css" publishTime="04/07/2012 22:05:03" />
-    <file relUrl="ckeditor/lang/eu.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/skins/kama/images/toolbar_start.gif" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="ckeditor/lang/pt.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="ckeditor/plugins/showblocks/images/block_address.png" publishTime="09/21/2010 17:05:40" />
+    <file relUrl="ckeditor/skins/office2003/images/dialog_sides.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/lang/pt-br.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/skins/kama/images/dialog_sides.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="JavaScript/jquery-1.2.6.js" publishTime="04/07/2012 22:05:04" />
     <file relUrl="ckeditor/skins/v2/images/sprites_ie6.png" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/plugins/a11yhelp/lang/en.js" publishTime="05/09/2011 17:28:30" />
-    <file relUrl="View/Admin.aspx" publishTime="04/08/2012 20:39:47" />
     <file relUrl="ckeditor/lang/_languages.js" publishTime="05/09/2011 17:28:30" />
-    <file relUrl="ckeditor/skins/office2003/images/sprites_ie6.png" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/lang/fo.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/lang/fa.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/skins/office2003/images/mini.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/plugins/forms/dialogs/textfield.js" publishTime="01/31/2011 19:28:16" />
     <file relUrl="ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/plugins/smiley/images/teeth_smile.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/lang/tr.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/plugins/pastetext/dialogs/pastetext.js" publishTime="05/09/2011 16:06:10" />
+    <file relUrl="ckeditor/plugins/smiley/dialogs/smiley.js" publishTime="05/09/2011 17:28:30" />
     <file relUrl="ckeditor/plugins/placeholder/plugin.js" publishTime="04/07/2011 16:17:36" />
-    <file relUrl="Image/NEWS/083312093319.jpg" publishTime="04/08/2012 21:33:19" />
     <file relUrl="ckeditor/skins/office2003/dialog.css" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/plugins/smiley/images/heart.gif" publishTime="08/20/2009 16:01:08" />
-    <file relUrl="ckeditor/skins/v2/dialog.css" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/plugins/forms/dialogs/button.js" publishTime="01/31/2011 19:28:16" />
+    <file relUrl="ckeditor/lang/no.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="ckeditor/plugins/pagebreak/images/pagebreak.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/lang/lt.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/skins/v2/images/mini.gif" publishTime="08/20/2009 16:01:08" />
-    <file relUrl="ckeditor/plugins/showblocks/images/block_p.png" publishTime="09/21/2010 17:05:40" />
+    <file relUrl="ckeditor/skins/kama/images/toolbar_start.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/skins/kama/images/sprites.png" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/plugins/templates/templates/images/template1.gif" publishTime="08/20/2009 16:01:08" />
-    <file relUrl="ckeditor/plugins/wsc/dialogs/wsc.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/plugins/templates/dialogs/templates.js" publishTime="05/09/2011 17:28:30" />
-    <file relUrl="View/HomePage.Master" publishTime="04/12/2012 20:12:44" />
+    <file relUrl="ckeditor/themes/default/theme.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/lang/sr.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/plugins/smiley/images/sad_smile.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/plugins/find/dialogs/find.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/plugins/showblocks/images/block_h2.png" publishTime="09/21/2010 17:05:40" />
     <file relUrl="ckeditor/plugins/placeholder/lang/he.js" publishTime="04/07/2011 16:17:36" />
     <file relUrl="ckeditor/lang/hr.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/lang/lv.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/plugins/forms/images/hiddenfield.gif" publishTime="05/28/2010 15:57:56" />
     <file relUrl="ckeditor/plugins/uicolor/uicolor.gif" publishTime="08/20/2009 16:01:08" />
-    <file relUrl="View/News.aspx" publishTime="04/10/2012 08:57:45" />
+    <file relUrl="ckeditor/plugins/iframe/dialogs/iframe.js" publishTime="06/16/2011 21:08:00" />
     <file relUrl="Image/btn-chitiet.gif" publishTime="04/07/2012 22:05:03" />
     <file relUrl="ckeditor/skins/office2003/images/dialog_sides.png" publishTime="08/20/2009 16:01:08" />
-    <file relUrl="ckeditor/lang/ko.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="Global.asax" publishTime="04/07/2012 22:05:03" />
-    <file relUrl="bin/CoDien.dll" publishTime="04/12/2012 20:12:20" />
+    <file relUrl="bin/CoDien.dll" publishTime="04/16/2012 23:30:53" />
     <file relUrl="ckeditor/plugins/wsc/dialogs/ciframe.html" publishTime="01/31/2011 19:28:16" />
     <file relUrl="ckeditor/lang/es.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/plugins/iframedialog/plugin.js" publishTime="05/09/2011 17:28:30" />
-    <file relUrl="ckeditor/themes/default/theme.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/contents.css" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="Image/XOA.png" publishTime="01/16/2008 12:29:22" />
+    <file relUrl="ckeditor/plugins/colordialog/dialogs/colordialog.js" publishTime="01/31/2011 19:28:16" />
     <file relUrl="bin/log4net.dll" publishTime="11/10/2011 07:48:35" />
     <file relUrl="ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" publishTime="04/07/2011 16:17:36" />
-    <file relUrl="ckeditor/plugins/smiley/images/omg_smile.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/lang/uk.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="ckeditor/lang/et.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="Web.config" publishTime="04/09/2012 12:06:28" />
     <file relUrl="ckeditor/plugins/liststyle/dialogs/liststyle.js" publishTime="06/16/2011 21:08:00" />
     <file relUrl="ckeditor/plugins/link/images/anchor.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/lang/nb.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/lang/ms.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="ckeditor/plugins/pastetext/dialogs/pastetext.js" publishTime="05/09/2011 16:06:10" />
     <file relUrl="Image/4.jpg" publishTime="04/07/2012 22:05:02" />
-    <file relUrl="ckeditor/skins/kama/icons_rtl.png" publishTime="12/17/2010 01:16:06" />
     <file relUrl="ckeditor/plugins/about/dialogs/about.js" publishTime="05/09/2011 17:28:30" />
-    <file relUrl="ckeditor/plugins/iframe/dialogs/iframe.js" publishTime="06/16/2011 21:08:00" />
-    <file relUrl="View/Admin.Master" publishTime="04/08/2012 21:31:22" />
-    <file relUrl="ckeditor/plugins/smiley/images/confused_smile.gif" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="View/Admin.Master" publishTime="04/14/2012 21:51:13" />
     <file relUrl="ckeditor/lang/pl.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/plugins/smiley/images/devil_smile.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/plugins/link/dialogs/link.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="ckeditor/lang/da.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/plugins/div/dialogs/div.js" publishTime="01/31/2011 19:28:16" />
     <file relUrl="Image/EDIT.png" publishTime="01/16/2008 12:30:32" />
     <file relUrl="Image/bg.gif" publishTime="04/07/2012 22:05:02" />
-    <file relUrl="ckeditor/skins/v2/icons.png" publishTime="12/17/2010 01:16:06" />
     <file relUrl="ckeditor/plugins/forms/dialogs/hiddenfield.js" publishTime="04/07/2011 16:17:36" />
-    <file relUrl="ckeditor/skins/v2/images/dialog_sides.gif" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="Image/NEWS/082212092212.gif" publishTime="04/08/2012 21:22:27" />
     <file relUrl="ckeditor/plugins/placeholder/placeholder.gif" publishTime="12/17/2010 01:16:06" />
     <file relUrl="ckeditor/plugins/smiley/images/thumbs_up.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/plugins/devtools/plugin.js" publishTime="05/09/2011 17:28:30" />
-    <file relUrl="ckeditor/plugins/uicolor/yui/assets/hue_thumb.png" publishTime="08/20/2009 16:01:08" />
-    <file relUrl="ckeditor/plugins/colordialog/dialogs/colordialog.js" publishTime="01/31/2011 19:28:16" />
-    <file relUrl="ckeditor/plugins/styles/styles/default.js" publishTime="01/31/2011 19:28:16" />
+    <file relUrl="ckeditor/skins/office2003/skin.js" publishTime="05/09/2011 17:28:30" />
     <file relUrl="ckeditor/lang/cs.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/plugins/dialog/dialogDefinition.js" publishTime="01/31/2011 19:28:16" />
     <file relUrl="ckeditor/lang/zh.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/skins/office2003/images/noimage.png" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/lang/sk.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/plugins/clipboard/dialogs/paste.js" publishTime="05/09/2011 16:06:10" />
     <file relUrl="ckeditor/plugins/templates/templates/default.js" publishTime="01/31/2011 19:28:16" />
     <file relUrl="ckeditor/plugins/pastefromword/filter/default.js" publishTime="06/16/2011 21:08:00" />
     <file relUrl="ckeditor/plugins/stylesheetparser/plugin.js" publishTime="05/09/2011 17:28:30" />
     <file relUrl="ckeditor/plugins/adobeair/plugin.js" publishTime="01/31/2011 19:28:16" />
-    <file relUrl="Image/NEWS/084612094639.gif" publishTime="04/08/2012 21:46:39" />
+    <file relUrl="ckeditor/plugins/uicolor/yui/assets/hue_bg.png" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="ckeditor/lang/sv.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/plugins/flash/dialogs/flash.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/lang/eo.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/skins/kama/images/mini.gif" publishTime="08/20/2009 16:01:08" />
-    <file relUrl="ckeditor/plugins/smiley/images/angel_smile.gif" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="View/Login.aspx" publishTime="04/14/2012 13:21:53" />
+    <file relUrl="ckeditor/plugins/templates/templates/images/template3.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/skins/v2/images/noimage.png" publishTime="08/20/2009 16:01:08" />
-    <file relUrl="Default.aspx" publishTime="04/07/2012 22:13:01" />
+    <file relUrl="View/Pages.aspx" publishTime="04/14/2012 21:52:21" />
     <file relUrl="ckeditor/plugins/smiley/images/cry_smile.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/plugins/forms/dialogs/select.js" publishTime="06/16/2011 21:08:00" />
+    <file relUrl="ckeditor/adapters/jquery.js" publishTime="01/31/2011 19:28:16" />
     <file relUrl="ckeditor/skins/office2003/images/dialog_sides_rtl.png" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/plugins/iframe/images/placeholder.png" publishTime="12/17/2010 01:16:06" />
-    <file relUrl="View/A_News_Add.aspx" publishTime="04/08/2012 22:16:47" />
-    <file relUrl="ckeditor/plugins/smiley/images/envelope.gif" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="View/A_News_Add.aspx" publishTime="04/13/2012 10:16:27" />
+    <file relUrl="ckeditor/lang/th.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/lang/sl.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="Admin.aspx" publishTime="04/14/2012 13:37:44" />
     <file relUrl="ckeditor/lang/hu.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="ckeditor/plugins/specialchar/dialogs/specialchar.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/skins/v2/icons_rtl.png" publishTime="12/17/2010 01:16:06" />
     <file relUrl="ckeditor/skins/kama/dialog.css" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/plugins/smiley/dialogs/smiley.js" publishTime="05/09/2011 17:28:30" />
+    <file relUrl="Image/bullet0_over.png" publishTime="11/23/2010 11:38:38" />
     <file relUrl="ckeditor/lang/he.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/lang/ja.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="ckeditor/plugins/showblocks/images/block_p.png" publishTime="09/21/2010 17:05:40" />
+    <file relUrl="ckeditor/lang/ko.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="Image/button_bg.png" publishTime="11/23/2010 11:38:09" />
-    <file relUrl="ckeditor/lang/pt.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="bin/CKEditor.NET.dll" publishTime="09/16/2011 17:24:04" />
-    <file relUrl="ckeditor/skins/office2003/templates.css" publishTime="01/31/2011 19:28:16" />
-    <file relUrl="ckeditor/plugins/uicolor/yui/assets/picker_mask.png" publishTime="08/20/2009 16:01:08" />
-    <file relUrl="JavaScript/jquery-1.6.2.js" publishTime="04/07/2012 22:05:05" />
+    <file relUrl="ckeditor/skins/office2003/images/noimage.png" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="ckeditor/lang/it.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="Image/delete2.ico" publishTime="06/02/2009 11:01:00" />
+    <file relUrl="ckeditor/lang/lv.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/plugins/link/dialogs/anchor.js" publishTime="05/09/2011 17:28:30" />
-    <file relUrl="ckeditor/lang/en-gb.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="View/A_BaiViet.aspx" publishTime="04/08/2012 21:11:56" />
-    <file relUrl="ckeditor/lang/km.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="ckeditor/lang/ms.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="View/A_BaiViet.aspx" publishTime="04/14/2012 21:48:54" />
+    <file relUrl="Default.aspx" publishTime="04/07/2012 22:13:01" />
     <file relUrl="ckeditor/lang/en-au.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="ckeditor/plugins/showblocks/images/block_h1.png" publishTime="09/21/2010 17:05:40" />
     <file relUrl="ckeditor/lang/nl.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/lang/is.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="Image/081412091445.gif" publishTime="04/08/2012 21:14:50" />
-    <file relUrl="ckeditor/lang/da.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="ckeditor/skins/office2003/templates.css" publishTime="01/31/2011 19:28:16" />
     <file relUrl="ckeditor/plugins/image/dialogs/image.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="Image/logo.png" publishTime="04/07/2012 22:05:02" />
     <file relUrl="ckeditor/lang/zh-cn.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/plugins/placeholder/lang/en.js" publishTime="01/31/2011 19:28:16" />
+    <file relUrl="ckeditor/lang/de.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="ckeditor/lang/vi.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/config.js" publishTime="01/31/2011 19:28:16" />
-    <file relUrl="ckeditor/plugins/scayt/dialogs/toolbar.css" publishTime="01/31/2011 19:28:16" />
+    <file relUrl="ckeditor/plugins/smiley/images/shades_smile.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/plugins/bbcode/plugin.js" publishTime="06/16/2011 21:08:00" />
-    <file relUrl="Image/Capture.JPG" publishTime="04/07/2012 22:05:01" />
+    <file relUrl="ckeditor/plugins/styles/styles/default.js" publishTime="01/31/2011 19:28:16" />
     <file relUrl="ckeditor/lang/fi.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/lang/cy.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/lang/et.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="ckeditor/plugins/smiley/images/envelope.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/lang/sr-latn.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/plugins/templates/templates/images/template2.gif" publishTime="08/20/2009 16:01:08" />
-    <file relUrl="ckeditor/LICENSE.html" publishTime="06/16/2011 21:08:00" />
+    <file relUrl="ckeditor/plugins/uicolor/yui/assets/picker_mask.png" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="ckeditor/skins/kama/icons_rtl.png" publishTime="12/17/2010 01:16:06" />
     <file relUrl="ckeditor/plugins/scayt/dialogs/options.js" publishTime="04/07/2011 16:17:36" />
     <file relUrl="ckeditor/plugins/xml/plugin.js" publishTime="04/07/2011 16:17:36" />
-    <file relUrl="ckeditor/skins/office2003/images/dialog_sides.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/plugins/a11yhelp/lang/he.js" publishTime="01/31/2011 19:28:16" />
     <file relUrl="ckeditor/lang/bn.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/ckeditor_basic.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/lang/ru.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/lang/af.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="Image/bullet0_over.png" publishTime="11/23/2010 11:38:38" />
-    <file relUrl="Image/2.jpg" publishTime="04/07/2012 22:05:01" />
+    <file relUrl="ckeditor/plugins/docprops/dialogs/docprops.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="StyleSheet/StyleSheet.css" publishTime="04/14/2012 21:11:10" />
+    <file relUrl="ckeditor/plugins/wsc/dialogs/wsc.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/skins/v2/editor.css" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/lang/mn.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/plugins/uicolor/dialogs/uicolor.js" publishTime="01/31/2011 19:28:16" />
-    <file relUrl="ckeditor/plugins/specialchar/lang/en.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/plugins/forms/dialogs/textarea.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="ckeditor/skins/kama/images/dialog_sides.gif" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="ckeditor/plugins/smiley/images/confused_smile.gif" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="ckeditor/plugins/smiley/images/omg_smile.gif" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="bin/CKEditor.NET.dll" publishTime="09/16/2011 17:24:04" />
+    <file relUrl="Image/NEWS/083312093319.jpg" publishTime="04/08/2012 21:33:19" />
     <file relUrl="Image/8.gif" publishTime="04/07/2012 22:05:03" />
-    <file relUrl="ckeditor/lang/fr-ca.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/plugins/smiley/images/angry_smile.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/plugins/smiley/images/tounge_smile.gif" publishTime="08/20/2009 16:01:08" />
-    <file relUrl="ckeditor/plugins/autogrow/plugin.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="StyleSheet/StyleSheet.css" publishTime="04/10/2012 08:48:21" />
+    <file relUrl="ckeditor/lang/en-gb.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="ckeditor/skins/v2/images/dialog_sides.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="Image/Untitled.png" publishTime="04/07/2012 22:05:03" />
-    <file relUrl="ckeditor/skins/kama/skin.js" publishTime="05/09/2011 17:28:30" />
+    <file relUrl="Image/081412091445.gif" publishTime="04/08/2012 21:14:50" />
+    <file relUrl="ckeditor/images/spacer.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/plugins/wsc/dialogs/wsc.css" publishTime="01/31/2011 19:28:16" />
-    <file relUrl="ckeditor/plugins/forms/dialogs/checkbox.js" publishTime="01/31/2011 19:28:16" />
+    <file relUrl="ckeditor/plugins/placeholder/lang/en.js" publishTime="01/31/2011 19:28:16" />
     <file relUrl="ckeditor/skins/kama/editor.css" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="ckeditor/skins/kama/templates.css" publishTime="01/31/2011 19:28:16" />
     <file relUrl="ckeditor/lang/bg.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/plugins/smiley/images/lightbulb.gif" publishTime="08/20/2009 16:01:08" />
-    <file relUrl="ckeditor/plugins/uicolor/yui/yui.js" publishTime="01/31/2011 19:28:16" />
+    <file relUrl="ckeditor/skins/v2/images/dialog_sides.png" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="ckeditor/plugins/uicolor/yui/assets/yui.css" publishTime="01/31/2011 19:28:16" />
     <file relUrl="ckeditor/lang/ro.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/plugins/wsc/dialogs/tmpFrameset.html" publishTime="01/31/2011 19:28:16" />
-    <file relUrl="ckeditor/lang/no.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="ckeditor/skins/kama/skin.js" publishTime="05/09/2011 17:28:30" />
     <file relUrl="ckeditor/plugins/table/dialogs/table.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/skins/office2003/icons_rtl.png" publishTime="12/17/2010 01:16:06" />
     <file relUrl="Image/foot.png" publishTime="04/07/2012 22:05:02" />
-    <file relUrl="ckeditor/images/spacer.gif" publishTime="08/20/2009 16:01:08" />
-    <file relUrl="ckeditor/plugins/uicolor/yui/assets/hue_bg.png" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="ckeditor/plugins/about/dialogs/logo_ckeditor.png" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="ckeditor/lang/en-ca.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="ckeditor/LICENSE.html" publishTime="06/16/2011 21:08:00" />
     <file relUrl="ckeditor/lang/el.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/plugins/showblocks/images/block_pre.png" publishTime="09/21/2010 17:05:40" />
+    <file relUrl="View/News.aspx" publishTime="04/16/2012 23:24:47" />
     <file relUrl="ckeditor/plugins/smiley/images/broken_heart.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/lang/_translationstatus.txt" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="Image/add.ico" publishTime="06/02/2009 11:00:46" />
+    <file relUrl="ckeditor/lang/fa.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/plugins/uicolor/plugin.js" publishTime="01/31/2011 19:28:16" />
-    <file relUrl="ckeditor/lang/vi.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="Image/delete2.ico" publishTime="06/02/2009 11:01:00" />
+    <file relUrl="Image/add.ico" publishTime="06/02/2009 11:00:46" />
+    <file relUrl="Image/XOA.png" publishTime="01/16/2008 12:29:22" />
+    <file relUrl="Image/Capture.JPG" publishTime="04/07/2012 22:05:01" />
     <file relUrl="ckeditor/lang/ca.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="bin/CoDien.pdb" publishTime="04/12/2012 20:12:20" />
+    <file relUrl="bin/CoDien.pdb" publishTime="04/16/2012 23:30:53" />
     <file relUrl="ckeditor/plugins/smiley/images/embaressed_smile.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/skins/v2/images/sprites.png" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/skins/office2003/images/sprites.png" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="ckeditor/plugins/ajax/plugin.js" publishTime="04/07/2011 16:17:36" />
     <file relUrl="JavaScript/transmenu.js" publishTime="04/07/2012 22:05:04" />
+    <file relUrl="ckeditor/plugins/forms/dialogs/textarea.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="Image/081312091357.gif" publishTime="04/08/2012 21:13:57" />
     <file relUrl="Image/NEWS/Default.jpg" publishTime="04/07/2012 22:05:02" />
     <file relUrl="ckeditor/plugins/showblocks/images/block_h5.png" publishTime="09/21/2010 17:05:40" />
     <file relUrl="ckeditor/ckeditor.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/lang/th.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/plugins/smiley/images/regular_smile.gif" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="ckeditor/plugins/smiley/images/lightbulb.gif" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="JavaScript/headmenu.js" publishTime="04/07/2012 22:05:03" />
+    <file relUrl="ckeditor/plugins/autogrow/plugin.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="ckeditor/plugins/flash/images/placeholder.png" publishTime="08/20/2009 16:01:08" />
-    <file relUrl="View/Home.aspx" publishTime="04/08/2012 23:03:03" />
+    <file relUrl="View/Home.aspx" publishTime="04/14/2012 21:42:25" />
     <file relUrl="Image/1.jpg" publishTime="04/07/2012 22:05:00" />
     <file relUrl="ckeditor/CHANGES.html" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/plugins/showblocks/images/block_h1.png" publishTime="09/21/2010 17:05:40" />
+    <file relUrl="ckeditor/plugins/forms/dialogs/checkbox.js" publishTime="01/31/2011 19:28:16" />
     <file relUrl="ckeditor/plugins/smiley/images/wink_smile.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/plugins/placeholder/dialogs/placeholder.js" publishTime="01/31/2011 19:28:16" />
-    <file relUrl="ckeditor/adapters/jquery.js" publishTime="01/31/2011 19:28:16" />
+    <file relUrl="ckeditor/lang/eu.js" publishTime="09/13/2011 21:32:14" />
     <file relUrl="Image/6.jpg" publishTime="04/07/2012 22:05:02" />
-    <file relUrl="ckeditor/lang/en-ca.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/lang/de.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="Image/5.jpg" publishTime="04/07/2012 22:05:02" />
+    <file relUrl="ckeditor/plugins/smiley/images/angel_smile.gif" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="JavaScript/headmenu.css" publishTime="04/07/2012 22:05:05" />
     <file relUrl="ckeditor/skins/kama/images/sprites_ie6.png" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="ckeditor/plugins/uicolor/yui/yui.js" publishTime="01/31/2011 19:28:16" />
     <file relUrl="Image/NEWS/084912094901.gif" publishTime="04/08/2012 21:49:01" />
     <file relUrl="ckeditor/plugins/devtools/lang/en.js" publishTime="05/09/2011 17:28:30" />
-    <file relUrl="JavaScript/headmenu.js" publishTime="04/07/2012 22:05:03" />
-    <file relUrl="Image/NEWS/082212092212.gif" publishTime="04/08/2012 21:22:27" />
+    <file relUrl="ckeditor/plugins/uicolor/yui/assets/hue_thumb.png" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="ckeditor/plugins/forms/images/hiddenfield.gif" publishTime="05/28/2010 15:57:56" />
     <file relUrl="Image/edit.ico" publishTime="06/02/2009 11:01:02" />
     <file relUrl="ckeditor/plugins/uicolor/yui/assets/picker_thumb.png" publishTime="08/20/2009 16:01:08" />
     <file relUrl="Image/box-bullet1.gif" publishTime="04/07/2012 22:05:03" />
-    <file relUrl="ckeditor/plugins/templates/templates/images/template3.gif" publishTime="08/20/2009 16:01:08" />
-    <file relUrl="ckeditor/plugins/specialchar/dialogs/specialchar.js" publishTime="09/13/2011 21:32:14" />
-    <file relUrl="ckeditor/skins/kama/templates.css" publishTime="01/31/2011 19:28:16" />
+    <file relUrl="ckeditor/plugins/uicolor/lang/en.js" publishTime="01/31/2011 19:28:16" />
+    <file relUrl="ckeditor/lang/km.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="ckeditor/skins/kama/images/dialog_sides.png" publishTime="08/20/2009 16:01:08" />
+    <file relUrl="ckeditor/plugins/scayt/dialogs/toolbar.css" publishTime="01/31/2011 19:28:16" />
     <file relUrl="ckeditor/plugins/forms/dialogs/form.js" publishTime="01/31/2011 19:28:16" />
-    <file relUrl="ckeditor/lang/sv.js" publishTime="09/13/2011 21:32:14" />
+    <file relUrl="ckeditor/plugins/uicolor/dialogs/uicolor.js" publishTime="01/31/2011 19:28:16" />
+    <file relUrl="ckeditor/plugins/smiley/images/regular_smile.gif" publishTime="08/20/2009 16:01:08" />
     <file relUrl="ckeditor/skins/v2/skin.js" publishTime="05/09/2011 17:28:30" />
-    <file relUrl="ckeditor/skins/office2003/skin.js" publishTime="05/09/2011 17:28:30" />
   </publishProfile>
 </publishData>
