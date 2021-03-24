@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLHANGTHEP" Class="BHTHepDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=QLHANGTHEP;Persist Security Info=True;User ID=sa" SettingsObjectName="BanHangThep.Properties.Settings" SettingsPropertyName="QLHANGTHEPConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.NHAP_HANG" Member="NHAP_HANGs">
+    <Type Name="NHAP_HANG">
+      <Column Name="STT" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MAHANG" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TENHANG" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DVT" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="SOLUONG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GIANHAP" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GIABAN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAYCNGIA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TRONGLUONG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GHICHU" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CREATEBY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CREATEDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MODIFYBY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MODIFYDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.USERS" Member="USERs">
+    <Type Name="USER">
+      <Column Name="USERNAME" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FULLNAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ROLEID" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="ENABLED" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CREATEBY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CREATEDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MODIFYBY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MODIFYDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

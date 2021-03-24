@@ -27,13 +27,21 @@ namespace BanHangThep
         private void btBanHang_Click(object sender, EventArgs e)
         {
             PanelContent.Controls.Clear();
-            // frm_LayDuLieuGanMoi_Ky baothay = new frm_LayDuLieuGanMoi_Ky();
             UCT_BanHang baothay = new UCT_BanHang();
-            baothay.Height = PanelContent.Size.Height - 300;
-            baothay.Width = PanelContent.Size.Width - 300;
-            //baothay.Height = PanelContent.Size.Height - 5;
-            //baothay.Width = PanelContent.Size.Width - 5;
+            baothay.Height = PanelContent.Size.Height;
+            baothay.Width = PanelContent.Size.Width;
             PanelContent.Controls.Add(baothay);
+        }
+
+        private void btNhapHang_Click(object sender, EventArgs e)
+        {
+            //PanelContent.Controls.Clear();
+            //UCT_NhapHang baothay = new UCT_NhapHang();
+            //baothay.Height = PanelContent.Size.Height;
+            //baothay.Width = PanelContent.Size.Width;
+            //PanelContent.Controls.Add(baothay);
+            frmNhapHang f = new frmNhapHang();
+            f.ShowDialog();
         }
     }
 }
