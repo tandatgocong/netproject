@@ -1,5 +1,4 @@
-﻿using BanHang.GUI;
-using BanHangThep.GUI;
+﻿using BanHangThep.GUI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace BanHangThep
 {
-    public partial class frmNhapHang : Form
+    public partial class frmBanHang : Form
     {
-        public frmNhapHang()
+        public frmBanHang()
         {
             InitializeComponent();
 

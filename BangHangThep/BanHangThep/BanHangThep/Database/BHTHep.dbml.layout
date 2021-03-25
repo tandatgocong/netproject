@@ -2,16 +2,16 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="BHTHep">
   <DataContextMoniker Name="/BHTHepDataContext" />
   <nestedChildShapes>
-    <classShape Id="a508c482-502d-4a08-bcd6-05c39351d859" absoluteBounds="4.25, 1.375, 2, 3.5016097005208326">
-      <DataClassMoniker Name="/BHTHepDataContext/NHAP_HANG" />
-      <nestedChildShapes>
-        <elementListCompartment Id="d774976b-6ed6-49ef-8728-5c360661a9fb" absoluteBounds="4.2650000000000006, 1.835, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
     <classShape Id="a3d41358-c989-40d7-8f04-3097b3a7660d" absoluteBounds="1.125, 2, 2, 2.5401025390625">
       <DataClassMoniker Name="/BHTHepDataContext/USER" />
       <nestedChildShapes>
         <elementListCompartment Id="0dbff2a0-56f8-4c90-a377-92035af73ee8" absoluteBounds="1.1400000000000001, 2.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6a834e6d-0df9-406b-acd9-0525d0ce868a" absoluteBounds="3.875, 1.375, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/BHTHepDataContext/NHAP_HANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fd171afd-37a7-45a7-8d48-1d974fc19763" absoluteBounds="3.89, 1.835, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

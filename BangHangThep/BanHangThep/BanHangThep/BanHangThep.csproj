@@ -68,11 +68,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\C_NhapHang.cs" />
+    <Compile Include="Class\C_USERS.cs" />
     <Compile Include="Class\LinQConnection.cs" />
     <Compile Include="Database\BHTHep.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BHTHep.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmBanHang.Designer.cs">
+      <DependentUpon>frmBanHang.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmNhapHang.cs">
       <SubType>Form</SubType>
@@ -80,23 +94,11 @@
     <Compile Include="GUI\frmNhapHang.Designer.cs">
       <DependentUpon>frmNhapHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\UCT_BanHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GUI\UCT_BanHang.Designer.cs">
       <DependentUpon>UCT_BanHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\UCT_NhapHang.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\UCT_NhapHang.Designer.cs">
-      <DependentUpon>UCT_NhapHang.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -109,17 +111,17 @@
     <None Include="Database\BHTHep.dbml.layout">
       <DependentUpon>BHTHep.dbml</DependentUpon>
     </None>
+    <EmbeddedResource Include="frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmBanHang.resx">
+      <DependentUpon>frmBanHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmNhapHang.resx">
       <DependentUpon>frmNhapHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\UCT_BanHang.resx">
       <DependentUpon>UCT_BanHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\UCT_NhapHang.resx">
-      <DependentUpon>UCT_NhapHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

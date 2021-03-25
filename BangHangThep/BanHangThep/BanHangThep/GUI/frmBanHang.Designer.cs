@@ -1,6 +1,6 @@
 ﻿namespace BanHangThep
 {
-    partial class frmNhapHang
+    partial class frmBanHang
     {
         /// <summary>
         /// Required designer variable.
