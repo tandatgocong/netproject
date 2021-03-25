@@ -101,6 +101,7 @@
             this.bt_huy.Style = DevComponents.DotNetBar.eDotNetBarStyle.VS2005;
             this.bt_huy.TabIndex = 13;
             this.bt_huy.Text = "Cancel";
+            this.bt_huy.Click += new System.EventHandler(this.bt_huy_Click);
             // 
             // bt_Login
             // 
@@ -115,10 +116,11 @@
             this.bt_Login.Style = DevComponents.DotNetBar.eDotNetBarStyle.VS2005;
             this.bt_Login.TabIndex = 12;
             this.bt_Login.Text = "Log In";
+            this.bt_Login.Click += new System.EventHandler(this.bt_Login_Click);
             // 
             // reflectionLabel1
             // 
-            this.reflectionLabel1.Location = new System.Drawing.Point(141, 22);
+            this.reflectionLabel1.Location = new System.Drawing.Point(87, 31);
             this.reflectionLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.reflectionLabel1.Name = "reflectionLabel1";
             this.reflectionLabel1.Size = new System.Drawing.Size(229, 56);
@@ -134,7 +136,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(484, 351);
+            this.ClientSize = new System.Drawing.Size(455, 273);
             this.Controls.Add(this.reflectionLabel1);
             this.Controls.Add(this.labelX2);
             this.Controls.Add(this.labelX1);
@@ -146,7 +148,8 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frm_Login";
-            this.Text = "frm_Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ĐĂNG NHẬP";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

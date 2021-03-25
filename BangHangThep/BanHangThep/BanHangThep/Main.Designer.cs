@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
+            this.labelItem1 = new DevComponents.DotNetBar.LabelItem();
+            this.qatCustomizeItem1 = new DevComponents.DotNetBar.QatCustomizeItem();
+            this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
+            this.PanelContent = new System.Windows.Forms.Panel();
             this.office2007StartButton1 = new DevComponents.DotNetBar.Office2007StartButton();
             this.btBanHang = new DevComponents.DotNetBar.ButtonItem();
             this.btNhapHang = new DevComponents.DotNetBar.ButtonItem();
             this.btThongKe = new DevComponents.DotNetBar.ButtonItem();
             this.btBaoCao = new DevComponents.DotNetBar.ButtonItem();
-            this.labelItem1 = new DevComponents.DotNetBar.LabelItem();
-            this.qatCustomizeItem1 = new DevComponents.DotNetBar.QatCustomizeItem();
-            this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
-            this.PanelContent = new System.Windows.Forms.Panel();
             this.panelEx1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +61,53 @@
             this.ribbonControl1.TabGroupHeight = 400;
             this.ribbonControl1.TabIndex = 0;
             this.ribbonControl1.Text = "ribbonControl1";
+            // 
+            // labelItem1
+            // 
+            this.labelItem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelItem1.Name = "labelItem1";
+            this.labelItem1.PaddingBottom = 3;
+            this.labelItem1.PaddingLeft = 3;
+            this.labelItem1.PaddingRight = 3;
+            this.labelItem1.PaddingTop = 3;
+            this.labelItem1.Text = "<b><font size=\"+4\"><font color=\"#B02B2C\">     Cửa hàng THÉP VIỆT VT </font></font" +
+    "></b>";
+            this.labelItem1.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // qatCustomizeItem1
+            // 
+            this.qatCustomizeItem1.Name = "qatCustomizeItem1";
+            this.qatCustomizeItem1.PopupWidth = 400;
+            // 
+            // panelEx1
+            // 
+            this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx1.Controls.Add(this.PanelContent);
+            this.panelEx1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelEx1.Location = new System.Drawing.Point(0, 49);
+            this.panelEx1.Margin = new System.Windows.Forms.Padding(15);
+            this.panelEx1.Name = "panelEx1";
+            this.panelEx1.Padding = new System.Windows.Forms.Padding(15);
+            this.panelEx1.Size = new System.Drawing.Size(1233, 700);
+            this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.panelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx1.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx1.Style.GradientAngle = 90;
+            this.panelEx1.TabIndex = 1;
+            // 
+            // PanelContent
+            // 
+            this.PanelContent.BackColor = System.Drawing.Color.AliceBlue;
+            this.PanelContent.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.PanelContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelContent.Location = new System.Drawing.Point(15, 15);
+            this.PanelContent.Margin = new System.Windows.Forms.Padding(0);
+            this.PanelContent.Name = "PanelContent";
+            this.PanelContent.Size = new System.Drawing.Size(1203, 670);
+            this.PanelContent.TabIndex = 3;
             // 
             // office2007StartButton1
             // 
@@ -111,53 +158,6 @@
             this.btBaoCao.ImageFixedSize = new System.Drawing.Size(40, 40);
             this.btBaoCao.Name = "btBaoCao";
             this.btBaoCao.Text = "Báo Cáo";
-            // 
-            // labelItem1
-            // 
-            this.labelItem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelItem1.Name = "labelItem1";
-            this.labelItem1.PaddingBottom = 3;
-            this.labelItem1.PaddingLeft = 3;
-            this.labelItem1.PaddingRight = 3;
-            this.labelItem1.PaddingTop = 3;
-            this.labelItem1.Text = "<b><font size=\"+4\"><font color=\"#B02B2C\">     Cửa hàng THÉP VIỆT VT </font></font" +
-    "></b>";
-            this.labelItem1.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // qatCustomizeItem1
-            // 
-            this.qatCustomizeItem1.Name = "qatCustomizeItem1";
-            this.qatCustomizeItem1.PopupWidth = 400;
-            // 
-            // panelEx1
-            // 
-            this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
-            this.panelEx1.Controls.Add(this.PanelContent);
-            this.panelEx1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelEx1.Location = new System.Drawing.Point(0, 49);
-            this.panelEx1.Margin = new System.Windows.Forms.Padding(15);
-            this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Padding = new System.Windows.Forms.Padding(15);
-            this.panelEx1.Size = new System.Drawing.Size(1233, 700);
-            this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.panelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.panelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.panelEx1.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.panelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.panelEx1.Style.GradientAngle = 90;
-            this.panelEx1.TabIndex = 1;
-            // 
-            // PanelContent
-            // 
-            this.PanelContent.BackColor = System.Drawing.Color.AliceBlue;
-            this.PanelContent.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PanelContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelContent.Location = new System.Drawing.Point(15, 15);
-            this.PanelContent.Margin = new System.Windows.Forms.Padding(0);
-            this.PanelContent.Name = "PanelContent";
-            this.PanelContent.Size = new System.Drawing.Size(1203, 670);
-            this.PanelContent.TabIndex = 3;
             // 
             // Main
             // 

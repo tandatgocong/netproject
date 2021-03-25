@@ -16,7 +16,7 @@ namespace BanHangThep
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmNhapHang());
+            Application.Run(new Main());
         }
     }
 }

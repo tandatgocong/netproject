@@ -73,6 +73,16 @@ namespace BanHangThep.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap anh_anime_phong_canh_dep_093817122 {
+            get {
+                object obj = ResourceManager.GetObject("anh-anime-phong-canh-dep-093817122", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dotnhandon {
             get {
                 object obj = ResourceManager.GetObject("dotnhandon", resourceCulture);
