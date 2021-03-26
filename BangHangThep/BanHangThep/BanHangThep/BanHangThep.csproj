@@ -55,7 +55,11 @@
     <Reference Include="log4net">
       <HintPath>..\..\..\PMGiay\BanHang\BanHang\bin\Debug\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="String_Indentity">
+      <HintPath>..\..\..\PMGiay\BanHang\BanHang\bin\Debug\String_Indentity.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Design" />
@@ -71,6 +75,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\C_GioHang.cs" />
     <Compile Include="Class\C_NhapHang.cs" />
     <Compile Include="Class\C_USERS.cs" />
     <Compile Include="Class\LinQConnection.cs" />

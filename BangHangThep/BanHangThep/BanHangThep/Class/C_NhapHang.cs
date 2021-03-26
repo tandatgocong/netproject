@@ -23,6 +23,21 @@ namespace BanHangThep.Class
             }
             return null;
         }
+        public static List<NHAP_HANG> getListBan()
+        {
+            try
+            {
+                var query = from dottc in db.NHAP_HANGs where dottc.GIABAN != null orderby dottc.MAHANG descending select dottc;
+                return query.ToList();
+            }
+            catch (Exception ex)
+            {
+                //  log.Error(ex.Message);
+            }
+            return null;
+        }
+       
+
         public static NHAP_HANG findbyMaHang(string shs)
         {
             try
