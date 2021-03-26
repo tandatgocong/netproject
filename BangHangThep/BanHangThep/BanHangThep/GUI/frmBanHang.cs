@@ -158,17 +158,27 @@ namespace BanHangThep
             NhapSo(sender, e);
         }
 
+
+        void CLEARHoaDon()
+        {
+            txtMaHoaDon.Text = Class.C_GioHang.IdentityHoaDon();
+            this.txtKhachHang.Text = "";
+            this.txtDiaChi.Text = "";
+            this.txtDienThoai.Text = "";
+            this.txtGhiChu.Text = "";
+            this.gridList.DataSource = Class.C_GioHang.tb;
+
+        }
         void CLEAR()
         {
             cbMaHang.Text = "";
             txtTenHang.Text = "";
             txtDVT.Text = "";
-        //    txtTrongluong.Text = "";
-        //    txtGiaNhap.Text = "";
-       //     txtGia.Text = "";
-        //    txtGiaNhapMoi.Text = "";
+            //    txtTrongluong.Text = "";
+            //    txtGiaNhap.Text = "";
+            //     txtGia.Text = "";
+            //    txtGiaNhapMoi.Text = "";
             txtGiaBan.Text = "0";
-         
             txtThanhTien.Text = "0";
             this.txtSLMua.Value = 1;
             this.txtSLTon.Text = "0";
@@ -181,37 +191,67 @@ namespace BanHangThep
 
         private void btThemMoi_Click(object sender, EventArgs e)
         {
-            this.txtTongTien.Text = "53654365366";
-            // Nhập hàng mới
-            string mahang = this.cbMaHang.Text;
-            NHAP_HANG nh = Class.C_NhapHang.findbyMaHang(mahang);
-            if (nh == null)
+            
+                 string sql = "INSERT INTO HOADON (MAHD, TENKH, DIACHI, SODT, TIENHANG, TIENBAN, GHICHU, NGAYLAP, CREATEBY, CREATEDATE )   VALUES ";
+            sql += " ( N'" + txtMaHoaDon.Text + "'";
+            sql += " , N'" + txtKhachHang.Text + "'";
+            sql += ", N'" + txtDiaChi.Text + "'";
+            sql += ", N'" + txtDienThoai.Text + "'";
+            sql += "," + Class.C_GioHang._tongtien_hang;
+            sql += ", " + Class.C_GioHang._tongtien_ban;
+            sql += ", N'" + txtGhiChu.Text + "'";
+            sql += ", GETDATE()";
+            sql += ", N'aa'";
+            sql += ", GETDATE()) ";
+            if (Class.LinQConnection.ExecuteCommand_(sql) > 0)
             {
-                if (MessageBox.Show(this, "Xác nhận Thêm mới nhập hàng ?", "..: Thông Báo :..", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    //decimal sumNhap = (txtSLTon.Value + txtSoLuongNhap.Value);
-                    //string sql = "INSERT INTO [QLHANGTHEP].[dbo].[NHAP_HANG] ([MAHANG],[TENHANG],[DVT],[SOLUONG],[GIANHAP],[GIABAN],[NGAYCNGIA],[TRONGLUONG],[GHICHU],[CREATEBY],[CREATEDATE]  )   VALUES ";
-                    //sql += " ( N'" + cbMaHang.Text + "'";
-                    //sql += " , N'" + txtTenHang.Text + "'";
-                    //sql += ", N'" + txtDVT.Text + "'";
-                    //sql += "," + sumNhap;
-                    //sql += "," + txtGiaNhap.Text.Replace(",", "");
-                    //sql += ", " + txtGiaBan.Text.Replace(",", "");
-                    //sql += ", GETDATE()";
-                    //sql += ", " + txtTrongluong.Text;
-                    //sql += ", N'" + txtGhiChu.Text + "'";
-                    //sql += ", N'aa'";
-                    //sql += ", GETDATE()) ";
 
-                    //Class.LinQConnection.ExecuteCommand_(sql);
-                    formload();
+                for (int i = 0; i < gridList.Rows.Count; i++)
+                {
+
+
+                    string g_mahd = txtMaHoaDon.Text;
+                    string g_mahang = this.gridList.Rows[i].Cells["gMaHang"].Value + "";
+                    string g_tenhang = this.gridList.Rows[i].Cells["hc_tenhang"].Value + "";
+                    string g_dvt = this.gridList.Rows[i].Cells["hc_dvt"].Value + "";
+                    string g_soluong = this.gridList.Rows[i].Cells["hc_Soluong"].Value + "";
+
+                    double g_gianhap = double.Parse(this.gridList.Rows[i].Cells["hc_gianhap"].Value + "");
+                    double g_giaban = double.Parse(this.gridList.Rows[i].Cells["gr_giaban"].Value + "");
+
+                    double s_gianhap = double.Parse(this.gridList.Rows[i].Cells["hc_tongtienban"].Value + "");
+                    double s_giaban = double.Parse(this.gridList.Rows[i].Cells["hc_Tongtiennhap"].Value + "");
+
+                    string sql2 = "INSERT INTO CT_HOADON (MAHD, MAHANG, TENHANG, DVT, SOLUONG, DGNHAP, DGBAN, TONGTIENNHAP, TONGTIENBAN, CREATEBY, CREATEDATE)   VALUES ";
+                    sql2 += " ( N'" + g_mahd + "'";
+                    sql2 += " , N'" + g_mahang + "'";
+                    sql2 += ", N'" + g_tenhang + "'";
+                    sql2 += ", N'" + g_dvt + "'";
+                    sql2 += "," + g_soluong;
+                    sql2 += ", " + g_gianhap;
+                    sql2 += ", " + g_giaban;
+                    sql2 += ", " + s_gianhap;
+                    sql2 += ", " + s_giaban;
+                    sql2 += ", N'aa'";
+                    sql2 += ", GETDATE()) ";
+
+                    Class.LinQConnection.ExecuteCommand_(sql2);
                 }
+
+                Class.C_GioHang._tongtien_ban = 0;
+                Class.C_GioHang._tongtien_hang = 0;
+                this.txtTongTien.Text = "0";
+                MessageBox.Show(this, "Thêm mới thông tin thành Công !", "..: Thông Báo :..", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+               
+                Class.C_GioHang.tb = null;
+                CLEAR();
+                CLEARHoaDon();
+                this.txtKhachHang.Focus();
             }
             else
-            {
-                MessageBox.Show(this, "Mã hàng đã tồn tại, Vui lòng nhập mã hàng mới ?", "..: Thông Báo :..", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            }
+            { MessageBox.Show(this, "Mã hàng đã tồn tại, Vui lòng nhập mã hàng mới ?", "..: Thông Báo :..", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            //ADD Chi Tiết
         }
 
         private void btXoa_Click(object sender, EventArgs e)
@@ -317,5 +357,6 @@ namespace BanHangThep
             }
 
         }
+
     }
 }
