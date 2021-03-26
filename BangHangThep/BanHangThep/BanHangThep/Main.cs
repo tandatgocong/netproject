@@ -66,11 +66,8 @@ namespace BanHangThep
 
         private void btBanHang_Click(object sender, EventArgs e)
         {
-            PanelContent.Controls.Clear();
-            UCT_BanHang baothay = new UCT_BanHang();
-            baothay.Height = PanelContent.Size.Height;
-            baothay.Width = PanelContent.Size.Width;
-            PanelContent.Controls.Add(baothay);
+            frmBanHang f = new frmBanHang();
+            f.ShowDialog();
         }
 
         private void btNhapHang_Click(object sender, EventArgs e)

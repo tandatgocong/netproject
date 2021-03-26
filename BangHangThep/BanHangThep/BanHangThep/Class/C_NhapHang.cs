@@ -14,6 +14,7 @@ namespace BanHangThep.Class
         {
             try
             {
+                db = new BHTHepDataContext();
                 var query = from dottc in db.NHAP_HANGs orderby dottc.MAHANG descending select dottc;
                 return query.ToList();
             }
@@ -27,6 +28,7 @@ namespace BanHangThep.Class
         {
             try
             {
+                db = new BHTHepDataContext();
                 var query = from dottc in db.NHAP_HANGs where dottc.GIABAN != null orderby dottc.MAHANG descending select dottc;
                 return query.ToList();
             }
@@ -42,6 +44,7 @@ namespace BanHangThep.Class
         {
             try
             {
+                db = new BHTHepDataContext();
                 var query = from q in db.NHAP_HANGs where q.MAHANG == shs select q;
                 return query.SingleOrDefault();
             }

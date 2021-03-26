@@ -35,7 +35,7 @@ namespace BanHangThep
         }
         void formload()
         {
-          //  gridList.DataSource = Class.LinQConnection.getDataTable("SELECT  ROW_NUMBER() OVER (ORDER  BY [NGAYCNGIA] DESC) AS 'STT'   ,[MAHANG] ,[TENHANG] ,[DVT] ,[SOLUONG] ,[GIANHAP] ,[GIABAN] ,[NGAYCNGIA] ,[TRONGLUONG] ,[GHICHU] FROM NHAP_HANG ORDER BY [NGAYCNGIA]  DESC ");
+            //  gridList.DataSource = Class.LinQConnection.getDataTable("SELECT  ROW_NUMBER() OVER (ORDER  BY [NGAYCNGIA] DESC) AS 'STT'   ,[MAHANG] ,[TENHANG] ,[DVT] ,[SOLUONG] ,[GIANHAP] ,[GIABAN] ,[NGAYCNGIA] ,[TRONGLUONG] ,[GHICHU] FROM NHAP_HANG ORDER BY [NGAYCNGIA]  DESC ");
             txtMaHoaDon.Text = Class.C_GioHang.IdentityHoaDon();
             formatSo(txtTongTien);
         }
@@ -45,7 +45,7 @@ namespace BanHangThep
             try
             {
                 loadNhapHang(cbMaHang.Text);
-             
+
             }
             catch (Exception)
             {
@@ -60,14 +60,14 @@ namespace BanHangThep
                 cbMaHang.Text = nh.MAHANG;
                 txtTenHang.Text = nh.TENHANG;
                 txtDVT.Text = nh.DVT;
-              //  txtTrongluong.Text = nh.TRONGLUONG + "";
-               txtGiaNhap.Text = nh.GIANHAP + "";
-              //  txtGia.Text = nh.GIANHAP + "";
-              //  txtGiaNhapMoi.Text = nh.GIANHAP + "";
+                //  txtTrongluong.Text = nh.TRONGLUONG + "";
+                txtGiaNhap.Text = nh.GIANHAP + "";
+                //  txtGia.Text = nh.GIANHAP + "";
+                //  txtGiaNhapMoi.Text = nh.GIANHAP + "";
                 txtGiaBan.Text = nh.GIABAN + "";
                 txtSLTon.Text = nh.SOLUONG + "";
                 txtThanhTien.Text = nh.GIABAN + "";
-             //   dateNgayCapNhat.Value = nh.NGAYCNGIA.Value;
+                //   dateNgayCapNhat.Value = nh.NGAYCNGIA.Value;
             }
         }
 
@@ -79,7 +79,7 @@ namespace BanHangThep
             string v_dvt = this.txtDVT.Text;
             double v_gianhap = double.Parse(this.txtGiaNhap.Text);
             double v_giaban = double.Parse(this.txtGiaBan.Text);
-            double v_soluong = double.Parse(this.txtSLMua.Value+"");
+            double v_soluong = double.Parse(this.txtSLMua.Value + "");
             double v_conlai = double.Parse(this.txtSLTon.Text + "");
             if (v_soluong <= 0)
                 MessageBox.Show(this, "Số Lượng Mua >=0.1 !", "..: Thông Báo :..", MessageBoxButtons.OK, MessageBoxIcon.Stop);
@@ -149,13 +149,7 @@ namespace BanHangThep
 
         private void txtGia_TextChanged(object sender, EventArgs e)
         {
-           // formatSo(txtGia);
-        }
-      
-
-        private void txtGiaBanMoi_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            NhapSo(sender, e);
+            // formatSo(txtGia);
         }
 
 
@@ -191,8 +185,11 @@ namespace BanHangThep
 
         private void btThemMoi_Click(object sender, EventArgs e)
         {
-            
-                 string sql = "INSERT INTO HOADON (MAHD, TENKH, DIACHI, SODT, TIENHANG, TIENBAN, GHICHU, NGAYLAP, CREATEBY, CREATEDATE )   VALUES ";
+            try
+            {
+
+           
+            string sql = "INSERT INTO HOADON (MAHD, TENKH, DIACHI, SODT, TIENHANG, TIENBAN, GHICHU, NGAYLAP, CREATEBY, CREATEDATE )   VALUES ";
             sql += " ( N'" + txtMaHoaDon.Text + "'";
             sql += " , N'" + txtKhachHang.Text + "'";
             sql += ", N'" + txtDiaChi.Text + "'";
@@ -236,6 +233,8 @@ namespace BanHangThep
                     sql2 += ", GETDATE()) ";
 
                     Class.LinQConnection.ExecuteCommand_(sql2);
+                    // Update Soluong
+                    Class.LinQConnection.ExecuteCommand_("UPDATE NHAP_HANG SET SOLUONG=SOLUONG -" + g_soluong + " WHERE MAHANG='" + g_mahang + "'");
                 }
 
                 Class.C_GioHang._tongtien_ban = 0;
@@ -243,7 +242,7 @@ namespace BanHangThep
                 this.txtTongTien.Text = "0";
                 MessageBox.Show(this, "Thêm mới thông tin thành Công !", "..: Thông Báo :..", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-               
+
                 Class.C_GioHang.tb = null;
                 CLEAR();
                 CLEARHoaDon();
@@ -252,22 +251,17 @@ namespace BanHangThep
             else
             { MessageBox.Show(this, "Mã hàng đã tồn tại, Vui lòng nhập mã hàng mới ?", "..: Thông Báo :..", MessageBoxButtons.OK, MessageBoxIcon.Error); }
             //ADD Chi Tiết
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show(this, "Thêm mới thông tin Lỗi!", "..: Thông Báo :..", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btXoa_Click(object sender, EventArgs e)
         {
-            string mahang = this.cbMaHang.Text;
 
-            if (MessageBox.Show(this, "Xác nhận xóa mặt hàng ?", "..: Thông Báo :..", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                // Lưu Nhập Hàng củ
-                string sql = "DELETE FROM NHAP_HANG  WHERE MAHANG='" + mahang + "'";
-                Class.LinQConnection.ExecuteCommand_(sql);
-                CLEAR();
-            }
-            // 
-
-            formload();
         }
 
         private void txtTongTien_TextChanged(object sender, EventArgs e)
@@ -282,7 +276,7 @@ namespace BanHangThep
 
         private void txtGiaBan_KeyPress(object sender, KeyPressEventArgs e)
         {
-            NhapSo(sender,e);
+            NhapSo(sender, e);
         }
 
         private void txtSLMua_ValueChanged(object sender, EventArgs e)
@@ -296,9 +290,9 @@ namespace BanHangThep
             catch (Exception)
             {
 
-              
+
             }
-           
+
         }
 
         private void txtThanhTien_TextChanged(object sender, EventArgs e)
@@ -306,7 +300,7 @@ namespace BanHangThep
             formatSo(txtThanhTien);
         }
 
-     
+
 
         private void gridList_RowStateChanged(object sender, DataGridViewRowStateChangedEventArgs e)
         {
@@ -357,6 +351,85 @@ namespace BanHangThep
             }
 
         }
+        void LoadDSHoaDon()
+        {
+            string sql = "SELECT   MAHD, TENKH, DIACHI, SODT, TIENHANG, TIENBAN, GHICHU, NGAYLAP,(TIENBAN - TIENHANG) as 'LOINHUAN'   ";
+            sql += "FROM  [HOADON] WHERE CONVERT(DATE,NGAYLAP,103) BETWEEN CONVERT(DATE,'" + dateTuNgay.Value.ToString("dd/MM/yyyy") + "',103) AND CONVERT(DATE,'" + dateDenNgay.Value.ToString("dd/MM/yyyy") + "',103)";
+            dataGridViewX1.DataSource = Class.LinQConnection.getDataTable(sql);
+            double sum_Tienban = 0;
+            double sum_Tiennhap = 0;
+            double sum_Loinhuan = 0;
+            for (int i = 0; i < dataGridViewX1.Rows.Count; i++)
+            {
+                dataGridViewX1.Rows[i].HeaderCell.Value = (i + 1).ToString();
+                sum_Tienban += double.Parse(this.dataGridViewX1.Rows[i].Cells["sTienBan"].Value + "");
+                sum_Tiennhap += double.Parse(this.dataGridViewX1.Rows[i].Cells["sTienNhap"].Value + "");
+                sum_Loinhuan += double.Parse(this.dataGridViewX1.Rows[i].Cells["sTienLoi"].Value + "");
+            }
 
+            this.sumTienBan.Text = String.Format("{0:0,0}", sum_Tienban);
+            this.sumTienNhap.Text = String.Format("{0:0,0}", sum_Tiennhap);
+            this.sumLoiNhuan.Text = String.Format("{0:0,0}", sum_Loinhuan);
+        }
+
+        private void btTraCuu_Click(object sender, EventArgs e)
+        {
+
+            LoadDSHoaDon();
+        }
+
+        private void dataGridViewX1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            int rowindex = dataGridViewX1.CurrentCell.RowIndex;
+            int columnindex = dataGridViewX1.CurrentCell.ColumnIndex;
+            string mahd = this.dataGridViewX1.Rows[rowindex].Cells["sMaHD"].Value + "";
+            MessageBox.Show(this, "Làm sau hiển thị hóa đơn" + mahd);
+        }
+
+        private void dataGridViewX1_RowsRemoved(object sender, DataGridViewRowsRemovedEventArgs e)
+        {
+            double sum_Tienban = 0;
+            double sum_Tiennhap = 0;
+            double sum_Loinhuan = 0;
+
+            for (int j = 0; j < dataGridViewX1.Rows.Count; j++)
+            {
+                dataGridViewX1.Rows[j].HeaderCell.Value = (j + 1).ToString();
+                sum_Tienban += double.Parse(this.dataGridViewX1.Rows[j].Cells["sTienBan"].Value + "");
+                sum_Tiennhap += double.Parse(this.dataGridViewX1.Rows[j].Cells["sTienNhap"].Value + "");
+                sum_Loinhuan += double.Parse(this.dataGridViewX1.Rows[j].Cells["sTienLoi"].Value + "");
+            }
+
+            this.sumTienBan.Text = String.Format("{0:0,0}", sum_Tienban);
+            this.sumTienNhap.Text = String.Format("{0:0,0}", sum_Tiennhap);
+            this.sumLoiNhuan.Text = String.Format("{0:0,0}", sum_Loinhuan);
+
+        }
+
+        private void dataGridViewX1_UserDeletedRow(object sender, DataGridViewRowEventArgs e)
+        {
+
+        }
+
+        private void dataGridViewX1_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
+        {
+            if (MessageBox.Show(this, "Xác nhận Xóa hóa đơn Bán Hàng", "..: Thông Báo :..", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                //Tra Hàng
+                int rowindex = dataGridViewX1.CurrentCell.RowIndex;
+                int columnindex = dataGridViewX1.CurrentCell.ColumnIndex;
+                string mahd = this.dataGridViewX1.Rows[rowindex].Cells["sMaHD"].Value + "";
+                DataTable tb = Class.LinQConnection.getDataTable("SELECT * FROM CT_HOADON WHERE MAHD='" + mahd + "'");
+                for (int i = 0; i < tb.Rows.Count; i++)
+                {
+                    int g_soluong = int.Parse(tb.Rows[i]["SOLUONG"].ToString());
+                    string g_mahang = tb.Rows[i]["MAHANG"].ToString();
+                    Class.LinQConnection.ExecuteCommand_("UPDATE NHAP_HANG SET SOLUONG=SOLUONG +" + g_soluong + " WHERE MAHANG='" + g_mahang + "'");
+                }
+                Class.LinQConnection.ExecuteCommand_("DELETE FROM CT_HOADON WHERE MAHD='" + mahd + "'");
+                Class.LinQConnection.ExecuteCommand_("DELETE FROM HOADON WHERE MAHD='" + mahd + "'");
+                              
+            }
+        }
     }
 }
